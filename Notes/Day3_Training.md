@@ -46,7 +46,7 @@ answering some of our questions. I found out that he prefers **Command-Line** ba
 on a **GUI**.
 
 ___
-> 12:45 PM - Afternoon Meeting with Richard **[Afternoon]**
+> 12:45 PM - Continue Git and PyCharm Set-Up **[Afternoon]**
 
 In the **PyCharm** `Terminal` we are to enter some commands to initialise our Repo on the **local machine** and then
 establish a **remote connection** with the Repository we just made.
