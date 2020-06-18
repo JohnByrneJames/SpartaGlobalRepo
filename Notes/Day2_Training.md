@@ -114,6 +114,16 @@ and make you want to achieve a goal more, this can help reduce the chance
 of losing focus.
 * Dedicated space can help get an individual into a routine and keep them focused
 
+**7 Habits of Effective people** in and our of the workplace
+
+1. Be proactive
+2. Begin with the end in mind
+3. put first things first
+4. think win-win
+5. seek first to understand then be understood
+6. synergize (Allow for synergy)
+7. Sharpen the saw
+
 ___
 > 14:15 AM - Communication 1 Continued... **[Afternoon]**
 
