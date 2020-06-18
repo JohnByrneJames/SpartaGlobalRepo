@@ -1,4 +1,4 @@
-###### Sparta Global Training Day 2
+###### Sparta Global Training Day 3
 ###### Communication
 ___
 
