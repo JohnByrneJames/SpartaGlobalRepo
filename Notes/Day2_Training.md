@@ -90,6 +90,7 @@ immediate affect.
     
     
 **Urgent and Importance matrix**: 
+
 ![alt text](../Images/Importance_Urgent_Matrix.png "Urgent and Importance Matrix")
     
 ___
@@ -241,6 +242,7 @@ ___
 
 **TED TALK** The power of Listening
 > Courtesy of **William Ury**
+
 [![Audi R8](http://img.youtube.com/vi/saXfavo1OQo/0.jpg)](https://www.youtube.com/watch?v=saXfavo1OQo "Audi R8")
 
 * **Notes from video**
