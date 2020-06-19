@@ -119,7 +119,7 @@ are able to slip within that project. **Earliest Start** Calculation and **Lates
 > **"** You only do the latest Start calculations once you know the earliest start of the final Node **"**
 
 ___
-> ![alt text](../Images/Network_Diagram_AON_CalcEarliestStart.PNG "Technique to work out Earliest Start")
+> ![alt text](../Images/Network_Diagram_AON_CalcEarliestStart.png "Technique to work out Earliest Start")
 ___
 
 **Working out Latest Start** : **`Right`** →  **`Left`**
