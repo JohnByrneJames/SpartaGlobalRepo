@@ -1,5 +1,6 @@
 ###### Sparta Global Training Day 4
-###### Communication
+###### Presentation Skills & Interview Techniques
+######System Development Life Cycles and Project Environment
 ___
 
 > 9:00 AM - Daily Stand Up **[Morning meetup]**
@@ -313,10 +314,10 @@ ___
 as it displays the capabilities of a system in a way that is easy for non-technological individuals to understand
 
 **V-Model**
-* `Requirement Specification` -> `Acceptance Testing`
-* `Functional specification` -> `System testing`
-* `Technical Specification` -> `Integrating testing`
-* `Program specification` -> `unit Testing`
+* `Requirement Specification` →  `Acceptance Testing`
+* `Functional specification` →  `System testing`
+* `Technical Specification` →  `Integrating testing`
+* `Program specification` →  `unit Testing`
 * `Coding`
 
 
