@@ -4,7 +4,7 @@ ___
 
 > 9:00 AM - Daily Stand Up **[Morning meetup]**
 
-Discussing what we liked about yesterday and waht the highs and
+Discussing what we liked about yesterday and what the highs and
 blocks were of that day. 
 
 - I enjoyed the fact that we learn about active listening and how
@@ -14,8 +14,8 @@ you talk.
 
 - I also enjoyed the **perato principle**, which is also known as the **80/20
 principle** which says that everything is not as it seems or as it comes across.
-For example in Italy; 80% of the population occupy only 20% of
-the country. 
+For example in Italy; 80% of the land mass in occupied by 20% of the popular, meaning that remaining
+20% has 80% of the population on it.
 
 - I found that properly listening and using the concept of **active-listening** is
 an essential part of being a good listener and can actively improve
@@ -63,7 +63,7 @@ establish a **remote connection** with the Repository we just made.
 > 12:45 PM - Create SSH Key for easy and secure connection **[Mid-Afternoon]**
 
 This allows access from the **local** repository to the **remote** one easier as it can be done automatically by exchanging
-a public key that allows your **GitHub** to identify your computer. This is done by comparing your **public** to the stored 
+a public key that allows your **GitHub** to identify your computer. This is done by comparing your **public** key to the stored 
 **private** key on you computer.
 * **Git Bash:**
     * Go to `Git bash`
@@ -102,7 +102,7 @@ in the right way can avoid conflict.
     team dynamics
     
 * **Seekers**
-    * Eager to engage in disagreement, directness, honestly, lose patient when
+    * Eager to engage in disagreement, directness, honesty, lose patients when
     others aren't as direct, doesn't mind destabilising teams.
     > **"** Not every situation requires a reaction - Some can be rhetorical and are to
     inform you of potential happenings rather than prompt a reply. **"**
@@ -116,9 +116,9 @@ unwilling to accept criticism. What should you do?
     2. Inform the manager to take this further
     3. Hold a group meeting to share your concerns with this individual together
     
-Question **i** could escalate the situation which is counteractive to what you want,
+Option **i** could escalate the situation which is counteractive to what you want,
 therefore **iii** could be the best course as it allows a constructive discussion among peers
-and colleagues can voice concerns - if it does not resolve it then it can be escalated to **ii**.
+and colleagues who can voice concerns - if it does not resolve it then it can be escalated to **ii**.
 
 * **Scenario 2**
     * You're leading a small team. 2 members seem to have different working Styles
@@ -127,10 +127,9 @@ which is causing tension across the team. How would you resolve this?
     2. Call the 2 employees for an informal conversation
     3. Arrange a formal meeting o take this further
     
-Try calm the situation down and choose the option that will satisfy both parties, as well as keep
-the situation calm and collected. **Listen** to what is being said and find the **facts** in
-order to make a sensible decision. option **ii** allows it to be remain private, and perhaps
-come to a conclusion that suits everyone, however if it does not then **iii** could be more suitable.
+Try calm the situation down and choose the option that will satisfy both parties. **Listen** to what is being said and find the **facts** in
+order to make a sensible decision. option **ii** allows it to remain private, and perhaps
+come to a conclusion that suits everyone, however if it does not then **iii** could be a next course of action.
 
 * **Tips**
     * Stay Calm
@@ -175,9 +174,9 @@ behaviour learned through experience to specific outcomes.
         
 >**"** It is like learning the language of your own mind - is the practice of
 understanding how people organise their thinking, feeling, language and
-behaviour to produce the results the do. NLP provides people with a
+behaviour to produce the results. NLP provides people with a
 methodology to model outstanding performances achieved by geniuses and leaders
-in their field. NLP is also used for personal development for success in business. **"**
+in their field; bringing forward personal development for success in business. **"**
 
 How people organise their feeling, thinking, language and behaviour to how someone receives that information.
 
@@ -188,7 +187,7 @@ How people organise their feeling, thinking, language and behaviour to how someo
     * It can be helpful to develop a better **mindset** for yourself, improve the behaviour and other aspects of your every day life,
     whether it be in the workplace or at home.
     * A bit more of a positive outlook on life can be achieved simply by changing the way you think about things and the behaviour that is
-    shown we approaching different situations
+    shown when approaching different situations
     
 * **NPL** in the **Workplace**
     * NLP provides you with the ability to improve your communication and reverse
@@ -248,8 +247,8 @@ Overall There are **175** types of Biases, too much to cover!
         * The feeling of obligation to give when you receive
         * Personalised and unexpected makes it even better
     * **Door in the face** - forcing people to refuse a large request increases the
-    * likelihood of agreeing to a second, smaller request
-    * **Likability** - Give compliments ad build cooperation
+     likelihood of agreeing to a second, smaller request
+    * **Likability** - Give compliments and build cooperation
         * Freely give honest flattery
     * **The Bystander** people who look to others to determine their own actions.
     

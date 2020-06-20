@@ -114,15 +114,7 @@ and make you want to achieve a goal more, this can help reduce the chance
 of losing focus.
 * Dedicated space can help get an individual into a routine and keep them focused
 
-**7 Habits of Effective people** in and our of the workplace
 
-1. Be proactive
-2. Begin with the end in mind
-3. put first things first
-4. think win-win
-5. seek first to understand then be understood
-6. synergize (Allow for synergy)
-7. Sharpen the saw
 
 ___
 > 14:15 AM - Communication 1 Continued... **[Afternoon]**
@@ -172,22 +164,22 @@ can sometimes give someone an impression.
 ourselves when going to give a presentation. For example good expression,
 hand gestures and interaction with the presenter.
 
-> **"** It is not what you want, its how you say it **"**
+> **"** It is not what you say, its how you say it **"**
 
 * **Body Language**
     - Sit or stand at right angles, on the same level
     - Respect personal space
     - Use open gestures
-    - Focus on the other personal
+    - Focus on the other person if they are presenting
     - Lean in to show interest
     - Lean further to apply pressure
     - Lean back to relax
     - Maintain appropriate eye contact
     
-**Be Proactive** - Focus on the things you can control rather than things you can't.
+**7 Habits of Effective people**    
+* **Be Proactive** - Focus on the things you can control rather than things you can't.
 
-1. **Begin with the end in mind** - Are you doing things you want to be
-remembered as.
+1. **Begin with the end in mind** - Beginning each day with a clear vision of your desired direction and destination.
 2. **Put first things first** - what we say vs how we allocate our time.
 3. **Think win-win** - For you to win they do not have to lose.
 4. **Seek first** to understand then to be understood - Does what you do
