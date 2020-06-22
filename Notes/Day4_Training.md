@@ -1,6 +1,5 @@
 ###### Sparta Global Training Day 4
-###### Presentation Skills & Interview Techniques
-######System Development Life Cycles and Project Environment
+###### Presentation Skills & Interview Techniques. System Development Life Cycles and Project Environment
 ___
 
 > 9:00 AM - Daily Stand Up **[Morning meetup]**

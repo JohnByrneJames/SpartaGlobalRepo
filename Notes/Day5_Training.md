@@ -124,7 +124,7 @@ ___
 
 **Working out Latest Start** : **`Right`** →  **`Left`**
 
-**Latest Start** (`Present Node`) + **Duration** (`Predecessor Node`) = **Latest Start** (`Predecessor Node`)
+**Latest Start** (`Present Node`) - **Duration** (`Predecessor Node`) = **Latest Start** (`Predecessor Node`)
 
 > **"** The last node in an AON the earliest and latest start will be the same. **"**
 
@@ -243,10 +243,19 @@ ___
 > **"** A justification for the proposed project needed to obtain authorisation from the board, so a business case was assembled. **"**
 
 * **Examples of techniques for analysis**
-    * Most
+    * Most - `Mission`, `Objective`, `Strategy` and `Tactics`s
     * Boston box
+        * `**Wild cat** - New entrants (Low market share, but high market growth) `
+        * `**Star** - Potential for growth (High market share, and high market growth)`
+        * `**Cash cow** - Matured (High market share, but low market growth) `
+        * `**Dog** - On the declining path (Low market share, and low market growth)`
     * Porters five forces
-    * PESTLE
+        * `Competition in the industry`
+        * `Potential of new entrants into the industry`
+        * `Power of supplies`
+        * `Power of customers`
+        * `Threat of subsitute products`
+    * PESTLE - `Political`, `Economic`, `Social`, `Technological`, `Legal`and `Environment`
     * SWOT - `Strength`, `Weakness`, `Opportunities` and `Threats`.
     * Workshops
     * Interviews 
