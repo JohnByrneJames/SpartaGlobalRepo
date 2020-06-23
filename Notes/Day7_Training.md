@@ -216,7 +216,48 @@ duplicated data.
     with the following columns [Book ID], [Author 1], [Author 2] ,[Author 3] is not 1NF because [Author 1], [Author 2], and [Author 3] 
     are all repeating the same attribute. 
 
-~#~ **[Come back and add a table slide 94]** ~#~
+* **Question**
+
+This **table** is NOT in **1NF** because the values in **Colour** are not **atomic**, this means they aren't singular values. 
+`
+_table_product_`
+
+| Product ID | Colour       | Price |
+|------------|--------------|-------|
+| 1          | red, green   | 10.99 |
+| 2          | yellow       | 12.00 |
+| 3          | green        | 14.99 |
+| 4          | yellow, blue | 5.99  |
+| 5          | red          | 20.00 |
+
+* **Answer**
+
+To fix the table it needs to be seperated into two seperate tables, this is because 
+**Product_ID** will always be **5.99**, but can come in both the colours **Yellow** and **Blue**.
+
+`_table_product_price_` _table1_
+
+| product ID | Price |
+|------------|-------|
+| 1          | 10.99 |
+| 2          | 12.00 |
+| 3          | 14.99 |
+| 4          | 5.99  |
+| 5          | 20.00 |
+
+`_table_product_colour_` _table2_
+
+| product ID | Colour |
+|------------|--------|
+| 1          | red    |
+| 1          | green  |
+| 2          | yellow |
+| 3          | green  |
+| 4          | yellow |
+| 4          | blue   |
+| 5          | red    |
+
+___
 
 **2nd Normal Form**
 
@@ -225,21 +266,100 @@ A database is in second Normal Form when the following conditions are satisfied:
 * All non-key attributes are fully functional dependent on the Primary Key
 * An example is location which depends on only part of the primary key, this is wrong instead it should depend fully on the primary key.
 
-~#~ **[Come back and add a table slide 94]** ~#~
+* **Question**
+
+Here the **composite key** is used. **Product_ID** and **Store** combine to make a Primary Key. In this case **Location** only depend on **Store** which is part of the primary key. 
+
+`_table_pruchase_detail`
+
+| Product ID | Store | Location |
+|------------|-------|----------|
+| 1          | 1     | London   |
+| 1          | 3     | Tokyo    |
+| 2          | 1     | London   |
+| 3          | 2     | New York |
+| 4          | 3     | Tokyo    |
+
+* **Answer**
+
+To fix this table we need to split the table, so that the **Location** column relies on a primary key, in this case **Store**. 
+
+`_table_pruchase` _table1_
+
+| Product ID | Store |
+|------------|-------|
+| 1          | 1     |
+| 1          | 3     |
+| 2          | 1     |
+| 3          | 2     |
+| 4          | 3     |
+
+`table_store` _table2_
+
+| Store | Location |
+|------------|-------|
+| 1         | London     |
+| 2          | New York  |
+| 3          | Tokyo    |
+
+___
 
 **3rd Normal Form** 
 A database is in Third Normal Form when the following conditions are satisfied:
 *   It is in 2NF
 *   There is no transitive functional dependency
-    * i.e A transistive Functional Dependeny is when a non-key column is Functionally Dependent on another 
-    non-key column, which is Functionally Depdendent on the Primary Key 
+    * i.e A transitive Functional dependency is when a non-key column is Functionally Dependent on another 
+    non-key column, which is Functionally dependent on the Primary Key 
 
-~#~ **[Come back and add a table slide 94]** ~#~
+* **Question**
+
+In this example **Book_ID** determines **Genre_ID**, which in turn determines **Genre Type** - that means they are functionally 
+dependent on each other.
+
+`table_book_detail`
+
+| Book ID | Genre ID | Genre Type | Price |
+|---------|----------|------------|-------|
+| 1       | 1        | Fiction    | 9.99  |
+| 2       | 2        | Travel     | 14.99 |
+| 3       | 1        | Fiction    | 24.99 |
+
+* **Answer**
+
+To fix this we are going to choose **BookID** as the primary key for the first table because it doesn't 
+rely on any other table to exist like the **GenreID**. Another table can track **GenreID** as it is 
+functionally dependent on **GenreType**
+
+`table_book` _table1_
+
+| Book ID | Genre ID | Price |
+|---------|----------|-------|
+| 1       | 1        | 9.99  |
+| 2       | 2        | 14.99 |
+| 3       | 1        | 24.99 |
+
+`table_genre` _table2_
+
+| Genre ID | Genre Type| 
+|---------|-----------|
+| 1       | Fiction   |
+| 2       | Travel    |
 
 ___ 
 **HOMEWORK**
 * Research Manual or automatic way to do <br> `DELETE FROM film_table WHERE film_id=1`
-    * A `foreign key` with `CASCADE` delete means that if a record in the parent table is deleted, then the corresponding records in the child table will automatically be deleted. This is called a cascade delete in SQL Server.
-* 
-
- 
+    * **AUTOMATIC** - A `foreign key` with `CASCADE` delete means that if a record in 
+    the parent table is deleted, then the corresponding records in the 
+    child table will automatically be deleted. This is called a cascade delete 
+    in SQL Server.
+    * **EXAMPLE** - <br>`DELETE FROM film_table WHERE film_id = 1` <br>
+    `ALTER TABLE director` <br>
+    `ADD CONSTRAINT film_id` <br>
+    `FOREIGN KEY (film_id)` <br>
+    `REFERENCES film_table (film_id) ON DELETE CASCADE`
+    
+    * **MANUAL** - A foreign key constraint, you can delete the foreign key constraint manually 
+    which removes the requirement for referential integrity.
+    * **EXAMPLE** - <br>
+    `ALTER TABLE film_table` <br>
+    `DROP CONSTRAINT (film_id)` <br>
