@@ -103,31 +103,40 @@ ___
 **SQL KEY WORDS** with **Examples**
 
 * **CREATE** 
-    * `CREATE DATABASE JohnByrne_db`
-    * `CREATE TABLE customers (` <br>
-    `customerID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,` <br>
-    `FirstName VARCHAR(100) NOT NULL,` <br>
-    `LastName VARCHAR(100) NOT NULL,` <br>
-    `DateOfBirth DATE)`
-    
-    * `CREATE TABLE film_table` <br>
-    `( film_name VARCHAR(20),` <br>
-    `film_type VARCHAR(20),` <br>
-    `date_of_release DATE, ` <br>
-    `director VARCHAR(40),` <br>
-    `writer VARCHAR(100),` <br>
-    `star VARCHAR(100),` <br>
-    `film_language CHAR(2),` <br>
-    `official_website VARCHAR(100),`<br>
-    `plot_summary VARCHAR(1000))` 
-    
-    * `CREATE TABLE director` <br>
-   ` ( director_id INT IDENTITY(1, 5),` <br>
-    `director_name VARCHAR(50),` <br>
-    `city VARCHAR(20) DEFAULT 'LONDON',` <br>
-    `film_id INT, `<br>
-    `PRIMARY KEY(director_id),` <br>
-    `FOREIGN KEY(film_id) REFERENCES film_table(film_id))`
+
+
+`CREATE DATABASE JohnByrne_db`
+
+
+```sql
+    CREATE TABLE customers (
+    customerID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
+    FirstName VARCHAR(100) NOT NULL,
+    LastName VARCHAR(100) NOT NULL
+    DateOfBirth DATE)
+```
+```sql
+    CREATE TABLE film_table
+    ( film_name VARCHAR(20),
+    film_type VARCHAR(20),
+    date_of_release DATE, 
+    director VARCHAR(40),
+    writer VARCHAR(100),
+    star VARCHAR(100),
+    film_language CHAR(2),
+    official_website VARCHAR(100),
+    plot_summary VARCHAR(1000))
+```
+
+```sql 
+    CREATE TABLE director ( 
+    director_id INT IDENTITY(1, 5),
+    director_name VARCHAR(50),
+    city VARCHAR(20) DEFAULT 'LONDON',
+    film_id INT, 
+    PRIMARY KEY(director_id),
+    FOREIGN KEY(film_id) REFERENCES film_table(film_id))
+```
 
 * **INSERT**
     * `INSERT INTO customers (FirstName, LastName, DateOfBirth)`<br>

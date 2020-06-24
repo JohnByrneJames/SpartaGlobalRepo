@@ -400,9 +400,7 @@ ___
 * Set up Presentation `GROUP BY` and `HAVING` also add examples
     * **Group is** : `John`, `Lucio` and `Sohaib`
     
-* Look into `ON DELETE CASCADE` a little more, and research a bit more into the existing **constraints**.
-
-* go to notes from yesterday and today and change it to SQL inline like below:
+~~* go to notes from yesterday and today and change it to SQL inline like below:~~
 
 ```sql
 CREATE TABLE Student(s_id int NOT NULL, Name varchar(60), Age int);
