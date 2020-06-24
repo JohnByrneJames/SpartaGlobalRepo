@@ -25,19 +25,23 @@ floating around with no connections.
 the rows in the `director_table` which has that `film_id` (**1**) as a `FOREIGN KEY`.
 
 * **ALTER** 
-    * `ALTER TABLE director` <br>
-    `ADD CONSTRAINT foreign_key_onFilmId FOREIGN KEY (film_id)` <br>
-    `REFERENCES film_table (film_id) ON DELETE CASCADE;`
+```sql
+ALTER TABLE director
+ADD CONSTRAINT foreign_key_onFilmId FOREIGN KEY (film_id)
+REFERENCES film_table (film_id) ON DELETE CASCADE;
+```
 
 * **CREATE**
-    * `CREATE TABLE critics (` <br>
-    `critic_id INT PRIMARY KEY IDENTITY,` <br>
-    `critic_name VARCHAR(255) NOT NULL,` <br>
-    `reputation VARCHAR(10) NOT NULL,` <br>
-    `film_id INT NOT NULL,` <br>
-    `FOREIGN KEY (film_id)` <br>
-        `REFERENCES film_table (film_id)` <br>
-        `ON DELETE CASCADE );`
+```sql
+CREATE TABLE critics (
+critic_id INT PRIMARY KEY IDENTITY,
+critic_name VARCHAR(255) NOT NULL,
+reputation VARCHAR(10) NOT NULL,
+film_id INT NOT NULL,
+FOREIGN KEY (film_id)
+    REFERENCES film_table (film_id)
+    ON DELETE CASCADE );
+```
         
 
 **SELECT CLAUSES**
@@ -52,29 +56,50 @@ the rows in the `director_table` which has that `film_id` (**1**) as a `FOREIGN 
 **WHERE** is used to filter data, city is a column in the customers table and you 
 are asking it to find only the entries which contain **Paris** as the city.
  
-* `SELECT * FROM Customers` <br>
-`WHERE City = 'Paris'`
+```sql
+SELECT * FROM Customers
+WHERE City = 'Paris'
+```
 
 **Exercise**
 * **Q** : How many employees have home city of London ?
-* **A** : `SELECT * FROM Employees` <br>
-`WHERE City = 'London'` ~ **4**
-* **A-Returns Count** : <br>`SELECT COUNT(*) AS 'Employees living in London' FROM Employees` <br>
+* **A** : **4**
+```sql
+SELECT * FROM Employees
 `WHERE City = 'London'`
+```
+* **A-Returns Count** 
+```sql
+SELECT COUNT(*) AS 'Employees living in London' FROM Employees
+WHERE City = 'London'`
+```
 ___
 
 * **Q** : Which Employee is a Doctor ?
-* **A** : `SELECT * FROM Employees` <br>
-`WHERE TitleOfCourtesy = 'Dr.'`~ **1**
-* **A-Returns Count** : <br>`SELECT COUNT(*) AS "Number of employees with title doctor" FROM Employees` <br>
-`WHERE TitleOfCourtesy = 'Dr.'`
+* **A** : Dr. **Andrew Fuller**
+```sql
+SELECT * FROM Employees
+WHERE TitleOfCourtesy = 'Dr.'
+```
+
+* **A-Returns Count** : 
+```sql
+SELECT COUNT(*) AS "Number of employees with title doctor" FROM Employees
+`WHERE TitleOfCourtesy = 'Dr.'
+```
 ___
 
 * **Q** : How many products are discontinued ?
-* **A** : `SELECT * FROM Products` <br>
-`WHERE Discontinued = 1` <br> ~ **8**
-* **A-Returns Count** : <br>`SELECT COUNT(*) AS "Products that are discontinued" FROM Products` <br>
-`WHERE Discontinued = 1` 
+* **A** : **8**
+```sql
+SELECT * FROM Products
+WHERE Discontinued = 1
+```
+* **A-Returns Count** : 
+```sql
+SELECT COUNT(*) AS "Products that are discontinued" FROM Products
+WHERE Discontinued = 1
+```
 ___
  
 ___
@@ -87,16 +112,20 @@ strings after **`AS`** it is not as intelligent as the Azure Data Studio
 
 An **Apostrophe** **'** is a Reserved character, what happens when querying the example below?
 
-`'29 King''s Way'`
+Placing two apostrophe in the location, will tell the SQL query that this is part of the string.
 
-`SELECT * FROM products WHERE ProductName = 'Anais''s'`
+```sql
+SELECT * FROM products WHERE ProductName = 'Anais''s'`
+```
 
 **Table Aliasing** is SO useful when querying a database as it can help avoid 
 spelling mistakes and makes it a lot faster and easier.
 
-* `SELECT c.CompanyName, c.City, c.Country, c.Region` <br>
-`FROM Customers c` <br>
-`WHERE c.Region = 'BC'`
+```sql
+SELECT c.CompanyName, c.City, c.Country, c.Region
+FROM Customers c
+WHERE c.Region = 'BC'
+```
 
 It can be useful to write the **FROM** part first as it will 
 attach an alias `C` to the `Customers` table, this allows the `SELECT` part to suggest the 
@@ -108,25 +137,32 @@ columns after the point.
 starting from the top. For example `TOP 100` will select 100 rows 
 from that table.
 
-`SELECT TOP 100 CompanyName, City FROM Customers` <br>
-`WHERE Country = 'FRANCE'`
+```sql
+SELECT TOP 100 CompanyName, City FROM Customers
+WHERE Country = 'FRANCE'
+```
 
 * **AND** 
 
-**AND** is a keyword that means all criterias in a condition need to met, for example
-`Region = EU AND Age = 11`
-
-`SELECT ProductName, UnitPrice FROM Products` <br>
-`Where CategoryID = 1 AND Discontinued = 0`
-
+**AND** is a keyword that means all criterias in a condition need to met, for example:
+```sql
+Region = EU AND Age = 11
+```
+```sql
+SELECT ProductName, UnitPrice FROM Products
+Where CategoryID = 1 AND Discontinued = 0
+```
 * **OR**
 
 **OR** is a keyword that means only one of multiple criteria have to meet 
-the condition, for example `Region = EU OR Age = 11`
-
-`SELECT ProductName, UnitPrice FROM Products` <br>
-`WHERE CategoryID = 1 OR Discontinued = 0`
-
+the condition, for example:
+```sql
+Region = EU OR Age = 11
+```
+```sql
+SELECT ProductName, UnitPrice FROM Products
+WHERE CategoryID = 1 OR Discontinued = 0
+```
 * **Operators**
 
 **<>** Or **!=** <br>
@@ -135,16 +171,20 @@ the condition, for example `Region = EU OR Age = 11`
 **<=** Less than or equal to <br>
 **>=** Greater than or equal to <br>
 
-`SELECT ProductName, UnitPrice FROM Products` <br>
-`WHERE UnitsInStock > 0 AND UnitPrice > 29.99` 
+```sql
+SELECT ProductName, UnitPrice FROM Products
+WHERE UnitsInStock > 0 AND UnitPrice > 29.99
+```
 
 * **DISTINCT**
 
 **DISTINCT** will remove duplicates from a `SELECT` CLAUSE and only return 
 unique values. Return distinct values. `No Duplicates`
 
-`SELECT DISTINCT Country FROM Customers` <br>
-`WHERE ContactTitle = 'Owner'`
+```sql
+SELECT DISTINCT Country FROM Customers
+WHERE ContactTitle = 'Owner'
+```
 
 * **WILDCARDS**
 
@@ -157,20 +197,28 @@ the `LIKE` operator.
 bring back anything that does not start with those letters.
 
 _• Select anything ending with a_ <br>
-`SELECT DISTINCT c.Country` <br>
-`FROM Customers c WHERE Country LIKE '%a'`
+```sql
+SELECT DISTINCT c.Country
+FROM Customers c WHERE Country LIKE '%a'
+```
 
 _• Countries starting with U, A or M_ <br>
-`SELECT DISTINCT c.Country`
-`FROM Customers c WHERE Country LIKE '%[UAM]'`
+```sql
+SELECT DISTINCT c.Country
+FROM Customers c WHERE Country LIKE '%[UAM]'
+```
 
 _• Countries NOT starting with U, A or M_
-`SELECT DISTINCT c.Country` <br>
-`FROM Customers c WHERE Country LIKE '%[^UAM]'`
+```sql
+SELECT DISTINCT c.Country
+FROM Customers c WHERE Country LIKE '%[^UAM]'
+```
 
 _• Countries which have a 3rd letter of A_<br>
-`SELECT DISTINCT c.Country` <br>
-`FROM Customers c WHERE Country LIKE '__A%'`
+```sql
+SELECT DISTINCT c.Country
+FROM Customers c WHERE Country LIKE '__A%'
+```
 
 **BREAK**
 > 2:00 PM - SQL SELECT CLAUSE and QUERIES continued... **[Afternoon]**
@@ -181,22 +229,30 @@ _• Countries which have a 3rd letter of A_<br>
 so for example `WHERE Region IN('WA','SP')` is the same as saying `WHERE Region = 'WA' OR Region = 'SP'`
 
 _• Using the **IN** operator_<br>
-`SELECT * FROM Customers ` <br>
-`WHERE Region IN ('WA','SP')`
+```sql
+SELECT * FROM Customers
+WHERE Region IN ('WA','SP')
+```
 
 _• Using the **OR** operator_<br>
-`SELECT * FROM Customers ` <br>
-`WHERE Region = 'WA' OR Region = 'SP'`
+```sql
+SELECT * FROM Customers
+WHERE Region = 'WA' OR Region = 'SP'
+```
 
 _• Following the rules of **BIDMAS** brackets seperate operations_<br>
-`SELECT * FROM Customers ` <br>
-`WHERE (Region = 'WA' OR Region = 'SP')`<br> 
-`AND (Country = 'Brazil' OR Country = 'USA')`
+```sql
+SELECT * FROM Customers
+WHERE (Region = 'WA' OR Region = 'SP')
+AND (Country = 'Brazil' OR Country = 'USA')
+```
 
 _• Instead **IN** is more efficient as it takes less syntax 
 to do the same query_ <br>
-`SELECT * FROM Customers` <br>
-`WHERE Region IN('WA', 'SP') AND Country IN ('Brazil', 'USA')`
+```sql
+SELECT * FROM Customers
+WHERE Region IN('WA', 'SP') AND Country IN ('Brazil', 'USA')
+```
 
 * **BETWEEN**
 
@@ -204,8 +260,10 @@ The **BETWEEN** key word includes values between and as well as the boundary
 values, for example 1 - 10 would return 1 and 10 as well as any in between if they are 
 in the database.
 
-`SELECT * FROM EmployeeTerritories` <br>
-`WHERE TerritoryID BETWEEN 06800 AND 09999`
+```sql
+SELECT * FROM EmployeeTerritories
+WHERE TerritoryID BETWEEN 06800 AND 09999
+```
 
 **exercise** Three Questions...
 
