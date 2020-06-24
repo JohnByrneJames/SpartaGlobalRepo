@@ -268,30 +268,40 @@ WHERE TerritoryID BETWEEN 06800 AND 09999
 **exercise** Three Questions...
 
 _• What are the names and product IDs of the product with a unit price below 5.00?_ <br>
-`SELECT p.ProductName, p.ProductID` <br>
-`FROM Products p` <br>
-`WHERE p.UnitPrice < 5.00`
+```sql
+SELECT p.ProductName, p.ProductID
+FROM Products p
+WHERE p.UnitPrice < 5.00
+```
 
 _• Which Categories have a category name with initials beginning with 'B' or 'S'?_ <br>
-`SELECT c.CategoryName, c.Description` <br>
-`FROM Categories c ` <br>
-`WHERE c.CategoryName LIKE 'B%' OR c.CategoryName LIKE 'S%'`
+```sql
+SELECT c.CategoryName, c.Description
+FROM Categories c
+WHERE c.CategoryName LIKE 'B%' OR c.CategoryName LIKE 'S%'
+```
 
 _Option 2_ <br>
-`SELECT c.CategoryName` <br>
-`FROM Categories c` <br>
-`WHERE c.CategoryName LIKE '[BS]%'`
+```sql
+SELECT c.CategoryName
+FROM Categories c
+WHERE c.CategoryName LIKE '[BS]%'
+```
 
 _• How many orders are there for employees 5 and 7? Display the total for both._ <br>
-`SELECT Count(o.EmployeeID)` <br>
-`FROM Orders o` <br>
-`WHERE o.EmployeeID = 5 OR o.EmployeeID = 7`
+```sql
+SELECT Count(o.EmployeeID)
+FROM Orders o
+WHERE o.EmployeeID = 5 OR o.EmployeeID = 7
+```
 
 _Option 2_ <br>
-`SELECT o.EmployeeID, Count(o.EmployeeID) AS "Count of orders placed by Employees 5 and 7"` <br>
-`FROM Orders o` <br>
-`WHERE EmployeeID IN (5, 7)` <br>
-`GROUP BY o.EmployeeID`
+```sql
+SELECT o.EmployeeID, Count(o.EmployeeID) AS "Count of orders placed by Employees 5 and 7"`
+FROM Orders o
+WHERE EmployeeID IN (5, 7)
+GROUP BY o.EmployeeID
+```
 
 * **CONCAT**
 
@@ -299,39 +309,52 @@ Concatenate using **+** along with single quotes. Add two strings, values
 together means to concatenate them. This is helpful to concatenate two pieces of information 
 into a single column, for example the city and country.
 
-`SELECT CompanyName AS 'Company Name', City +',' + Country AS "City"`
-`FROM Customers`
+```sql
+SELECT CompanyName AS 'Company Name', City +',' + Country AS "City"
+FROM Customers
+```
 
 _• This adds an additional Phone number with the company name for contacting them._ <br>
-`SELECT CompanyName + ' Contactable at ' + Phone  AS 'Company Info', City +',' + Country AS "City"`
-`FROM Customers`
+```sql
+SELECT CompanyName + ' Contactable at ' + Phone  AS 'Company Info', City +',' + Country AS "City"
+FROM Customers
+```
 
 _• This does the same thing but with the key word `CONCAT`_ <br>
-`SElECT c.CompanyName AS "Company Name",` <br>
-`CONCAT(c.City, ', ',c.Country) AS "City"` <br>
-`FROM Customers c`
+```sql
+SElECT c.CompanyName AS "Company Name",
+CONCAT(c.City, ', ',c.Country) AS "City"
+FROM Customers c
+```
 
-`SELECT CONCAT(e.FirstName, ' ' ,e.LastName) AS "Employee Name"` <br>
-`FROM Employees e`
+```sql
+SELECT CONCAT(e.FirstName, ' ' ,e.LastName) AS "Employee Name"
+FROM Employees e
+```
 
 * **IS**
 
 **IS** is a special operator for dealing with **NULL** values. In order to filter based on NULLs 
 simply use **IS NULL** or **IS NOT NULL**.
 
-`SELECT c.CompanyName AS "Company Name", City + ',' + Country AS 'City'` <br>
-`FROM Customers c` <br>
-`WHERE c.Region IS NOT NULL`
+```sql
+SELECT c.CompanyName AS "Company Name", City + ',' + Country AS 'City'
+FROM Customers c
+WHERE c.Region IS NOT NULL
+```
 
-`SELECT c.CompanyName AS "Company Name", City + ',' + Country AS 'City'` <br>
-`FROM Customers c` <br>
-`WHERE c.Region IS NULL`
+```sql
+SELECT c.CompanyName AS "Company Name", City + ',' + Country AS 'City'
+FROM Customers c
+WHERE c.Region IS NULL
+```
 
 _• Write a select statement to list six countries that have region codes in the customers table._ <br>
-
-`SELECT DISTINCT c.Country, c.Region` <br>
-`FROM Customers c`<br>
-`WHERE Region IS NOT NULL`
+```sql
+SELECT DISTINCT c.Country, c.Region
+FROM Customers c
+WHERE Region IS NOT NULL
+```
 
 * **Arithmetic** 
 
@@ -360,12 +383,13 @@ an applied discount of 25% (0.25).
 
 _• Work out the Gross total and Net Total of the items in the order table, then identify the **TOP 2** with the
 highest net total._ <br>
-
-`SELECT TOP 2 od.UnitPrice, od.Quantity, od.Discount, od.OrderID,` <br>
-`od.UnitPrice*od.Quantity AS "Gross Total",` <br>
-`ROUND((od.UnitPrice*od.Quantity) - (od.UnitPrice * od.Discount * od.Quantity), 2)  AS "Net Total"` <br>
-`FROM [Order Details] od` <br>
-`ORDER BY [Net Total] DESC`
+```sql
+SELECT TOP 2 od.UnitPrice, od.Quantity, od.Discount, od.OrderID,
+od.UnitPrice*od.Quantity AS "Gross Total",
+ROUND((od.UnitPrice*od.Quantity) - (od.UnitPrice * od.Discount * od.Quantity), 2)  AS "Net Total"
+FROM [Order Details] od
+ORDER BY [Net Total] DESC
+```
 
 
 * **ORDER BY** 
@@ -374,11 +398,13 @@ This allows you to order columns into either ascending **ASC** or
 descending **DESC** order, for example a table showing the net total of 
 a sales column you could **DESC**, which would order the column showing the largest net total at the top.
 
-`SELECT TOP 2 od.UnitPrice, od.Quantity, od.Discount, od.OrderID,` <br>
-`od.UnitPrice*od.Quantity AS "Gross Total",` <br>
-`ROUND((od.UnitPrice*od.Quantity) - (od.UnitPrice * od.Discount * od.Quantity), 2)  AS "Net Total"` <br>
-`FROM [Order Details] od` <br>
-`ORDER BY [Net Total] DESC`
+```sql
+SELECT TOP 2 od.UnitPrice, od.Quantity, od.Discount, od.OrderID,
+od.UnitPrice*od.Quantity AS "Gross Total",
+ROUND((od.UnitPrice*od.Quantity) - (od.UnitPrice * od.Discount * od.Quantity), 2)  AS "Net Total"
+FROM [Order Details] od
+ORDER BY [Net Total] DESC
+```
 
 * **STRING Functions**
 
@@ -398,57 +424,78 @@ Further **examples** :
 
 _• **INDEXES Start from 1 in SQL**_ <br>
 _• RETURNS the index of the letter a if it is in a string, otherwise it returns 0._ <br>
-`SELECT e.FirstName, CHARINDEX('s', e.FirstName) AS "Position of Character"` <br>
-`FROM Employees e`
+```sql
+SELECT e.FirstName, CHARINDEX('s', e.FirstName) AS "Position of Character"
+FROM Employees e
+```
 
 _• Returns the first and third character of a string._ <br>
-`SELECT e.FirstName, SUBSTRING(e.FirstName, 1, 3) AS "Extracted String"` <br>
-`FROM Employees e`
+```sql
+SELECT e.FirstName, SUBSTRING(e.FirstName, 1, 3) AS "Extracted String"
+FROM Employees e
+```
 
 _• Returns the last two characters (from the right of a string)._ <br>
-`SELECT e.FirstName, RIGHT(e.FirstName, 2) AS 'Extracted String'` <br>
-`FROM Employees e `
+```sql
+SELECT e.FirstName, RIGHT(e.FirstName, 2) AS 'Extracted String'
+FROM Employees e
+```
 
 _• Returns the first two characters (from the left of a string)._ <br>
-`SELECT e.FirstName, LEFT(e.FirstName, 2) AS 'Extracted String'` <br>
-`FROM Employees e `
+```sql
+SELECT e.FirstName, LEFT(e.FirstName, 2) AS 'Extracted String'
+FROM Employees e
+```
 
 _• Removes white space from the end of a string._ <br> 
-`SELECT e.FirstName, RTRIM(e.firstName) AS 'Trimmed String'`
-`FROM Employees e`
+```sql
+SELECT e.FirstName, RTRIM(e.firstName) AS 'Trimmed String'
+FROM Employees e
+```
 
 _• Removes white space from the start of a string._ <br> 
-`SELECT e.FirstName, LTRIM(e.firstName) AS 'Trimmed String'` <br>
-`FROM Employees e`
+```sql
+SELECT e.FirstName, LTRIM(e.firstName) AS 'Trimmed String'
+FROM Employees e
+```
 
 _• Replace the letter 'a' with the symbol '!'._ <br> 
-`SELECT e.FirstName, REPLACE(e.firstName, 'a', '!') AS 'Replaced String'` <br>
-`FROM Employees e`
+```sql
+SELECT e.FirstName, REPLACE(e.firstName, 'a', '!') AS 'Replaced String'
+FROM Employees e
+```
 
 _• Returns the length of a string._ <br> 
-`SELECT e.FirstName, LEN(e.firstName) AS 'Length of String' ` <br>
-`FROM Employees e `
+```sql
+SELECT e.FirstName, LEN(e.firstName) AS 'Length of String'
+FROM Employees e
+```
 
 _• Returns the UPPER and LOWER case versions of a string._ <br> 
-`SELECT e.Firstname, UPPER(e.FirstName) AS 'Upper Case Conversion', LOWER(e.FirstName) AS 'Lower Case Conversion'` <br>
-`FROM Employees e`
+```sql
+SELECT e.Firstname, UPPER(e.FirstName) AS 'Upper Case Conversion', LOWER(e.FirstName) AS 'Lower Case Conversion'
+FROM Employees e
+```
 
 _• This gets the Postcode and extracts the 
 letters on the left of the blank place, this is signified from the -1. 
 So if there are 4 then its -1 to get the 3rd Index, before the blank space._ <br>
-
-`SELECT PostalCode "Post Code",` <br>
-`LEFT(PostalCode, CHARINDEX(' ', PostalCode)-1) AS "Post Code Region",` <br>
-    `CHARINDEX(' ', PostalCode) AS "Space Found", Country ` <br>
-`FROM Customers ` <br>
-`WHERE Country = 'UK'`
+```sql
+SELECT PostalCode "Post Code",
+LEFT(PostalCode, CHARINDEX(' ', PostalCode)-1) AS "Post Code Region",
+    `CHARINDEX(' ', PostalCode) AS "Space Found", Country
+FROM Customers
+WHERE Country = 'UK'
+```
 
 **Exercise** to return only the product names that contain a single quote **'** <br>
 
-`SELECT p.ProductName "Product Names",` <br>
-`CHARINDEX('''',p.ProductName) AS "Index of Quote"` <br>
-`FROM Products p` <br>
-`WHERE CHARINDEX('''',p.ProductName) > 0`
+```sql
+SELECT p.ProductName "Product Names",
+CHARINDEX('''',p.ProductName) AS "Index of Quote"
+FROM Products p
+WHERE CHARINDEX('''',p.ProductName) > 0
+```
 
 This returns the indexes of the point in the string where the apostrophe occurred if a string 
 does not contain one it will return a 0, therefore we don't show those.
