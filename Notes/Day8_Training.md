@@ -297,7 +297,7 @@ WHERE o.EmployeeID = 5 OR o.EmployeeID = 7
 
 _Option 2_ <br>
 ```sql
-SELECT o.EmployeeID, Count(o.EmployeeID) AS "Count of orders placed by Employees 5 and 7"`
+SELECT o.EmployeeID, Count(o.EmployeeID) AS "Count of orders placed by Employees 5 and 7"
 FROM Orders o
 WHERE EmployeeID IN (5, 7)
 GROUP BY o.EmployeeID
@@ -483,7 +483,7 @@ So if there are 4 then its -1 to get the 3rd Index, before the blank space._ <br
 ```sql
 SELECT PostalCode "Post Code",
 LEFT(PostalCode, CHARINDEX(' ', PostalCode)-1) AS "Post Code Region",
-    `CHARINDEX(' ', PostalCode) AS "Space Found", Country
+    CHARINDEX(' ', PostalCode) AS "Space Found", Country
 FROM Customers
 WHERE Country = 'UK'
 ```
