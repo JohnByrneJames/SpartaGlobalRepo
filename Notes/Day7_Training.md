@@ -1,4 +1,4 @@
-###### Sparta Global Training Day 6
+###### Sparta Global Training Day 7
 ###### Continuing with SQL...
 ___
 
@@ -39,6 +39,9 @@ ___
     * A update has been done, the `COMMIT` will push these changes to the database. `ROLLBACK` is to go back to a previous 
     version of the database, due to a issue or bug. The `SAVEPOINT` is made when you make a 
     change to the database, this is a point where you can `ROLLBACK` to.
+
+**`Exam has 70% is DML`** <br>
+**`Exam has 30% is DDL`**
 
 | DML    | DDL      | DCL    | TCL       |
 |--------|----------|--------|-----------|

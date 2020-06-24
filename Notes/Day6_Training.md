@@ -314,20 +314,15 @@ and is very helpful for **Analyst's** to create a visualisation, conclude findin
 
 * **Pseudo code** 
 
-`SELECT column_name(s)`
-
-`FROM table_name`
-
-`WHERE condition`
-
+`SELECT column_name(s)` <br>
+`FROM table_name` <br>
+`WHERE condition` <br>
 `GROUP BY column_name(s)`
 
 * **Example in Azura Database Studio**
 
-`SELECT COUNT(CustomerID), City`
-
-`FROM Customers`
-
+`SELECT COUNT(CustomerID), City` <br>
+`FROM Customers` <br>
 `GROUP BY City`
 
 * **Having Clause** is used to filter the **grouped** records. Having clause returns the grouped records which match the given condition. You can also sort the grouped 
@@ -335,29 +330,22 @@ records which using **Order By**.
 
 * **Pseudo code** 
 
-`SELECT column_name(s)`
-
-`FROM table_name`
-
-`WHERE condition`
-
-`GROUP BY column_name(s)`
-
-`HAVING condition`
-
+`SELECT column_name(s)` <br>
+`FROM table_name` <br>
+`WHERE condition` <br>
+`GROUP BY column_name(s)` <br>
+`HAVING condition` <br>
 `ORDER BY column_name(s)`
 
 * **Example in Azura Database Studio**
 
-`SELECT COUNT(CustomerID), City`
-
-`FROM Customers`
-
-`GROUP BY City`
-
+`SELECT COUNT(CustomerID), City` <br>
+`FROM Customers` <br>
+`GROUP BY City` <br>
 `HAVING COUNT(CustomerID) > 2`
 
 > **"** An example of this is to sum up the daily sales and combine in a single quarter and show it to the senior manager. **"**
 
-
 **Hands on Experience**
+~ Experience is something you gain through doing, 
+rather than reading a lot exercise books. 
