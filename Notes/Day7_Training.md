@@ -104,75 +104,122 @@ ___
 
 * **CREATE** 
 
-
+```sql
 `CREATE DATABASE JohnByrne_db`
-
+```
 
 ```sql
-    CREATE TABLE customers (
-    customerID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
-    FirstName VARCHAR(100) NOT NULL,
-    LastName VARCHAR(100) NOT NULL
-    DateOfBirth DATE)
+CREATE TABLE customers (
+customerID INT IDENTITY(1, 1) PRIMARY KEY NOT NULL,
+FirstName VARCHAR(100) NOT NULL,
+LastName VARCHAR(100) NOT NULL
+DateOfBirth DATE)
 ```
 ```sql
-    CREATE TABLE film_table
-    ( film_name VARCHAR(20),
-    film_type VARCHAR(20),
-    date_of_release DATE, 
-    director VARCHAR(40),
-    writer VARCHAR(100),
-    star VARCHAR(100),
-    film_language CHAR(2),
-    official_website VARCHAR(100),
-    plot_summary VARCHAR(1000))
+CREATE TABLE film_table( 
+film_name VARCHAR(20),
+film_type VARCHAR(20),
+date_of_release DATE, 
+director VARCHAR(40),
+writer VARCHAR(100),
+star VARCHAR(100),
+film_language CHAR(2),
+official_website VARCHAR(100),
+plot_summary VARCHAR(1000))
 ```
+
+_•**IDENTITY** is auto increment from 1, it increments the PRIMARY KEY by 1 when a new record is created. It can 
+altered from its default of 1 with `IDENTITY(start, step)`_ <br>
 
 ```sql 
-    CREATE TABLE director ( 
-    director_id INT IDENTITY(1, 5),
-    director_name VARCHAR(50),
-    city VARCHAR(20) DEFAULT 'LONDON',
-    film_id INT, 
-    PRIMARY KEY(director_id),
-    FOREIGN KEY(film_id) REFERENCES film_table(film_id))
+CREATE TABLE director ( 
+director_id INT IDENTITY(1, 5),
+director_name VARCHAR(50),
+city VARCHAR(20) DEFAULT 'LONDON',
+film_id INT, 
+PRIMARY KEY(director_id),
+FOREIGN KEY(film_id) REFERENCES film_table(film_id))
 ```
 
 * **INSERT**
-    * `INSERT INTO customers (FirstName, LastName, DateOfBirth)`<br>
-    `VALUES ('Barry', 'B. Barlow', '1996-10-20');` IDENTITY is auto increment from 1, incrementing by 1
-    * `INSERT INTO film_table (film_name, film_type, date_of_release, director, writer, star, film_language, official_website, plot_summary)` <br>
-    `VALUES ('The Joker', 'Thriller', '2019-10-04',  'Todd Philips', 'Scott Silver',' Joaquin Phoenix', 'en', 'www.joker.movie', 'Description..');`
+
+```sql 
+INSERT INTO customers (FirstName, LastName, DateOfBirth)
+VALUES ('Barry', 'B. Barlow', '1996-10-20');
+```
+
+```sql 
+INSERT INTO film_table (film_name, film_type, date_of_release, director, writer, star, film_language, official_website, plot_summary)
+VALUES ('The Joker', 'Thriller', '2019-10-04',  'Todd Philips', 'Scott Silver',' Joaquin Phoenix', 'en', 'www.joker.movie', 'Description..');
+```
 
 * **DROP**
-    * `DROP TABLE customers` 
-    * `DROP DATABASE John_db`
+
+```sql
+DROP TABLE customers
+```
+```sql
+DROP DATABASE John_db
+```
     
 * **ALTER**
-    * `ALTER TABLE film_table DROP` <br>
-    `COLUMN release_date;`
-    * `ALTER TABLE film_table` <br>
-`ALTER COLUMN film_name VARCHAR(10) NOT NULL` [ Change Nullable to **No** ]
-    * `ALTER TABLE film_table` <br> `ADD date_joined DATETIME` or `DATE`
+
+```sql
+ALTER TABLE film_table DROP
+COLUMN release_date;
+```
+
+_•**NOT NULL** is a constraint that changes the **NULLABLE** attribute to **no** for that particular column, meaning it always 
+needs to receive a value and cannot be empty._
+```sql
+ALTER TABLE film_Table
+ALTER COLUMN film_name VARCHAR(10) NOT NULL
+```
+
+```sql
+ALTER TABLE film_table
+ADD date_joined DATETIME
+```
     
 * **SELECT**
-    * `SELECT * FROM film_table` 
-    * `SELECT film_name,  writer FROM film_table`
+```sql
+SELECT * FROM film_table
+```
+```sql
+SELECT film_name,  writer FROM film_table
+```
     
 * **EXTRA**
-    * `SP_HELP` Reports information about a database object 
+
+_•**SP_HELP** reports information about a database object, such as a table. It is good for checking the data types of 
+columns and their constraints/ attributes ECT._ <br>
+```sql
+SP_HELP
+```
 
 * **UPDATE**
-    * `UPDATE people` <br>
-    `SET person_id = 1` <br>
-    `WHERE person_id =2` 
-    * `UPDATE film_table` <br>
-    `SET plot_summary = 'This film is actually trash!'` <br>
-    `WHERE film_name = 'The Joker'`
+
+```sql
+UPDATE people
+SET person_id = 1
+WHERE person_id = 2
+```
+
+```sql
+UPDATE film_table
+SET plot_summary = 'This film is actually trash!'
+WHERE film_name = 'The Joker'
+```
     
 * **DELETE**
-    * `DELETE FROM film_table WHERE film_id = 1`
-    * `DELETE FROM film_table WHERE rating < 1`
+
+```sql
+DELETE FROM film_table WHERE film_id = 1
+```
+
+```sql
+DELETE FROM film_table WHERE rating < 1
+```
      
 >To add a Primary key simply add a `PRIMARY KEY` next to the colum and 
 >add `IDENTITY(1, 1)` as this tells this column to increment by 1 starting from 1 each time 
@@ -360,18 +407,25 @@ functionally dependent on **GenreType**
 ___ 
 **HOMEWORK**
 * Research Manual or automatic way to do <br> `DELETE FROM film_table WHERE film_id=1`
-    * **AUTOMATIC** - A `foreign key` with `CASCADE` delete means that if a record in 
+* **AUTOMATIC** - A `foreign key` with `CASCADE` delete means that if a record in 
     the parent table is deleted, then the corresponding records in the 
     child table will automatically be deleted. This is called a cascade delete 
     in SQL Server.
-    * **EXAMPLE** - <br>`DELETE FROM film_table WHERE film_id = 1` <br>
-    `ALTER TABLE director` <br>
-    `ADD CONSTRAINT film_id` <br>
-    `FOREIGN KEY (film_id)` <br>
-    `REFERENCES film_table (film_id) ON DELETE CASCADE`
-    
-    * **MANUAL** - A foreign key constraint, you can delete the foreign key constraint manually 
-    which removes the requirement for referential integrity.
     * **EXAMPLE** - <br>
-    `ALTER TABLE film_table` <br>
-    `DROP CONSTRAINT (film_id)` <br>
+    
+```sql
+DELETE FROM film_table WHERE film_id = 1
+ALTER TABLE director
+ADD CONSTRAINT film_id
+FOREIGN KEY (film_id)
+REFERENCES film_table (film_id) ON DELETE CASCADE
+```
+
+* **MANUAL** - A foreign key constraint, you can delete the foreign key constraint manually 
+    which removes the requirement for referential integrity. This way you need to go and manually remove each 
+    foreign key before you can delete any of its parent data.
+    * **EXAMPLE** - <br>
+```sql
+ALTER TABLE film_table
+DROP CONSTRAINT (film_id)
+```
