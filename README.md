@@ -3,8 +3,8 @@
 ##### `Position:` Junior Devop Engineer :computer: 
 ___
 
-##### `Started :` _**June 15 2020**_ :sunny:
-##### `Ended :`  _**Ongoing...**_
+##### `Started :` **June 15 2020** :sunny:
+##### `Ended :`  **Ongoing...** :warning:
  
 ___
 
