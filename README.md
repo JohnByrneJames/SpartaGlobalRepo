@@ -1,6 +1,7 @@
 ## Sparta Global Training
 ##### `Name:` John Byrne :office:
 ##### `Position:` Junior Devop Engineer :computer: 
+##### `E-mail :` Jbyrne@spartaglobal.com :email:
 ___
 
 ##### `Started :` **June 15 2020** :sunny:
@@ -16,9 +17,10 @@ ___
 
 ___
 
-## **Check List**
+**Check List :** 
 
 * ~~**Week One** - Business Week~~
 * **Week Two** - SQL 
 * **Week Three** - Python
 * **Week Four** - Python
+
