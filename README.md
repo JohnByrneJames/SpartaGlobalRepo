@@ -1,17 +1,22 @@
-##Sparta Global Training
-##### Find Useful Links Below
-`Started :` _**June 15 2020**_ <br> <br>
-`Ended :`  _**Ongoing...**_
+## Sparta Global Training
+##### `Name:` John Byrne :office:
+##### `Position:` Junior Devop Engineer :computer: 
+___
+
+##### `Started :` _**June 15 2020**_ :sunny:
+##### `Ended :`  _**Ongoing...**_
  
 ___
 
 **Useful Links :** 
 
-1. **_Find My Training Notes_** [HERE](/Notes)
+1. **Find My Training Notes** [HERE](/Notes)
 
-2. **_Find Me on LinkedIn_** [HERE](https://www.linkedin.com/in/john-byrne-b74214174/)
+2. **Find Me on LinkedIn** [HERE](https://www.linkedin.com/in/john-byrne-b74214174/)
 
-**Check List**
+___
+
+## **Check List**
 
 * ~~**Week One** - Business Week~~
 * **Week Two** - SQL 
