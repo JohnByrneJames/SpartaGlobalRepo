@@ -23,20 +23,15 @@ technology they are using.
 
 * **Date Functions**
 
-**GETDATE** - `SELECT GETDATE()` to return the current date and time 
-
-**SYSDATETIME** -  `SELECT SYSDATETIME()` to return the date and time of the computer being used
-
-**DATEADD** `DATEADD(d, 5, OrderDate) AS "Due Date"` to add 5 days. 
-The `d` extracts todays date and adds the 5.
-
-**DATEDIFF** `DATEDIFF(d, OrderDate, ShippedDate) AS "Ship Time"` to calculate difference between dates
-
-**YEAR** `SELECT YEAR(OrderDate) AS "Order year"` to extract the year from a date
-
-**MONTH** `SELECT MONTH(OrderDate) AS "Order Month"` to extract the month from a date
-
-**DAY** `SELECT DAY(OrderDate) AS "Order Day"` to extract the day from a date
+|             | Description                                                                                                  |
+|-------------|--------------------------------------------------------------------------------------------------------------|
+| **GETDATE**     | `SELECT GETDATE()` to return the current date and time                                                       |
+| **SYSDATETIME** | `SELECT SYSDATETIME()` to return the date and time of the computer being used                                |
+| **DATEADD**     | `DATEADD(d, 5, OrderDate) AS "Due Date"` to add 5 days. The `d` extracts todays date and add the 5 (5 days). |
+| **DATEDIFF**    | `DATEDIFF(d, OrderDate, ShippedDate) AS "Ship Time"` to calculate difference between dates                   |
+| **YEAR**        | `SELECT YEAR(OrderDate) AS "Order year"` to extract the year from a date                                     |
+| **MONTH**       | `SELECT MONTH(OrderDate) AS "Order Month"` to extract the month from a date                                  |
+| **DAY**         | `SELECT DAY(OrderDate) AS "Order Day"` to extract the day from a date                                        |
 
 **d** = `day`, **m** = `month` and **y** = `year` <br>
 
@@ -70,16 +65,14 @@ The following aggregate functions can be used to calculate totals usually in con
 _• **Aggregate Functions** can be used be used with a `GROUP BY`, but without a `GROUP BY` 
 you get one row (total) as a result. IF you use an aggregate function in a select statement, 
 all other columns must either be an aggregate or in the `GROUP BY` clause._ <br>
- 
-* **SUM** - `SUM(OrderTotal)` for the grand total of a column for all rows selected 
 
-* **AVG** - `AVG(UnitPrice)` for the average of a column for all rows selected
-
-* **MIN** - `MIN(UnitPrice)` for the smallest value in a column for all rows selected
-
-* **MAX** - `MAX(UnitPrice)` for the largest value in a column for all rows selected 
-
-* **COUNT** - `COUNT(*)` for the number of NOT NULL rows selected. If * is used all rows are counted.
+|           | Description                                                                             |
+|-----------|-----------------------------------------------------------------------------------------|
+| **SUM**   | `SUM(OrderTotal)` for the grand total of a column for all rows selected                 |
+| **AVG**   | `AVG(UnitPrice)` for the average of a column for all rows selected                      |
+| **MIN**   | `MIN(UnitPrice)` for the smallest value in a column for all rows selected               |
+| **MAX**   | `MAX(UnitPrice)` for the largest value in a column for all rows selected                |
+| **COUNT** | `COUNT(*)` for the number of NOT NULL rows selected. If * is used all rows are counted. |
  
 _• This finds the `SUM` `AVG` `MIN` and `MAX` for each supplier and adding a group, will show all the suppliers 
 grouped by their ID, essentially categorising the results based on the supplier._ <br>
