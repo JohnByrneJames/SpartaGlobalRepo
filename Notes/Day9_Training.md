@@ -15,5 +15,24 @@ Need to go over some `DELETE CASCADE` a little more as well as
 go over **DDL**, **DML**, **DCL** and **TCL**. I need to know the **DDL** and **DML** off by 
 heart so that in the future I can easily serve that information if ever asked in the future.
 
+At the end of the graduation at Sparta Global there will be a presentation given to 
+all of Sparta Global, Sales Team and students. **PREPARE** and research their interests and 
+technology they are using.
 
+
+
+---
+**Homework**
+
+* Exercises in the Northwind database as it is good practice, exercise and solutions.
+
+**[W3Schools Northwind Exercises](https://www.w3resource.com/mysql-exercises/northwind/products-table-exercises/)**
+
+* SQL Online Test at TESTDOME
+
+**[TESTDOME SQL Test](https://www.testdome.com/tests/sql-online-test/12)**
+
+* SQL test that has a small certificate
+
+**[W3Schools Quiz](https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL)**
 

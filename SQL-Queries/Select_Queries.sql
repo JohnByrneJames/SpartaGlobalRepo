@@ -242,10 +242,6 @@ FROM Employees e
 
 -- RETURNS THE UPPER CASE AND LOWER CASE VERSION OF A TABLES CONTENT (STRING ONLY)
 
-
-
-
-
 -- NESTED FUNCTIONS IN SQL
 -- Finds the Postal code, scans it until it encounters a blank space, it then minuses one of that to get 
 -- the index of the character before that blank space.
