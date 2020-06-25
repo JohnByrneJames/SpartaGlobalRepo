@@ -14,7 +14,7 @@ a **Northwind** database in Azure data studio, because it allows me to test out 
 I am more of a practical learner so I agree with Anais, I would prefer more practical examples with real databases 
 rather than theory.
 
-> ![alt text](../Images/Northwind_Relational_Database_Structure.png "Relational Database structure for northwind database")
+> ![alt text](../../Images/Northwind_Relational_Database_Structure.png "Relational Database structure for northwind database")
 
 **No Blockers**...
 > **"** Perhaps it will be better if we do more practical work as this is the best way to learn something like databases, 

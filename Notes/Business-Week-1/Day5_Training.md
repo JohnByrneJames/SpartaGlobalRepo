@@ -48,7 +48,7 @@ ___
 allows everyone to see how it will go.
 
 ___
-> ![alt text](../Images/Task_Breakdown.png "Task Breakdown Diagram")
+> ![alt text](../../Images/Task_Breakdown.png "Task Breakdown Diagram")
 
 * **Estimation of durations** - Time estimation that each particular task is going to take. Look at previous project
 risks and problems, these are handled by project managers to estimate times. They use buffer times to work around
@@ -65,15 +65,15 @@ in a table. This creates an easy virtual reference of activities that must finis
 B has a dependency of task A, meaning B cannot start without A.
 
 ___
-> ![alt text](../Images/Logical_Dependencies.png "The logical dependencies diagram")
+> ![alt text](../../Images/Logical_Dependencies.png "The logical dependencies diagram")
 >
-> ![alt text](../Images/Logical_Dependencies_PrecedenceTable.png "logical Dependencies table")
+> ![alt text](../../Images/Logical_Dependencies_PrecedenceTable.png "logical Dependencies table")
 
 - **Network Diagrams** - The precedence table is converted into a simple diagram that illustrates what needs to be done in
 order. This is also known as a network diagram.
 
 ___
-> ![alt text](../Images/Network_Diagram_From_Table.png "Network Diagram and precedence table conversion")
+> ![alt text](../../Images/Network_Diagram_From_Table.png "Network Diagram and precedence table conversion")
 
 - **Gantt chart** - A Gantt Chart, commonly used in project management, shows activities and events displayed against time they will take.
 The left of the chart has a list of activities with a time scale along the top. 
@@ -82,11 +82,11 @@ The left of the chart has a list of activities with a time scale along the top.
 
 _**Challenge 1**_ -
 ___
-> ![alt text](../Images/Network_Diagram_Challenge1.png "Network Diagram Challenge 1")
+> ![alt text](../../Images/Network_Diagram_Challenge1.png "Network Diagram Challenge 1")
 
 _**Challenge 2**_ -
 ___
-> ![alt text](../Images/Network_Diagram_Challenge2.png "Network Diagram Challenge 2")
+> ![alt text](../../Images/Network_Diagram_Challenge2.png "Network Diagram Challenge 2")
 
 Expect **Devop engineers** to know knowledge about Python code, understanding of database and a lot of problems
 that regularly occur in business and technologies. 
@@ -104,7 +104,7 @@ There are typically four different parts of the activity node
 * **`Float`** Float - Free Float [Critical Path - 0] (Calculation: `Latest Start - Earliest Start = Float`) Can have buffer
 
 ___
-> ![alt text](../Images/Network_Diagram_AON.png "Technique to work out Earliest Start")
+> ![alt text](../../Images/Network_Diagram_AON.png "Technique to work out Earliest Start")
 ___
 
 Each of these help you calculate the duration of your project and also the amount of time tasks
@@ -119,7 +119,7 @@ are able to slip within that project. **Earliest Start** Calculation and **Lates
 > **"** You only do the latest Start calculations once you know the earliest start of the final Node **"**
 
 ___
-> ![alt text](../Images/Network_Diagram_AON_CalcEarliestStart.png "Technique to work out Earliest Start")
+> ![alt text](../../Images/Network_Diagram_AON_CalcEarliestStart.png "Technique to work out Earliest Start")
 ___
 
 **Working out Latest Start** : **`Right`** →  **`Left`**
@@ -129,7 +129,7 @@ ___
 > **"** The last node in an AON the earliest and latest start will be the same. **"**
 
 ___
-> ![alt text](../Images/Network_Diagram_AON_CalcLatestStart.png "Technique to work out Earliest Start")
+> ![alt text](../../Images/Network_Diagram_AON_CalcLatestStart.png "Technique to work out Earliest Start")
 ___
 
 ___
@@ -141,11 +141,11 @@ ___
 
 _**Challenge 1**_ -
 ___
-> ![alt text](../Images/Network_Diagram_AON_Challenge1.PNG "Network AON Diagram Challenge 1")
+> ![alt text](../../Images/Network_Diagram_AON_Challenge1.PNG "Network AON Diagram Challenge 1")
 
 _**Challenge 2**_ -
 ___
-> ![alt text](../Images/Network_Diagram_AON_Challenge2.png "Network AON Diagram Challenge 2")
+> ![alt text](../../Images/Network_Diagram_AON_Challenge2.png "Network AON Diagram Challenge 2")
 
 **Critical Path** this is the path on the network diagrams that has a zero free float, this means 
 that in that particular path every node has 0 in the float section. It is the longest path through the network and gives you a logical estimate on project length
@@ -237,7 +237,7 @@ ___
 to see if they are in agreement.
 
 ___
-> ![alt text](../Images/BusinessCase_Diagram.png "Business case diagram")
+> ![alt text](../../Images/BusinessCase_Diagram.png "Business case diagram")
 
 
 > **"** A justification for the proposed project needed to obtain authorisation from the board, so a business case was assembled. **"**
@@ -305,7 +305,7 @@ to be opened. This is the active attempt to reduce the risk with the ultimate ai
 eliminate the those risks.
 
 ___
-> ![alt text](../Images/Risk_Identification_tools.png "Risk Identification tools table")
+> ![alt text](../../Images/Risk_Identification_tools.png "Risk Identification tools table")
 
 * **Some Sources of Risks**
   - Technology 
@@ -337,7 +337,7 @@ ___
 **Power and Interest Matrix**
 
 ___
-> ![alt text](../Images/power_interest_matrix.jpg "Risk Identification tools table")
+> ![alt text](../../Images/power_interest_matrix.jpg "Risk Identification tools table")
 
 > **"** Someone who has more power / influence and someone who has more interest in that project rather than
 have a direct impact about how it developed. **"** 

@@ -260,3 +260,86 @@ WHERE CHARINDEX('''',p.ProductName) > 0
 SELECT p.ProductName
 FROM Products p
 WHERE p.ProductName LIKE '%''%'
+
+-- SELECT DATE
+SELECT GETDATE()
+
+-- GET SYSDATETIME
+SELECT SYSDATETIME()
+
+-- Get differenc in days betwen the order date and shipping date (in days)
+SELECT DATEADD(d, 5, OrderDate) AS "Due Date",
+    DATEDIFF(d,OrderDate, ShippedDate) AS "Ship Days"
+FROM Orders
+
+-- Output a list of Employees from the Employees table including their name (concatenated) 
+-- and their age (calculated from Birthdate) 
+-- Extension get months, days old aswell / TRY to do this to show months and days aswell.
+SELECT CONCAT(e.EmployeeID, ', ', e.FirstName,' ', e.LastName) AS "Employee",
+CONCAT(DATEDIFF(yyyy, e.BirthDate, GETDATE()), '.',
+DATEDIFF(mm, e.BirthDate, GETDATE()), '.', 
+DATEDIFF(d, e.BirthDate, GETDATE())) AS "Year.Month.Days"
+FROM Employees e
+
+SELECT * FROM Employees
+
+-- CASE Statements can be useful when you need varying results output based on differing data. 
+-- Pay Close attention to WHEN THEN ELSE and END
+-- Use single quotes for data and double quotes for column aliases
+SELECT CASE 
+WHEN DATEDIFF(d, OrderDate, ShippedDate) < 10 THEN 'On Time'
+ELSE 'OverDue'
+END AS "Status"
+FROM Orders
+
+-- Use case to add a column to the previous activity called Retirement status as follows:
+-- Age greater than 65 = Retired
+-- Age greater than 60 = "retirement Due"
+-- Age less than 60 = "more than 5 years to go"
+
+SELECT CONCAT(FirstName, ' ', LastName) AS "name",
+    DATEDIFF(yy, e.BirthDate, GETDATE()) AS "age",
+CASE 
+WHEN DATEDIFF(YY, e.BirthDate, GETDATE()) >= 65 Then 'Retired'
+WHEN DATEDIFF(YY, e.BirthDate, GETDATE()) BETWEEN 61 AND 64 THEN 'Retirement Due'
+ELSE 'More than 5 years to go'
+END AS "retirement_status"
+FROM Employees e
+
+-- Aggregates can be used without GROUP BY. with no GROUP BY you just get on row total as a result.
+-- IF you use an aggregate function in a select statement, all other culmns must either be aggregate or in the
+-- GROUP BY clause
+
+-- GROUPED BY makes it show the SUM, AVG, MIN and MAX grouped by the suppliers (SupplierID)
+
+SELECT SUM(p.UnitsOnOrder) AS "Total on Order",
+    AVG(p.UnitsOnOrder) AS "Avg On Order",
+    MIN(p.UnitsOnOrder) AS "Min On Order",
+    MAX(p.UnitsOnOrder) AS "Max On Order"
+FROM Products p
+GROUP BY SupplierID
+
+-- Calculate units on order using aggregate functions per supplier
+-- Max 23, 25, 26 - Marcus - 24, 21, 27
+
+SELECT * FROM Products
+
+-- Use Group BY to calculate the average reorder level for all products by CategoryID
+-- Remember the SELECT clause must match the GROUP BY clause apart from any aggregates
+
+SELECT
+AVG(p.ReorderLevel) AS "Average Reorder Level"
+FROM Products p 
+GROUP BY p.CategoryID
+ORDER BY AVG(p.ReorderLevel) DESC
+
+-- HAVING is used instead of WHERE when filtering on subtotals/ grouped data.
+-- Columns aliases cannot be used in the HAVING clause. Aggregate functions are not 
+-- available for use in the WHERE clause due to the SQL processing sequence
+
+SELECT SupplierID,
+SUM(UnitsOnOrder) AS "Total On Order",
+    AVG(UnitsOnOrder) AS "Avg On Order"
+FROM Products 
+GROUP BY SupplierID 
+HAVING AVG(UnitsOnOrder) > 5

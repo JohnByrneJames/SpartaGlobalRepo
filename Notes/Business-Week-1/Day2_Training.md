@@ -91,7 +91,7 @@ immediate affect.
     
 **Urgent and Importance matrix**: 
 
-![alt text](../Images/Importance_Urgent_Matrix.png "Urgent and Importance Matrix")
+![alt text](../../Images/Importance_Urgent_Matrix.png "Urgent and Importance Matrix")
     
 ___
 > 13:40 AM - Communication 1 **[Afternoon]**

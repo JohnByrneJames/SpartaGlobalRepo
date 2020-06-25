@@ -305,7 +305,7 @@ focuses on realising the product requirements **"**
 → `Operations`
 
 
-![alt text](../Images/Waterfall_Diagram.jpg "Diagram of Waterfall Methodology")
+![alt text](../../Images/Waterfall_Diagram.jpg "Diagram of Waterfall Methodology")
 
 ___
 
@@ -320,7 +320,7 @@ as it displays the capabilities of a system in a way that is easy for non-techno
 * `Coding`
 
 
-![alt text](../Images/V-Model_Diagram.jpg "Diagram of V-Model Methodology")
+![alt text](../../Images/V-Model_Diagram.jpg "Diagram of V-Model Methodology")
     
 ___
 
@@ -328,7 +328,7 @@ ___
 **Repeat..**
 
 
-![alt text](../Images/Agile_Diagram.jpg "Diagram of Agile Methodology")
+![alt text](../../Images/Agile_Diagram.jpg "Diagram of Agile Methodology")
     
 ___
 
@@ -357,7 +357,7 @@ ___
   This backlog is constantly changing in response to business requirements, markets conditions or technology so is consistently updated with what is needed to be more useful to the target audience.
   
   
-> ![alt text](../Images/Scrum_artefact_ProductBL.png "Diagram of Product backlog")
+> ![alt text](../../Images/Scrum_artefact_ProductBL.png "Diagram of Product backlog")
 
 ___
   
@@ -365,14 +365,14 @@ ___
   This is controlled by the development team as they decide what functionality is required for a completion as well as the order of functionalities in order to move to the next increment.
   This backlog defines the product backlog items that will be performed and changed into a "Done" increment, it makes visible the work that the development team identifies as necessary to the meet.
   
-> ![alt text](../Images/Scrum_artefact_SprintBL.png "burndown chart displaying remaining tasks in sprint backlog. Update every day, it gives a simple view of the sprint progress. It also provides quick visualizations for reference.")
+> ![alt text](../../Images/Scrum_artefact_SprintBL.png "burndown chart displaying remaining tasks in sprint backlog. Update every day, it gives a simple view of the sprint progress. It also provides quick visualizations for reference.")
 
 ___
   
 * **Definition of Done** - Every product backlog has its own acceptance criteria to define what needs to be done in order to declare an item as "Done", This allows a collective of these Requirements
   in one place so they can be referred to for each item and avoid repeating the definition of "Done" items. It contains quality criteria, constraints and overall non-functional requirements.
   
-> ![alt text](../Images/Scrum_artefact_DOD.png "burndown chart displaying remaining tasks in sprint backlog. Update every day, it gives a simple view of the sprint progress. It also provides quick visualizations for reference.")
+> ![alt text](../../Images/Scrum_artefact_DOD.png "burndown chart displaying remaining tasks in sprint backlog. Update every day, it gives a simple view of the sprint progress. It also provides quick visualizations for reference.")
 
 ___
   
@@ -385,7 +385,7 @@ ___
   development team to a successful sprint on time with a working final product. The burn-down chart also helps the development team ascertain which objectives they are not realistically able to be complete,
   these tasks are moved back to the product backlog. 
   
-> ![alt text](../Images/Scrum_artefact_BurnDown-Chart.png "burndown chart displaying remaining tasks in sprint backlog. Update every day, it gives a simple view of the sprint progress. It also provides quick visualizations for reference.")
+> ![alt text](../../Images/Scrum_artefact_BurnDown-Chart.png "burndown chart displaying remaining tasks in sprint backlog. Update every day, it gives a simple view of the sprint progress. It also provides quick visualizations for reference.")
 
 ___
   
@@ -438,6 +438,6 @@ collaboratively works together.
 SCRUM usage and success. Ultimately helping teams work together by encouraging teams to learn through experiences, self-organization while working on a problem and to reflect on wins and losses effectively to allow for 
 continuous improvement.
 
-> ![alt text](../Images/Scrum_Overall.png "Visualisation of the different roles, artefact's and events that are present in the SCRUM framework.")
+> ![alt text](../../Images/Scrum_Overall.png "Visualisation of the different roles, artefact's and events that are present in the SCRUM framework.")
 
 ___
