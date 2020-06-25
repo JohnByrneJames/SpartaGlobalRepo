@@ -195,10 +195,182 @@ HAVING COUNT(c.CustomerID) >= 9
     ORDER BY COUNT(c.CustomerID) DESC
 ```
 
+* **JOINS**
+    * `INNER JOIN` - Returns records that have matching values in both tables
+    * `LEFT JOIN` - Returns all records from the left table, and the matched records from the right table.
+    * `RIGHT JOIN` - Returns all records from the right table, and the matched records from the left table.
+    * `FULL JOIN` - Returns all records when there is a match in either left or right table
+    * `SELF JOIN` - A Self JOIN is a regular join, but the table is joined with itself
+    
+**JOIN** clauses are used to combine rows from two or more tables, based on a related 
+column between them. It allows you to create a lsit of combined rows of matching data from different 
+tables.<br>
 
+> ![alt text](../../Images/SQL-JOINS-VenDiagrams.PNG "Ven Diagrams representing the matching conditions of JOINS")
+
+> ![alt text](../../Images/VenDiagrams_For_JOINS_Left_and_Right_and_Inner.PNG "Ven Diagrams for INNER, LEFT and RIGHT JOINS")
+
+
+**INNER JOIN** (simple join)
+
+The most frequently used, it returns any rows where there is a matched key in BOTH tables
+
+**LEFT JOIN** or **LEFT OUTER JOIN**
+
+Return all rows from the left table, and the matched rows from the right table 
+regardless of any matching entry in the right table. It will also show `NULL` values even 
+if it doesnt match on he right, meaning it will show it all as `NULL`.
+
+When performing **INNER JOINS** between multiple tables it is best to have a  **ERD** of the
+databases structure.
+
+_Table 1 - Student table_
+
+| st_id | student_name | course_id |
+|-------|--------------|-----------|
+| 1     | Lee          | 1         |
+| 2     | Barry        | 1         |
+| 3     | David        | 2         |
+| 4     | Tim          | 5         |
+| 5     | Nicole       | NULL      |
+
+_table 2 - Course table_
+
+| c_id | course_name |
+|------|-------------|
+| 1    | Business    |
+| 2    | Test        |
+| 3    | Agile       |
+| 4    | Web         |
+| 5    | Dev         |
+
+These two tables are going to be used to explain how joinin works 
+when quering two tables.
+
+* **`INNER JOIN`** - This compares both tables and only shows the relational data
+
+```sql 
+SELECT * FROM course c INNER JOIN student s
+ON s.course_id=c.c_id
+```
+
+| c_id | course_name | st_id | student_name | course_id |
+|------|-------------|-------|--------------|-----------|
+| 1    | Business    | 1     | Lee          | 1         |
+| 2    | Test        | 2     | Barry        | 1         |
+| 3    | Agile       | 3     | David        | 2         |
+| 4    | Web         | 4     | Tim          | 5         |
+
+* **`LEFT JOIN`** and **`RIGHT JOIN`** - These `JOINS` compare either the left to the right, 
+or the right to the left only take notice of what is matching in their respected 
+side `LEFT` or `RIGHT`
+
+```sql 
+SELECT * FROM student s LEFT JOIN course c   
+ON s.course_id=c.c_id
+```
+
+_This only cares about the left table, 
+this shows its matches as well as any of its NULL values or NON matches_
+
+
+| st_id | Student_name | course_id | c_id | course_name |
+|-------|--------------|-----------|------|-------------|
+| 1     | Lee          | 1         | 1    | Bussiness   |
+| 2     | Barry        | 1         | 1    | Business    |
+| 3     | David        | 2         | 2    | Test        |
+| 4     | Tim          | 5         | 5    | Dev         |
+| 5     | Nicole       | NULL      | NULL | NULL        |
+
+```sql
+SELECT * FROM student s RIGHT JOIN course c   
+ON s.course_id=c.c_id
+```
+
+_This only cares about the right table, 
+this shows its matches as well as any of its NULL values or NON matches_
+
+| st_id | Student_name | course_id | c_id | course_name |
+|-------|--------------|-----------|------|-------------|
+| 1     | Lee          | 1         | 1    | Bussiness   |
+| 2     | Barry        | 1         | 1    | Business    |
+| 3     | David        | 2         | 2    | Test        |
+| NULL  | NULL         | NULL      | 3    | Agile       |
+| NULL  | NULL         | NULL      | 4    | Web         |
+| 4     | Tim          | 5         | 5    | Dev         |
+
+```sql
+SELECT * FROM student s FULL JOIN course c   
+ON s.course_id=c.c_id
+```
+
+* **`FULL JOIN`** - This will get all the tables selected, and compare the records 
+to find matches, it will display what is displayed seperated in `LEFT` and `RIGHT` in one
+table.
+
+_This returns all the records from both tables when there is a match 
+in either left or right tables_
+
+| st_id | Student_name | course_id | c_id | course_name |
+|-------|--------------|-----------|------|-------------|
+| 1     | Lee          | 1         | 1    | Bussiness   |
+| 2     | Barry        | 1         | 1    | Business    |
+| 3     | David        | 2         | 2    | Test        |
+| 4     | Tim          | 5         | 5    | DEV         |
+| 5     | Nicole       | NULL      | NULL | NULL        |
+| NULL  | NULL         | NULL      | 3    | Agile       |
+| NULL  | NULL         | NULL      | 4    | Web         |
+
+```sql 
+SELECT * FROM student s FULL JOIN course c   
+ON s.course_id=c.c_id
+```
+
+* **`SELF JOIN`** - This is a regular `JOIN` however you are joining the table with itself, for example you could compare 
+the customers table from Northwind with itself, to see which customers are from the same city.
+
+```sql 
+SELECT A.ContactName AS CustomerName1, B.ContactName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;
+```
+
+<br>
+
+**Entity Relationship Diagram** (ERD) of the Northwind database. Very useful when performing
+ `JOINS` as it can help you understand referential keys throughout the tables.<br>
+> ![alt text](../../Images/Northwind_Relational_Database_Structure.png "Relational Database structure for northwind database")
+
+_helpful in below exercise_
+
+**Exercise**<br>
+_Using rows from Products, `GROUP BY` Supplier showing an average of Units On Order for each Supplier_ <br>
+_Include the Supplier name (use CompanyName) in the result set using an `INNER JOIN` to Suppliers table_ <br>
+_Also Remember the `GROUP BY` clause will need to include the Supplier Name_ <br>
+_**Note**: In the `SELECT` statement, you will need to specify which table you are requesting or use Aliases on 
+ALL columns that have the same name in multiple tables (e.g. wherever SupplierID appears in SQL)_
+
+```sql 
+SELECT s.CompanyName AS "Supplier Name", AVG(p.UnitsOnOrder) AS "Average of UnitsOnOrder"
+FROM Products p 
+INNER JOIN Suppliers s 
+ON p.SupplierID = s.SupplierID 
+GROUP BY s.SupplierID, s.CompanyName
+ORDER BY "Average of UnitsOnOrder" DESC
+```
 
 ---
 **Homework**
+
+* Look at presentation later today and look at how many power words were used and how 
+many could have been used. Get 5 points that you need to improve
+for presentation.
+
+* Do the activity showed at the end of the day on the presentation video.
+
+* Look more into `OUTER JOIN`, `INNER JOIN`, `LEFT JOIN`, `SELF JOIN`, `CATERSIAN` and `RIGHT JOIN`
 
 * Exercises in the Northwind database as it is good practice, exercise and solutions.
 

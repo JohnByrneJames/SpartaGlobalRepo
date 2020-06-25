@@ -306,6 +306,16 @@ ELSE 'More than 5 years to go'
 END AS "retirement_status"
 FROM Employees e
 
+
+/*Extracting year*/
+SELECT YEAR(e.BirthDate) AS "Year of my Birth" FROM Employees e
+
+/*Extracting month*/
+SELECT MONTH(e.BirthDate) AS "Month of my Birth" FROM Employees e
+
+/*Extracting day*/
+SELECT DAY(e.BirthDate) AS "DAY of my Birth" FROM Employees e
+
 -- Aggregates can be used without GROUP BY. with no GROUP BY you just get on row total as a result.
 -- IF you use an aggregate function in a select statement, all other culmns must either be aggregate or in the
 -- GROUP BY clause
@@ -343,3 +353,33 @@ SUM(UnitsOnOrder) AS "Total On Order",
 FROM Products 
 GROUP BY SupplierID 
 HAVING AVG(UnitsOnOrder) > 5
+
+SELECT * FROM Customers c INNER JOIN Orders o 
+ON o.CustomerID = c.customerID
+
+-- INNER JOIN ACROSS multiple tables
+SELECT e.EmployeeID, e.FirstName,o.OrderID,et.TerritoryID
+FROM Orders o INNER JOIN Employees e 
+ON o.EmployeeId=e.EmployeeId
+INNER JOIN EmployeeTerritories et
+ON et.EmployeeID=e.EmployeeID
+
+-- Questions slide 12
+-- Using rows from products, GROUP BY supplier showing an average of Units
+-- On Order for each supplier 
+SELECT s.CompanyName AS "Supplier Name", AVG(p.UnitsOnOrder) AS "Average of UnitsOnOrder"
+FROM Products p 
+INNER JOIN Suppliers s 
+ON p.SupplierID = s.SupplierID 
+GROUP BY s.SupplierID, s.CompanyName
+ORDER BY "Average of UnitsOnOrder" DESC
+
+-- SELF JOIN
+SELECT A.ContactName AS CustomerName1, B.ContactName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;
+
+
+
