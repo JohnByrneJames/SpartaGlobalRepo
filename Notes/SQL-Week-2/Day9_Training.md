@@ -361,7 +361,7 @@ ORDER BY "Average of UnitsOnOrder" DESC
 many could have been used. Get 5 points that you need to improve
 for presentation.
 
-* Do the activity showed at the end of the day on the presentation video.
+* ~~Do the activity showed at the end of the day on the presentation video.~~
 
 * Look more into `OUTER JOIN`, `INNER JOIN`, `LEFT JOIN`, `SELF JOIN`, `CATERSIAN` and `RIGHT JOIN`
 

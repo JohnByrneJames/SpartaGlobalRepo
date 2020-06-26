@@ -381,5 +381,82 @@ WHERE A.CustomerID <> B.CustomerID
 AND A.City = B.City
 ORDER BY A.City;
 
+-- List Orders from the Orders table and `JOIN` to the Customers and Employees table to include 
+-- Customer Name (Company Name) and Employee Name (First and Last Name). From the Orders table, include OrderID, OrderDate
+-- and Freight.
+
+SELECT o.OrderID, o.OrderDate, o.Freight, CONCAT(e.firstName, ' ', e.LastName) AS "Employee Name"
+FROM Customers c 
+INNER JOIN Orders o ON o.CustomerID = c.CustomerID
+INNER JOIN Employees e ON o.EmployeeID = e.EmployeeID
 
 
+-- 103 is Biritsh French standard
+SELECT OrderID, CONVERT(VARCHAR(10), OrderDate, 103) AS [dd/MM/yyyy]
+FROM Orders
+
+SELECT orderID, FORMAT(OrderDate, 'dd/MM/yyyy')
+FROM Orders
+
+-- SubQueries 
+SELECT CompanyName AS "Customer"
+FROM Customers 
+WHERE CustomerID NOT IN 
+    (SELECT CustomerID FROM Orders)
+
+-- Same problem with Join -- need to use outer join
+SELECT c.CompanyName AS "Customer"
+FROM Customers c 
+LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
+WHERE o.CustomerID IS NULL
+
+SELECT c.CompanyName AS "Customer"
+FROM Customers c 
+FULL JOIN Orders o ON c.CustomerID = o.CustomerID
+WHERE o.CustomerID IS NULL
+
+-- NESTED SUB-QUERY
+SELECT ood.OrderID, ood.ProductID, ood.UnitPrice, ood.Quantity, ood.Discount,
+    (SELECT MAX(od.UnitPrice) FROM [Order Details] od) AS "Max Price"
+FROM [Order Details] ood
+
+-- OUT OF EXAM SCOPE 
+
+SELECT od.ProductID, sq1.totalamt AS "Total Sold for this Product",
+od.UnitPrice, (UnitPrice * quantity)/sq1.totalamt * 100 AS "% of Total"
+    FROM [Order Details] od 
+    INNER JOIN 
+        (SELECT o.ProductID, SUM(o.UnitPrice *o.Quantity) AS totalamt 
+        FROM [Order Details] o
+        GROUP BY o.ProductID ) sq1 ON sq1.ProductID=od.ProductID
+
+-- Using a subquery in WHERE clause, list all Orders (Order ID, Product ID, Unit Price, Quantity 
+-- and Discount) from the [Order Details] table where the product has been discontinued. Repeated with more joins.
+
+-- JOINS
+SELECT od.OrderID, od.ProductID, od.UnitPrice, od.Quantity, od.Discount, p.Discontinued
+FROM Products p 
+INNER JOIN [Order Details] od ON p.ProductID = od.ProductID
+WHERE p.Discontinued = 1
+
+-- SUBquery
+SELECT od.OrderID, od.productID, od.UnitPrice, od.Quantity, od.Discount 
+FROM [Order Details] od 
+WHERE od.ProductID IN (SELECT p.ProductID FROM Products p WHERE p.Discontinued = 1)
+
+-- This is a contrived example, show how you could list all employee IDs in the same column as all supplier IDs.
+-- UNION ALL returns 38 rows, UNION remove any duplicates and returns 29 rows.
+-- Both SELECT statements must have the sam number of columns in the SELECT clause (same type). Only the column alias in the first 
+-- SELECT will be applied. ORDER BY 1 may be more appropriate if 
+
+SELECT EmployeeID AS "Employee/Supplier"
+FROM Employees 
+UNION ALL
+SELECT SupplierID 
+FROM Suppliers
+
+SELECT EmployeeID AS "Employee/Supplier"
+FROM Employees 
+UNION 
+SELECT SupplierID 
+FROM Suppliers
