@@ -180,13 +180,14 @@ ORDER BY SUM((od.UnitPrice * od.Quantity) - (od.UnitPrice * od.Discount * od.Qua
 -- Based on total value of orders shipped. No Excel required. (10 Marks)
 
 SELECT TOP 10
+	c.CustomerID,
     c.CompanyName,  
     ROUND(SUM((od.UnitPrice * od.Quantity) - (od.UnitPrice * od.Discount * od.Quantity)), 2) AS "Total value of orders shipped"
 FROM Customers c
 INNER JOIN Orders o ON c.CustomerID = o.CustomerID
 INNER JOIN [Order Details] od ON o.OrderID = od.OrderID
-WHERE YEAR(o.OrderDate) = (SELECT MAX(YEAR(orderDate)) FROM Orders) AND o.ShippedDate IS NOT NULL -- Do not count orders that haven't been shipped yet AKA NULL 
-GROUP BY c.CompanyName
+WHERE YEAR(o.OrderDate) = (SELECT MAX(YEAR(orderDate)) FROM Orders) AND o.ShippedDate IS NOT NULL -- Do not count orders that haven't been shipped yet AKA NULL INNER Query to find latest year
+GROUP BY c.CustomerID, c.CompanyName
 ORDER BY [Total value of orders shipped] DESC -- List in DESC to reveal top 10 with highest value
 
 -- ANSWER sheet 
@@ -211,9 +212,14 @@ FROM Orders o
 GROUP BY YEAR(o.OrderDate), MONTH(o.OrderDate) -- Group By Year, then group it by months
 ORDER BY YEAR(o.OrderDate), MONTH(o.OrderDate) ASC
 
+SELECT CONCAT(DATENAME(month, o.OrderDate), '-', DATENAME(year, o.OrderDate)) AS  "Year-Month",
+AVG(DATEDIFF(d, o.OrderDate, o.ShippedDate)) AS "Average Ship Time" 
+FROM Orders o
+
 -- ANSWER Sheet
 
-SELECT MONTH(OrderDate) Month, YEAR(OrderDate) Year, AVG(CAST(DATEDIFF(d, OrderDate, ShippedDate) As DECIMAL(10,2))) As ShipTime
+SELECT MONTH(OrderDate) Month, YEAR(OrderDate) Year, 
+AVG(CAST(DATEDIFF(d, OrderDate, ShippedDate) As DECIMAL(10,2))) As ShipTime
 	FROM orders 
 	WHERE ShippedDate IS NOT NULL
 	GROUP BY YEAR(OrderDate),MONTH(OrderDate)

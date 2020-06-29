@@ -39,7 +39,7 @@ asking about a conjunction table and what is does. I ended with :star: **100%** 
 
 _Modify the query to select only the ids of customers having purchased at least one product in the "Books" and "Garden" category.
 Output should have no duplicates and should be sorted in ascending order._ <br> 
-:warning: **`DO EXACTLY IS ASKED`** :warning:
+:warning: **`DO EXACTLY AS ASKED`** :warning:
 
 > ![alt text](../../Images/SQL_MockExam_CodinGames.PNG "Question 1 in the mock exam")
 
@@ -104,11 +104,24 @@ After that the trainee starts putting those in the Johari window. The adjectives
 **Results**
  
 * **Family** - <br>
-    * **
-* **Friends** - <br>
+    * **Knowledgeable** - They seem to know a lot about technology and are always the go to person for any problems in general.
+    * **Organised** - Self assertive as being able to seek and find answers to enable themselves to progress
+    * **patient** - The kind of person you would like to work for 
+* **Friend** - <br>
     * **Adaptable** - has coped and successfully conquered many challenges without setbacks, 
     e.g. moving in, COVID impact of uni
     * **Mature** - has logic, outlook and thinking way beyond his age
     * **Trustworthy** - you can always rely on John to do whatever is asked (& agreed) on time, 
     every time and done well
 * **Colleague** - <br>
+    * **Organised** - Finishes the work he is given and always seems to be ahead of others in terms of progress 
+    especially in university.
+    * **Relaxed** - Never seen him angry or annoyed and usually has a relaxed aura about him.
+    * **Friendly** - Very laid back and is approachable and funny to work with, especially when the days get long and 
+    boring. 
+    
+    
+___
+**Homework** 
+* Look through Day 6 and Day 7 of training notes as need to brush up on Theory part of SQL as there will be a lot of theory 
+questions in the test.
