@@ -153,8 +153,11 @@ ORDER BY [Total value of orders shipped] DESC -- List in DESC to reveal top 10 w
 
 -- 3.4 Plot the Average Ship Time by month for all data in the Orders Table using a line chart as below. (10 Marks)
 
+DECLARE @d DATETIME = '10/01/2011'
 SELECT CONCAT(YEAR(o.OrderDate),'-', MONTH(o.OrderDate)) AS "Year-Month", -- Combine year and month of orderdate
 AVG(DATEDIFF(d, o.OrderDate, o.ShippedDate)) AS "Average Ship Time" -- Get the days difference between order and ship date
 FROM Orders o 
 GROUP BY YEAR(o.OrderDate), MONTH(o.OrderDate) -- Group By Year, then group it by months
 ORDER BY YEAR(o.OrderDate), MONTH(o.OrderDate) ASC
+
+SELECT 
