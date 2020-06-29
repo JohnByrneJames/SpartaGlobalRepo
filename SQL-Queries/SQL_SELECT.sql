@@ -392,7 +392,7 @@ INNER JOIN Employees e ON o.EmployeeID = e.EmployeeID
 
 
 -- 103 is Biritsh French standard
-SELECT OrderID, CONVERT(VARCHAR(10), OrderDate, 103) AS [dd/MM/yyyy]
+SELECT OrderID, CONVERT(VARCHAR(10), OrderDate, 3) AS [dd/MM/yyyy]
 FROM Orders
 
 SELECT orderID, FORMAT(OrderDate, 'dd/MM/yyyy')

@@ -5,88 +5,79 @@ SELECT * FROM Customers
 -- 1.1	Write a query that lists all Customers in either Paris or London. 
 -- Include Customer ID, Company Name and all address fields.
 
-SELECT 
-c.CustomerID, 
-c.CompanyName, 
-CONCAT(c.Address, ', ', c.City, ', ', c.Country, ', ' , c.PostalCode) AS "Address"
+SELECT c.CustomerID, c.CompanyName, CONCAT(c.Address, ', ', c.City, ', ', c.PostalCode, ', ' , c.Country) AS "Address" -- Concatenate all the address fields in the customer table as they are related
 FROM Customers c
 WHERE c.City = 'Paris' OR c.City = 'London'
 
-
 -- 1.2	List all products stored in bottles.
-
-SELECT * FROM Products
 
 SELECT p.ProductName
 FROM Products p
-WHERE p.QuantityPerUnit LIKE '%bottles'
-
+WHERE p.QuantityPerUnit LIKE '%bottle%' -- Used %bottle% as some products are stored in a single bottle and others in bottles
 
 -- 1.3	Repeat question above, but add in the Supplier Name and Country.
 
-SELECT p.ProductName, s.CompanyName, s.Country
+SELECT p.ProductName, s.CompanyName AS "Supplier Name", s.Country
 FROM Products p
 INNER JOIN Suppliers s ON p.SupplierID = s.SupplierID
-WHERE p.QuantityPerUnit LIKE '%bottles'
-
+WHERE p.QuantityPerUnit LIKE '%bottle%'
 
 -- 1.4	Write an SQL Statement that shows how many products there are in each category. 
 -- Include Category Name in result set and list the highest number first.
 
-SELECT * FROM Categories
-
-SELECT COUNT(p.ProductID) AS "Products in Category", c.CategoryName
+SELECT c.CategoryName, COUNT(p.ProductID) AS "Products in Category"
 FROM Products p
 INNER JOIN Categories c ON p.CategoryID = c.CategoryID
 GROUP BY c.CategoryName
+ORDER BY [Products in Category] DESC
 
 -- 1.5	List all UK employees using concatenation to join their title of courtesy, first name and last name together. 
 -- Also include their city of residence.
-
-SELECT * FROM Employees
 
 SELECT CONCAT(e.TitleOfCourtesy, ' ', e.FirstName, ' ', e.LastName, ' From ', e.City) AS "UK Employees"
 FROM Employees e 
 WHERE e.Country = 'UK'
 
-
 -- 1.6	List Sales Totals for all Sales Regions (via the Territories table using 4 joins) with a Sales Total greater than 1,000,000. 
 -- Use rounding or FORMAT to present the numbers. 
--- (ANSWER) Northern, Easteen and Western
-SELECT * FROM Orders
-SELECT * FROM Region
-SELECT * FROM Customers 
-SELECT * FROM Employees
-SELECT * FROM Territories
+-- (ANSWER) Northern, Eastern and Western
 
-SELECT SUM(od.Quantity * UnitPrice) AS "Total Sales", r.RegionDescription
+-- WITHOUT DISCOUNT
+
+SELECT SUM(od.UnitPrice * od.Quantity) AS "Total Sales", r.RegionDescription
 FROM [Order Details] od
 INNER JOIN Orders o ON o.OrderID = od.OrderID
 INNER JOIN EmployeeTerritories et ON et.EmployeeID = o.EmployeeID
 INNER JOIN Territories t ON t.TerritoryID = et.TerritoryID
 INNER JOIN Region r ON r.RegionID = t.RegionID
 GROUP BY r.RegionDescription
-HAVING ROUND(SUM(od.Quantity * UnitPrice), 2)  > 1000000
+HAVING ROUND(SUM(od.UnitPrice * od.Quantity),2)  > 1000000
+
+-- WITH DISCOUNT 
+
+SELECT ROUND(SUM((od.UnitPrice * od.Quantity) - (od.UnitPrice * od.Discount * od.Quantity)), 2) AS "Total Sales", r.RegionDescription
+FROM [Order Details] od
+INNER JOIN Orders o ON o.OrderID = od.OrderID -- Join Orders to Order Details
+INNER JOIN EmployeeTerritories et ON et.EmployeeID = o.EmployeeID -- Join EmployeeTerritories to Orders
+INNER JOIN Territories t ON t.TerritoryID = et.TerritoryID -- Join Territories to EmployeeTerritories
+INNER JOIN Region r ON r.RegionID = t.RegionID -- Join Region to terriroties
+GROUP BY r.RegionDescription
+HAVING ROUND(SUM((od.UnitPrice * od.Quantity) - (od.UnitPrice * od.Discount * od.Quantity)), 2)  > 1000000 -- Round price with discount to 2 decimal points
 
 -- 1.7	Count how many Orders have a Freight amount greater than 100.00 and either USA or UK as Ship Country. 
--- (ANSWER) 187
+-- (ANSWER) 49
 
 SELECT * FROM Orders
 
 SELECT Count(o.orderID) AS "Frieght Greater than 100.00"
 FROM Orders o 
-WHERE o.Freight > 100.000
+WHERE o.Freight > 100.000 AND o.ShipCountry IN ('UK', 'USA')
 
 -- 1.8	Write an SQL Statement to identify the Order Number of the Order with the highest amount(value) of discount 
 -- applied to that order.
 -- (Answer) = 10353 and 103372
 
-SELECT * FROM [Order Details]
-SELECT * FROM Orders
-
--- 25% of £20 is £5, therefore the item is £15
-SELECT od.OrderID, od.UnitPrice, od.Quantity, od.Discount, 
-(od.UnitPrice * od.Discount * od.Quantity) AS "Total Discount" 
+SELECT TOP 1 od.OrderID, od.UnitPrice, od.Quantity, od.Discount, (od.UnitPrice * od.Discount * od.Quantity) AS "Total Discount" -- UnitPrice * Discount * Quantity = Total Discount
 FROM [Order Details] od
 ORDER BY [Total Discount] DESC
 
@@ -94,14 +85,10 @@ ORDER BY [Total Discount] DESC
 -- Spartans Table – include details about all the Spartans on this course. 
 -- Separate Title, First Name and Last Name into separate columns, and include University attended, course taken and mark achieved. 
 -- Add any other columns you feel would be appropriate. DO NOT INCLUDE DATEOFBIRTH
--- 2.2 Write SQL statements to add the details of the Spartans in your course to the table you have created.	
+
 CREATE DATABASE Mini_projectDB_John
 
 USE Mini_projectDB_John
-
-DROP TABLE [Spartans];
-
-SELECT * FROM Spartans
 
 CREATE TABLE [Spartans] (
     [SpartansID] INTEGER NOT NULL IDENTITY(1, 1),
@@ -114,6 +101,7 @@ CREATE TABLE [Spartans] (
     PRIMARY KEY ([SpartansID])
 );
 
+-- 2.2 Write SQL statements to add the details of the Spartans in your course to the table you have created.	
 
 INSERT INTO Spartans([Title],[FirstName],[Surname],[University],[Course],[Mark]) VALUES('Mrs.','Georgina','Bartlett','Newcastle University','Archaeology','2:1'),('Mr.','Humza','Malak','University of Kent','Computing with Games Development','2:2'),('Mr.','Ibrahim','Bocus','University of Leicester','Computer Science','2:1'),('Mr.','Bari','Allali','Lancaster University','Business Economics','2:2'),('Mr.','Nola','Alston','University of Warwick','International Business & Management','3:3'),('Dr.','Aspen','Reed','University of Leicester','Computing with Games Development','3:3'),('Ms.','Ezekiel','Espinoza','University of Greenwich','Product Design','2:2'),('Mr.','Aretha','Berry','Newcastle University','Aerospace Engineering','1:1'),('Dr.','Ivan','Harrell','Edinburgh','Computing with Games Development','2:1'),('Mrs.','Sydnee','Evans','Aston University','International Business & Management','2:2');
 INSERT INTO Spartans([Title],[FirstName],[Surname],[University],[Course],[Mark]) VALUES('Dr.','Molly','Spencer','University of Leicester','International Business & Management','3:3'),('Ms.','Omar','Morton','University of Kent','Ancient History','1:1'),('Mrs.','Jackson','Blair','University of Warwick','Modern Languages','2:2'),('Dr.','Emi','Ramirez','University of Nottingham','Philosophy and Economics','1:1'),('Mr.','Imogene','Cooley','Aston University','Aerospace Engineering','2:2'),('Mrs.','Demetria','Schneider','Edinburgh','International Business & Management','2:2'),('Dr.','Lunea','Salazar','University of Warwick','Aerospace Engineering','2:2'),('Ms.','Liberty','Tran','University of Birmingham','Computing with Games Development','1:1'),('Ms.','Alexandra','Vasquez','Edinburgh','Philosophy and Economics','3:3'),('Mrs.','Wesley','Herrera','Brunel University London','Computer Science','3:3');
@@ -128,10 +116,45 @@ INSERT INTO Spartans([Title],[FirstName],[Surname],[University],[Course],[Mark])
 
 SELECT * FROM Spartans
 
+SELECT CONCAT(s.title, ' ', s.FirstName, ' ', s.Surname) AS "Students Who Attended Greenwich"
+FROM Spartans s 
+WHERE s.University = 'University of Greenwich'
+
 -- 3.1 List all Employees from the Employees table and who they report to. No Excel required.
 
-SELECT * FROM Employees
-SP_HELP Employees
+USE Northwind
 
-SELECT * 
-FROM Employees e
+SELECT CONCAT(e1.FirstName,' ', e1.LastName, ' Reports to') AS "Employee", CONCAT(e2.FirstName,' ', e2.LastName) AS "Superior" 
+FROM Employees e1, Employees e2 -- This is done by using a SELF JOIN to compare two instances of a table against eachother
+WHERE e1.ReportsTo = e2.employeeID 
+
+-- 3.2 List all Suppliers with total sales over $10,000 in the Order Details table. 
+-- Include the Company Name from the Suppliers Table and present as a bar chart as below: (5 Marks)
+
+SELECT s.CompanyName, ROUND(SUM((od.UnitPrice * od.Quantity) - (od.UnitPrice * od.Discount * od.Quantity)), 2) AS "Total Sales" -- work out total of order - discount of order
+FROM Suppliers s
+INNER JOIN Products p ON s.SupplierID = p.SupplierID
+INNER JOIN [Order Details] od ON p.ProductID = od.ProductID 
+GROUP BY s.CompanyName
+HAVING SUM((od.UnitPrice * od.Quantity) - (od.UnitPrice * od.Discount * od.Quantity)) > 10000 
+
+-- 3.3 List the Top 10 Customers YTD (year to date) for the latest year in the Orders file. 
+-- Based on total value of orders shipped. No Excel required. (10 Marks)
+
+SELECT TOP 10
+    c.CompanyName,  
+    ROUND(SUM((od.UnitPrice * od.Quantity) - (od.UnitPrice * od.Discount * od.Quantity)), 2) AS "Total value of orders shipped"
+FROM Customers c
+INNER JOIN Orders o ON c.CustomerID = o.CustomerID
+INNER JOIN [Order Details] od ON o.OrderID = od.OrderID
+WHERE YEAR(o.OrderDate) = 1998 AND o.ShippedDate IS NOT NULL -- Do not count orders that haven't been shipped yet AKA NULL 
+GROUP BY c.CompanyName
+ORDER BY [Total value of orders shipped] DESC -- List in DESC to reveal top 10 with highest value
+
+-- 3.4 Plot the Average Ship Time by month for all data in the Orders Table using a line chart as below. (10 Marks)
+
+SELECT CONCAT(YEAR(o.OrderDate),'-', MONTH(o.OrderDate)) AS "Year-Month", -- Combine year and month of orderdate
+AVG(DATEDIFF(d, o.OrderDate, o.ShippedDate)) AS "Average Ship Time" -- Get the days difference between order and ship date
+FROM Orders o 
+GROUP BY YEAR(o.OrderDate), MONTH(o.OrderDate) -- Group By Year, then group it by months
+ORDER BY YEAR(o.OrderDate), MONTH(o.OrderDate) ASC

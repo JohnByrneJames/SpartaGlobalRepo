@@ -20,7 +20,7 @@ ___
 **Check List :** 
 
 * ~~**Week One** - Business Week~~
-* **Week Two** - SQL 
+* ~~**Week Two** - SQL~~ 
 * **Week Three** - Python
 * **Week Four** - Python
 

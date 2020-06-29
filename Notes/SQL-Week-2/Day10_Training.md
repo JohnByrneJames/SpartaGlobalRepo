@@ -1,4 +1,4 @@
-###### Sparta Global Training Day 9
+###### Sparta Global Training Day 10
 ###### Continuing with SQL and presenting on `GROUP BY` and `HAVING`
 ___
 
@@ -38,6 +38,8 @@ Prior to SQL Server 2012 `CONVERT` was used to format dates
 IN 2020 `FORMAT()` was introduced to make it easier.
 
 **[Time Formats and Code on W3 Schools.](https://www.w3schools.com/sql/func_sqlserver_convert.asp)**
+
+**[SQL Server FORMATS with examples](https://www.mssqltips.com/sqlservertip/2655/format-sql-server-dates-with-format-function/)**
 
 _The 103 is code for time standard in British/France_ <br>
 ```sql 
@@ -205,4 +207,3 @@ Thanks for the feedback I will take everything into consideration for sure and a
 ___ 
 **Homework**
 * Go over `CASE` statements - `END` `WHEN` `ELSE` `THEN`
-
