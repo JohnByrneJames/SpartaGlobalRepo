@@ -224,3 +224,27 @@ AVG(CAST(DATEDIFF(d, OrderDate, ShippedDate) As DECIMAL(10,2))) As ShipTime
 	WHERE ShippedDate IS NOT NULL
 	GROUP BY YEAR(OrderDate),MONTH(OrderDate)
 	ORDER BY Year ASC, Month ASC
+	   
+--- 
+-- Super formatted way below - from Ibrahim
+
+ 
+SELECT
+CONCAT(sq1.MonthName,' ', sq1.YearOrdered) "Date Ordered"
+    ,AVG("ShipTimePerproductindays") "AverageShipTimePerproductindays"/*This uses the subquery information and averages the amount of shipping time for the column*/
+FROM
+
+        (SELECT
+DATEDIFF(d,o.orderdate,o.ShippedDate) "ShipTimePerproductindays"
+            ,MONTH(o.OrderDate) "MonthOrdered"
+            ,YEAR(o.orderdate) "YearOrdered"
+            ,DateName(MONTH,DATEADD(MONTH,MONTH(o.orderdate) , 0 ) -1 ) "MonthName"/* This converts the month number to month name */
+FROM
+            Orders o) sq1 /* This subquery gives the time it took to ship each order, and also the month that the order was made*/
+GROUP BY
+     sq1.YearOrdered /*This tells the AVG function to only average the shiptimes for each month*/
+    ,sq1.MonthName
+    ,sq1.MonthOrdered
+ORDER BY
+CONVERT(datetime, CONCAT(sq1.YearOrdered,'/',sq1.MonthOrdered,'/','1'))/* This puts it in a nice format for excel*/
+

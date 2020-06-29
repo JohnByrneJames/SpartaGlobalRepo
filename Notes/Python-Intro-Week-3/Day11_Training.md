@@ -55,7 +55,14 @@ WHERE pc.name IN ('Books', 'Garden')
 ORDER BY c.customer_id DESC
 ```
 
-~ Link to document containing summary of Mini-Project
+ [PDF Version of Mini-Project](/Documents/SQL-Mini-Project-Summary.pdf)
+
+ [Word Version of Mini-Project](/Documents/SQL-Mini-Project-Answers.docx)
+
+___
+
+> 1:30 PM Spend rest of day doing SWOT Analysis and Juhari Window as well as revising for tomorrow.
+
 
 **profile pre-work** in preparation for the week on profiles, there are a couple of tasks that need to be completed.
 
@@ -97,7 +104,7 @@ ORDER BY c.customer_id DESC
     * Can be shy at times but also distant to others as I am more of a independent learner
 
 
-- [ ] Johari Window-They need to ask people-Family, Friends and Colleagues from previous organisation, 1 member from each group and ask the different set of adjectives they would like to assign the trainee and why. <br>
+- [x] Johari Window-They need to ask people-Family, Friends and Colleagues from previous organisation, 1 member from each group and ask the different set of adjectives they would like to assign the trainee and why. <br>
 The list of adjectives would be **[HERE](https://en.wikipedia.org/wiki/Johari_window)**. <br>
 After that the trainee starts putting those in the Johari window. The adjectives which neither they chose for themselves nor their people would go in the Unknown Part of the box. They will find all the info about this in the above link.
 
@@ -120,6 +127,10 @@ After that the trainee starts putting those in the Johari window. The adjectives
     * **Friendly** - Very laid back and is approachable and funny to work with, especially when the days get long and 
     boring. 
     
+> ![alt text](../../Images/JohariWindow_Friend_Family_Colleague.PNG "Question 1 in the mock exam")
+    
+**To contribute to my Johari Board go to** **[HERE](http://kevan.org/jh/john+byrne)** <br>
+**To view my current Johari Board go to** **[HERE](http://kevan.org/johari?view=john+byrne)**
     
 ___
 **Homework** 
