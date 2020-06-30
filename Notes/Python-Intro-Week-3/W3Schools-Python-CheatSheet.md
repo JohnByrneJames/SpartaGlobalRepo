@@ -18,6 +18,10 @@ print("Hello world")
         - [ ] Further Variables 
 
 ##### Road Map :car: :blue_car:
+- [Paragraph](#paragraph)
+
+- [ ] [Paragraph](#paragraph)
+
 - [ ] [Comments](#comments)  [:file_folder:](#comments)
 - [ ] Variables
 - [ ] Data Types
@@ -54,3 +58,6 @@ print("Hello world")
 ###Comments
 
 [Markdown - Summary](#comments)
+
+# Paragraph
+
