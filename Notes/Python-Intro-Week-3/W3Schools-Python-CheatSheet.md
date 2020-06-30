@@ -22,6 +22,10 @@ print("Hello world")
 
 - [ ] [Paragraph](#paragraph)
 
+- [ ] [Links](###Links)
+
+- [ ] [Test](#Test)
+
 - [ ] [Comments](#comments)  [:file_folder:](#comments)
 - [ ] Variables
 - [ ] Data Types
@@ -55,9 +59,13 @@ print("Hello world")
 - [ ] String formatting
 
 
-###Comments
+# Comments
 
 [Markdown - Summary](#comments)
 
 # Paragraph
 
+
+### Links
+
+### Test
