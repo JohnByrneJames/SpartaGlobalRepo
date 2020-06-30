@@ -23,8 +23,8 @@ ___
 
 **Check List :** 
 
-* ~~**Week One** - Business Week~~
-* ~~**Week Two** - SQL~~ 
-* **Week Three** - Python
-* **Week Four** - Python
+* ~~**Week One** - Business Week~~ :white_check_mark:
+* ~~**Week Two** - SQL~~ :white_check_mark:
+* **Week Three** - Python :white_square_button:
+* **Week Four** - Python :white_square_button:
 
