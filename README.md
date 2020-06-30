@@ -11,9 +11,11 @@ ___
 
 **Useful Links :** 
 
-1. **Find My Training Notes** [HERE](/Notes)
+1. **Find My Training Notes** [HERE](/Notes) `Training Notes`
 
-2. **Find Me on LinkedIn** [HERE](https://www.linkedin.com/in/john-byrne-b74214174/)
+2. **Find My Documents** [HERE](/Documents) `Presentations` - `Projects` - `MarkingSchemes` - `ProgressPapers`
+
+3. **Find Me on LinkedIn** [HERE](https://www.linkedin.com/in/john-byrne-b74214174/) `Social Media` - `Work History` - `Latest CV`
 
 ___
 

@@ -212,10 +212,6 @@ FROM Orders o
 GROUP BY YEAR(o.OrderDate), MONTH(o.OrderDate) -- Group By Year, then group it by months
 ORDER BY YEAR(o.OrderDate), MONTH(o.OrderDate) ASC
 
-SELECT CONCAT(DATENAME(month, o.OrderDate), '-', DATENAME(year, o.OrderDate)) AS  "Year-Month",
-AVG(DATEDIFF(d, o.OrderDate, o.ShippedDate)) AS "Average Ship Time" 
-FROM Orders o
-
 -- ANSWER Sheet
 
 SELECT MONTH(OrderDate) Month, YEAR(OrderDate) Year, 
