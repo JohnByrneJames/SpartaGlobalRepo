@@ -3,7 +3,7 @@
 ###### This is the course at [**W3Schools**](https://www.w3schools.com/python/python_variables.asp), I will be recording my progress with example where needed for future reference.
 ___
 
-## Legend
+# Legend :key:
 * This is a block of code, it is intractable and incorporates highlighting for easier reading.
 ```python
 print("Hello world")  
@@ -14,26 +14,25 @@ print("Hello world")
     * Python Variable Test :arrow_forward: [:clipboard:](Day12_Training.md)  :star: **97%** :star:
 
 * The contents of this Cheatsheet is labelled at the top, to jump to a section simply click the :file_folder: next to the section name.
-    - [ ] Python Variables [:file_folder:](#contents-page_facing_up) `Pending`<br>
+    - [ ] Python Variables [:file_folder:](#contents-page_facing_up) `Pending`
         - [ ] Further Variables [:file_folder:](#contents-page_facing_up)
         
-    - [x] Python Variables `Complete`<br> [:file_folder:](#contents-page_facing_up)
+    - [x] Python Variables [:file_folder:](#contents-page_facing_up) `Complete` 
         - [x] Further Variables [:file_folder:](#contents-page_facing_up)
            
-
-## Contents :page_facing_up:
+# Contents :page_facing_up:
 - [ ] Comments [:file_folder:](#comments)
-- [ ] Variables
-- [ ] Data Types
-- [ ] Numbers
-- [ ] Casting
-- [ ] Strings
-- [ ] Booleans
-- [ ] Operators
-- [ ] Lists
-- [ ] Tuples
-- [ ] Sets
-- [ ] Dictionaries
+- [ ] Variables [:file_folder:](#variables)
+- [ ] Data Types [:file_folder:](#data types)
+- [ ] Numbers [:file_folder:](#numbers)
+- [ ] Casting [:file_folder:](#castings)
+- [ ] Strings [:file_folder:](#strings)
+- [ ] Booleans [:file_folder:](#booleans)
+- [ ] Operators [:file_folder:](#operators)
+- [ ] Lists [:file_folder:](#lists)
+- [ ] Tuples [:file_folder:](#tuples)
+- [ ] Sets [:file_folder:](#sets)
+- [ ] Dictionaries 
 - [ ] If...Else
 - [ ] While Loops
 - [ ] For Loops

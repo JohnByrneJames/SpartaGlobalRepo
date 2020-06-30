@@ -76,12 +76,13 @@ ___
 
  **Personal SWOT analysis**
 *  **Strengths**
-    * Technical Person - Computing Degree
-    * **Independent** and comfortable in lots of situations
+    * Technical Person - Computing Degree (Finished University Degree in Computing with Games Development)
+    * **Independent** and comfortable in lots of situations 
     * **Patient** and **trustworthy** with people, rarely get annoyed and am relaxed in general
     * **modest**, **friendly** and always willing to help people
     * **Quick learner**, **calm** - can learn software rather quick
-    
+    * **Team-worker**, able to work well in a team (Worked in a team during my time in customer facing role and in educational environment)
+        * **Add examples...** as this is a good way to present strengths and the way I have improved them.
 * **Weaknesses**
     * Not very logical in the way I think about stuff at first
     * Not as confident as I would like to be and can sometimes come across as a little introverted
@@ -102,14 +103,17 @@ ___
     * Bad habits in way I behave in a professional environment
     * Not a good team leader 
     * Can be shy at times but also distant to others as I am more of a independent learner
+    * Need for continuous up-scaling of yourself and the technical skills and knowledge to match the demand from industry.
 
+- [x] **Johari Window**- Ask Family, Friends and Colleagues from previous organisation, 1 member from each group and ask the different set of adjectives they would like to assign the trainee and why. <br>
+The list of adjectives can be found **[HERE](https://en.wikipedia.org/wiki/Johari_window)**. <br>
+After that the trainee starts putting those in the **Johari window**. The adjectives which neither they chose for themselves nor their people would go in the Unknown Part of the box. They will find all the info about this in the above link.
 
-- [x] Johari Window-They need to ask people-Family, Friends and Colleagues from previous organisation, 1 member from each group and ask the different set of adjectives they would like to assign the trainee and why. <br>
-The list of adjectives would be **[HERE](https://en.wikipedia.org/wiki/Johari_window)**. <br>
-After that the trainee starts putting those in the Johari window. The adjectives which neither they chose for themselves nor their people would go in the Unknown Part of the box. They will find all the info about this in the above link.
+>**To contribute to my Johari Board go to** **[HERE](http://kevan.org/jh/john+byrne)** :stuck_out_tongue_winking_eye: <br> 
+>**To view my current Johari Board go to** **[HERE](http://kevan.org/johari?view=john+byrne)** :smile:
 
 **Results**
- 
+
 * **Family** - <br>
     * **Knowledgeable** - They seem to know a lot about technology and are always the go to person for any problems in general.
     * **Organised** - Self assertive as being able to seek and find answers to enable themselves to progress
@@ -126,12 +130,11 @@ After that the trainee starts putting those in the Johari window. The adjectives
     * **Relaxed** - Never seen him angry or annoyed and usually has a relaxed aura about him.
     * **Friendly** - Very laid back and is approachable and funny to work with, especially when the days get long and 
     boring. 
-    
-> ![alt text](../../Images/JohariWindow_Friend_Family_Colleague.PNG "Question 1 in the mock exam")
-    
-**To contribute to my Johari Board go to** **[HERE](http://kevan.org/jh/john+byrne)** <br>
-**To view my current Johari Board go to** **[HERE](http://kevan.org/johari?view=john+byrne)**
-    
+
+___
+
+> ![alt text](../../Images/JohariWindow_Friend_Family_Colleague.PNG "Johari Window")
+
 ___
 **Homework** 
 * Look through Day 6 and Day 7 of training notes as need to brush up on Theory part of SQL as there will be a lot of theory 
