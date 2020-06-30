@@ -18,3 +18,8 @@ I am personally not feeling many blockers at the moment, I feel like I have gras
 of sub-queries but not to a degree where I could use them from memory and would most likely use a `JOIN` statement
 instead. I just need to invest more time in the future to learn sub-queries further, however as I am not
 confident I am gonna try to refrain using them as much as I can.
+
+:star: Got **97%** :star: on **SQL Test**
+
+Finishing with the final SQL-Test and preparing for Python module to start by going though the [**W3Schools Python**](https://www.w3schools.com/python/python_variables.asp)
+course
