@@ -10,7 +10,7 @@ ___
  
 ___
 
-**Useful Links :** 
+##**Useful Links** 
 
 1. **Find My Training Notes** [HERE](/Notes) `Training Notes`
 
@@ -23,8 +23,8 @@ ___
 5. **Find Me on LinkedIn** [HERE](https://www.linkedin.com/in/john-byrne-b74214174/) `Social Media` - `Work History` - `Latest CV`
 ___
 
-**Road Map** 
-* _**Check List**_ : 
+##**Road Map** 
+* _**Check List**_ 
 
 - [x] **Week One** - Business Week [:briefcase:](/Notes/Business-Week-1)
 - [x] **Week Two** - SQL [:bar_chart:](/Notes/SQL-Week-2)

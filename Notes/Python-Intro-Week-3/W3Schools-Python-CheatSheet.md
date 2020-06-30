@@ -1,6 +1,6 @@
 # Python Cheat Sheet
 ###### As a learning reinforcement I will be going through the W3Schools Python Course too
-###### This is the course at [**W3Schools**](https://www.w3schools.com/python/python_variables.asp), I will be recording my progress with example where needed for future reference.
+###### This is the course at [**W3Schools**](https://www.w3schools.com/python/python_variables.asp), I will be recording my progress with examples where needed for future reference.
 ___
 
 # Legend :key:
@@ -52,6 +52,5 @@ print("Hello world")
 - [ ] Try...Except
 - [ ] User Input
 - [ ] String formatting
-
 
 # Comments
