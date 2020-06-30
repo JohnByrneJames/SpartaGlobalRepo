@@ -1,6 +1,6 @@
 # Python Cheat Sheet
-###### As a learning reinforcement I will be going through the W3Schools Python Course too
-###### This is the course at [**W3Schools**](https://www.w3schools.com/python/python_variables.asp), I will be recording my progress with examples where needed for future reference.
+### As a learning reinforcement I will be going through the W3Schools Python Course too
+### This is the course at [**W3Schools**](https://www.w3schools.com/python/python_variables.asp), I will be recording my progress with examples where needed for future reference.
 ___
 
 # Legend :key:
@@ -23,7 +23,7 @@ print("Hello world")
 # Contents :page_facing_up:
 - [ ] Comments [:file_folder:](#comments)
 - [ ] Variables [:file_folder:](#variables)
-- [ ] Data Types [:file_folder:](#data types)
+- [ ] Data Types [:file_folder:](#data_types)
 - [ ] Numbers [:file_folder:](#numbers)
 - [ ] Casting [:file_folder:](#castings)
 - [ ] Strings [:file_folder:](#strings)
