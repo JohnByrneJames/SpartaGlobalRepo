@@ -15,6 +15,8 @@ ___
 
 2. **Find My Documents** [HERE](/Documents) `Presentations` - `Projects` - `MarkingSchemes` - `ProgressPapers`
 
+3. **SQL Queries** [HERE](/SQL-Queries) `DDL Queries` - `DML Queries`
+
 3. **Find Me on LinkedIn** [HERE](https://www.linkedin.com/in/john-byrne-b74214174/) `Social Media` - `Work History` - `Latest CV`
 
 ___
