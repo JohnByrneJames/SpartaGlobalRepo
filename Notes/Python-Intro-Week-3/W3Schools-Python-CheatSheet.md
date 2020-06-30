@@ -10,7 +10,47 @@ print("Hello world")
 ```
 
 * A Progress test or exercise will be recorded with a link to the exercise taken (click the :clipboard: icon) and record of score. <br>
+  
     * Python Variable Test :arrow_forward: [:clipboard:](Day12_Training.md)  :star: **97%** :star:
 
-##### Road Map
-* 
+* The contents of this Cheatsheet is labelled at the top, to jump to a section simple click the name in the contents.
+    - [ ] Python Variables `Pending`<br>
+        - [ ] Further Variables 
+
+##### Road Map :car: :blue_car:
+- [ ] [Comments](#comments)  [:file_folder:](#comments)
+- [ ] Variables
+- [ ] Data Types
+- [ ] Numbers
+- [ ] Casting
+- [ ] Strings
+- [ ] Booleans
+- [ ] Operators
+- [ ] Lists
+- [ ] Tuples
+- [ ] Sets
+- [ ] Dictionaries
+- [ ] If...Else
+- [ ] While Loops
+- [ ] For Loops
+- [ ] Functions
+- [ ] Lambda
+- [ ] Arrays
+- [ ] Classes/ Objects
+- [ ] Inheritance
+- [ ] Iterators
+- [ ] Scope
+- [ ] Modules
+- [ ] Dates
+- [ ] Math
+- [ ] JSON
+- [ ] RegEx
+- [ ] PIP
+- [ ] Try...Except
+- [ ] User Input
+- [ ] String formatting
+
+
+###Comments
+
+[Markdown - Summary](#comments)
