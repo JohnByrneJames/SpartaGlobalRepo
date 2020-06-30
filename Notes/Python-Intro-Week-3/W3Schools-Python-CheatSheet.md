@@ -9,7 +9,7 @@ ___
 print("Hello world")  
 ```
 
-* A Progress test or exercise will be recorded with a link to the exercise taken and record of score. <br>
+* A Progress test or exercise will be recorded with a link to the exercise taken (click the :clipboard: icon) and record of score. <br>
     * Python Variable Test :arrow_forward: [:clipboard:](Day12_Training.md)  :star: **97%** :star:
 
 ##### Road Map
