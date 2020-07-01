@@ -1,4 +1,4 @@
-## Sparta Global Training
+# Sparta Global Training
 ##### `Name:` John Byrne :office:
 ##### `Position:` Junior Devop Engineer :computer: 
 ##### `E-mail :` Jbyrne@spartaglobal.com :email:
@@ -10,7 +10,7 @@ ___
  
 ___
 
-##**Useful Links** 
+## **Useful Links** 
 
 1. **Find My Training Notes** [HERE](/Notes) `Training Notes`
 
@@ -25,7 +25,7 @@ ___
 6. **Engineering 67 Kanban board** [HERE](https://trello.com/b/eZdQiVQU/engineering-67) `Kanban` - `Trello Board` - `Progress`
 ___
 
-##**Road Map** 
+## **Road Map** 
 * _**Check List**_ 
 
 - [x] **Week One** - Business Week [:briefcase:](/Notes/Business-Week-1)
