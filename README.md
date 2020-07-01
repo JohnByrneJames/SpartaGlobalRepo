@@ -4,14 +4,13 @@
 ##### `E-mail :` Jbyrne@spartaglobal.com :email:
 ##### `Languages :` C#, SQL and Python :snake:
 ##### `Location :` Central London :round_pushpin:  
-:rainbow: **`Happy Pride Month`** :rainbow:
+<div align="center">:rainbow: **`Happy Pride Month`** :rainbow:</div> 
+
 ___
 
 ##### `Started :` **June 15 2020** :sunny:
 ##### `Ended :`  **Ongoing...** :warning:
  
- 
-<div align="center">The derogatory term “scrub” means several different things. One definition is someone (especially a game player) who is not good at something (especially a game). By this definition, we all start out as scrubs, and there is certainly no shame in that. I mean the term differently, though. A scrub is a player who is handicapped by self-imposed rules that the game knows nothing about. A scrub does not play to win.</div> 
 ___
 
 ## **Useful Links** 
