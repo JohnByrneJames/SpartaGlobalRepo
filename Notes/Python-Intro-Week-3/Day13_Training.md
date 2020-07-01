@@ -52,18 +52,26 @@ print(x != y)
 
 ... The rest are quite straight forward... and can be found in greater detail in my [**Python Cheatsheet**](W3Schools-Python-CheatSheet.md)
 
-~#~ Table of string funcs used today ~#~
-
-
-* This particular days worksheets are below: <br>
-    * [Operators.py](../../Python-Files/Variables/Operators.py)
-    * [String_casting.py](../../Python-Files/Variables/String_casting.py)
 
 ## Strings and Casting
 
+| Function   | Description                                                             | Example                     |
+|------------|-------------------------------------------------------------------------|-----------------------------|
+| **len**        | Returns the length of a string                                          | len(string)                 |
+| **count**      | Returns the amount of times a string appears in another string          | string.count('t')           |
+| **lower**      | Converts a string to all lower case                                     | string.lower()              |
+| **upper**      | Converts a string to all Upper case                                     | string.upper()              |
+| **title**      | Converts the letter of each word in a string to a capital               | string.title()              |
+| **capitalize** | Converts the first letter in a string to a capital                      | string.capitalize()         |
+| **replace**    | Replace text in a string with the string specified                      | string.replace('text', 't') |
+| **startswith** | Returns either True or False if the string starts with the given string | string.startswith('t')      |
 
-## Concatenation
 
 
-
+* This particular days worksheets are below: <br>
+    * [**variables.py**](../../Python-Files/Revision-Files/variables.py)
+    * [**operators.py**](../../Python-Files/Revision-Files/operators.py)
+    * [**string_casting.py**](../../Python-Files/Revision-Files/strings.py)
+    * [**lists.py**](../../Python-Files/Revision-Files/lists.py)
+    * [**tuples.py**](../../Python-Files/Revision-Files/tuples.py) 
 
