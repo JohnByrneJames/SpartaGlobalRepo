@@ -16,13 +16,13 @@ ___
 
 2. **Find My Documents** [HERE](/Documents) `Presentations` - `Projects` - `MarkingSchemes` - `ProgressPapers`
 
-3. **Find My Python Files** [HERE](/Python-Files) `Python`
+3. **Find My Python Files** [HERE](/Python-Files) `Python` 
 
 4. **Find My SQL Queries** [HERE](/SQL-Queries) `DDL Queries` - `DML Queries` - `SQL-Server`
 
 5. **Find Me on LinkedIn** [HERE](https://www.linkedin.com/in/john-byrne-b74214174/) `Social Media` - `Work History` - `Latest CV`
 
-6. **Engineering 67 Kanban board** [HERE](https://trello.com/b/eZdQiVQU/engineering-67) `Kanban` - `Trello Board` - `Progress`
+6. **Engineering 67 Kanban board** [HERE](https://trello.com/b/eZdQiVQU/engineering-67) `Kanban` - `Trello Board` - `Agile` - `SCRUM`
 ___
 
 ## **Road Map** 
