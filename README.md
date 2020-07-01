@@ -1,8 +1,10 @@
 # Sparta Global Training
 ##### `Name:` John Byrne :office:
-##### `Position:` Junior Devop Engineer :computer: 
+##### `Position:` Junior DevOp Engineer :computer: 
 ##### `E-mail :` Jbyrne@spartaglobal.com :email:
 ##### `Languages :` C#, SQL and Python :snake:
+##### `Location :` Central London :round_pushpin:  
+:rainbow: **`Happy Pride Month`** :rainbow:
 ___
 
 ##### `Started :` **June 15 2020** :sunny:
