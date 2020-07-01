@@ -68,10 +68,10 @@ print(x != y)
 
 
 
-* This particular days worksheets are below: <br>
-    * [**variables.py**](../../Python-Files/Revision-Files/variables.py)
-    * [**operators.py**](../../Python-Files/Revision-Files/operators.py)
-    * [**string_casting.py**](../../Python-Files/Revision-Files/strings.py)
-    * [**lists.py**](../../Python-Files/Revision-Files/lists.py)
-    * [**tuples.py**](../../Python-Files/Revision-Files/tuples.py) 
+> **~ Todays Python Files ~** <br>
+* [**variables.py**](../../Python-Files/Revision-Files/variables.py)
+* [**operators.py**](../../Python-Files/Revision-Files/operators.py)
+* [**string_casting.py**](../../Python-Files/Revision-Files/strings.py)
+* [**lists.py**](../../Python-Files/Revision-Files/lists.py)
+* [**tuples.py**](../../Python-Files/Revision-Files/tuples.py) 
 
