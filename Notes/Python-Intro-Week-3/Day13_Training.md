@@ -66,12 +66,29 @@ print(x != y)
 | **replace**    | Replace text in a string with the string specified                      | string.replace('text', 't') |
 | **startswith** | Returns either True or False if the string starts with the given string | string.startswith('t')      |
 
+If the movie is a alphanumeric rating it will convert it to a number
 
+> **~ Today's Python Files ~** <br>
+* [**variables.py**](../../Python-Files/Revision-Files/variables.py) :page_with_curl:
 
-> **~ Todays Python Files ~** <br>
-* [**variables.py**](../../Python-Files/Revision-Files/variables.py)
-* [**operators.py**](../../Python-Files/Revision-Files/operators.py)
-* [**string_casting.py**](../../Python-Files/Revision-Files/strings.py)
-* [**lists.py**](../../Python-Files/Revision-Files/lists.py)
-* [**tuples.py**](../../Python-Files/Revision-Files/tuples.py) 
+* [**operators.py**](../../Python-Files/Revision-Files/operators.py) :page_with_curl:
 
+* [**string_casting.py**](../../Python-Files/Revision-Files/strings.py) :page_with_curl:
+
+* [**lists.py**](../../Python-Files/Revision-Files/lists.py) :page_with_curl:
+
+* [**tuples.py**](../../Python-Files/Revision-Files/tuples.py) :page_with_curl:
+
+* [**control_flow.py**](../../Python-Files/Revision-Files/control_flow.py) :page_with_curl:
+
+* [**dictionaries**](../../Python-Files/Revision-Files/dictionaries.py) :page_with_curl:
+
+* [**loops**](../../Python-Files/Revision-Files/loops.py) :page_with_curl:
+
+* [**sets**](../../Python-Files/Revision-Files/sets.py) :page_with_curl:
+
+* [**while_loops**](../../Python-Files/Revision-Files/while_loop.py) :page_with_curl:
+
+___
+**Homework**
+* Do dictionaries exercise at bottom of [**loops.py**](/Python-Files/Revision-Files/loops.py)
