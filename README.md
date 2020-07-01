@@ -21,6 +21,8 @@ ___
 4. **Find My SQL Queries** [HERE](/SQL-Queries) `DDL Queries` - `DML Queries` - `SQL-Server`
 
 5. **Find Me on LinkedIn** [HERE](https://www.linkedin.com/in/john-byrne-b74214174/) `Social Media` - `Work History` - `Latest CV`
+
+6. **Engineering 67 Kanban board** [HERE](https://trello.com/b/eZdQiVQU/engineering-67) `Kanban` - `Trello Board` - `Progress`
 ___
 
 ##**Road Map** 

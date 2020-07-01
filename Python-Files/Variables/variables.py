@@ -26,7 +26,7 @@ print(pay * hours)
 print(name + " " + str(pay))
 
 # Overwrite a variable - the pay of the spartan
-x = "20" # Pay is now 20
+x = "20"  # Pay is now 20
 
 # ~#~ Exercise : User Details ~#~
 # Create a variable called first_name and last_name
@@ -46,7 +46,3 @@ address = input("\nAnd what is your address?  ")
 print("Alright, to confirm " + full_name + ". You are " + age + " years old and live at " + address + "...")
 
 # print("Alright, to confirm {0}. You are {1} years old and live at {2}...".format(full_name, age, address))
-
-
-
-
