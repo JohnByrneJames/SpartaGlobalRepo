@@ -1,10 +1,10 @@
 # Sparta Global Training
-##### `Name:` John Byrne :office:
+##### `Name:` John Byrne :busts_in_silhouette:
 ##### `Position:` Junior DevOp Engineer :computer: 
 ##### `E-mail :` Jbyrne@spartaglobal.com :email:
 ##### `Languages :` C#, SQL and Python :snake:
 ##### `Location :` Central London :round_pushpin:  
-<div align="center" style="font-weight: bold">:rainbow: Happy Pride Month :rainbow:</div> 
+<div align="center" style="font-weight: bolder">:rainbow: Happy Pride Month :rainbow:</div> 
 
 ___
 
