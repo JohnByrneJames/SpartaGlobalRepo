@@ -31,8 +31,8 @@ ___
 ## **Road Map** 
 * _**Check List**_ 
 
-- [x] **Week One** - Business Week [:briefcase:](/Notes/Business-Week-1)
-- [x] **Week Two** - SQL [:bar_chart:](/Notes/SQL-Week-2)
-- [ ] **Week Three** - Python [:snake:](/Notes/Python-Intro-Week-3)
+- [x] **Week One** - Business Week [:briefcase:](/Notes/Week-1-Business)
+- [x] **Week Two** - SQL [:bar_chart:](/Notes/Week-2-SQL)
+- [ ] **Week Three** - Python [:snake:](/Notes/Week-3-Python)
 - [ ] **Week Four** - Python 
 

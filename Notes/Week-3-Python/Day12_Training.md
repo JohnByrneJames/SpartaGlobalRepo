@@ -29,7 +29,7 @@ ___
 Finishing with the final SQL-Test and preparing for Python module to start by going though the [**W3Schools Python**](https://www.w3schools.com/python/python_variables.asp)
 course
 
-Created Python Cheatsheet ~ [**HERE**](/Notes/Python-Intro-Week-3/Python-CheatSheet.md) 
+Created Python Cheatsheet ~ [**HERE**](/Notes/Week-3-Python/Python-CheatSheet.md) 
 
 Created Version of SQL Mini-Project Summary ~ [**HERE**](/Documents/SQL-Mini-Project-Summary-NoMarks.pdf) 
 
