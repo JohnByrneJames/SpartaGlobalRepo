@@ -4,7 +4,7 @@
 ##### `E-mail :` Jbyrne@spartaglobal.com :email:
 ##### `Languages :` C#, SQL and Python :snake:
 ##### `Location :` Central London :round_pushpin:  
-<div align="center" style="font-weight: bolder">:rainbow: Happy Pride Month :rainbow:</div> 
+<div align="center" style="font-weight: bolder"> :trophy: Happy Pride Month :trophy: </div> 
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 5. **Find Me on LinkedIn** [HERE](https://www.linkedin.com/in/john-byrne-b74214174/) `Social Media` - `Work History` - `Latest CV`
 
-6. **Engineering 67 Kanban board** [HERE](https://trello.com/b/eZdQiVQU/engineering-67) `Kanban` - `Trello Board` - `Agile` - `SCRUM`
+6. **Engineering 67 Kanban Board** [HERE](https://trello.com/b/eZdQiVQU/engineering-67) `Kanban` - `Trello Board` - `Agile` - `SCRUM`
 ___
 
 ## **Road Map** 

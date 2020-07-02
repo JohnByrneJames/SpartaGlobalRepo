@@ -17,7 +17,7 @@ particularly the advanced concepts such as functions and the object oriented pro
 * **Polymorphism** 
 * **Inheritance** 
 
-**Analogy..**
+**Analogy...**
 
 Some people find it basic but relates to all of us.
 
@@ -92,9 +92,9 @@ def __sleep():
 * [**functions**](../../Python-Files/Revision-Files/function.py) :page_with_curl:
 
 * [**math_functions**](../../Python-Files/Revision-Files/math_functions.py) :page_with_curl:
-* [**oop_classes**](../../Python-Files/Revision-Files/oop_classes.py) :page_with_curl:
-* [**dog_oop**](../../Python-Files/Revision-Files/dog_oop.py) :page_with_curl:
-* [**got_two_oop**](../../Python-Files/Revision-Files/dog_two_oop.py) :page_with_curl:
+* [**oop_classes**](../../Python-Files/Revision-Files/OOP-FIles/oop_classes.py) :page_with_curl:
+* [**dog_oop**](../../Python-Files/Revision-Files/OOP-FIles/dog_oop.py) :page_with_curl:
+* [**got_two_oop**](../../Python-Files/Revision-Files/OOP-FIles/dog_two_oop.py) :page_with_curl:
 
 ___
 **Homework**
@@ -106,5 +106,6 @@ ___
   Create a file called Snake and import reptile <br>
   Create a file called Reptile and import Snake <br>
   Create a python file - Why? (Explanation of Exercise is below) <br>
-  Include Pseudo Code aswell.
+  Include Pseudo Code as well.
   
+![alt text](../../Images/OOP_python_animal_inheritance_diagram.png)
