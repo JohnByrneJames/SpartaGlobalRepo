@@ -61,7 +61,7 @@ employee_records = {
     "name": "John Byrne",
     "martial_status": "Married",
     "Age": 22,
-    "Ethnicity": "White",
+    "Favorite_food": "Salmon",
     "Position": "DevOp",
     "Happy": False
 }

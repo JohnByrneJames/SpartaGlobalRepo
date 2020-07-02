@@ -1,5 +1,5 @@
 # Sparta Global Training
-##### `Name:` John Byrne :busts_in_silhouette:
+##### `Name:` John Byrne :relaxed:
 ##### `Position:` Junior DevOp Engineer :computer: 
 ##### `E-mail :` Jbyrne@spartaglobal.com :email:
 ##### `Languages :` C#, SQL and Python :snake:
