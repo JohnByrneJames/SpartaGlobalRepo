@@ -4,9 +4,9 @@
 
 # Everything in a class is an object
 class PyCalculator:
-    def __init__(self, num1, num2):  # Self keyword points to the class itself
-        self.num1 = num1
-        self.num2 = num2
+    def __init__(self, number1, number2):  # Self keyword points to the class itself
+        self.num1 = number1
+        self.num2 = number2
 
     def addition(self):
         return self.num1 + self.num2
