@@ -6,7 +6,7 @@ class Dog:
         var = self.kind_of_animal
         return "woof"
 
-    def bark(self, eat):
+    def eat(self, eat):
         self.eat = eat  # This cannot be affected other than inside the class - Good practice (Encapsulation)
         return "nom nom nom ..."
 

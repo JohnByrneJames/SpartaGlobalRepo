@@ -10,7 +10,6 @@
 # A child class inherits all methods from the parent class, however in some situations
 # the method inherited from the parent doesnt fit the child class.
 
-
 # 3 - Encapsulation
 # The idea of wrapping data and methods that work on data within one unit. It puts restrictions on
 # on accessing variables and methods directly and can prevent the accidental modification of data.

@@ -50,7 +50,7 @@ x = 11
 print(x != y)
 ```
 
-... The rest are quite straight forward... and can be found in greater detail in my [**Python Cheatsheet**](W3Schools-Python-CheatSheet.md)
+... The rest are quite straight forward... and can be found in greater detail in my [**Python Cheatsheet**](Python-CheatSheet.md)
 
 
 ## Strings and Casting

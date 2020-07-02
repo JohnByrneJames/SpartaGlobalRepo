@@ -55,3 +55,4 @@ print(calculator.num1.__str__() + " - " + calculator.num2.__str__() + " = " + ca
 print(calculator.num1.__str__() + " x " + calculator.num2.__str__() + " = " + calculator.multiplication().__str__())
 print(calculator.num1.__str__() + " % " + calculator.num2.__str__() + " = " + calculator.modulate().__str__())
 print(calculator.num1.__str__() + " ÷ " + calculator.num2.__str__() + " = " + calculator.division().__str__())
+
