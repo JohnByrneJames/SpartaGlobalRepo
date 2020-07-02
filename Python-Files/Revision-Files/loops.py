@@ -62,13 +62,17 @@ employee_records = {
     "martial_status": "Married",
     "Age": 22,
     "Ethnicity": "White",
-    "Position": "DevOp"
+    "Position": "DevOp",
+    "Happy": False
 }
 
 # print out key and value of dictionary and if the value is a int then convert it to a integer, this stops any errors
 # Surprisingly if you dont do a convert it will just stop and not throw an error
 for key, value in employee_records.items():
-    if value == int:
+    if value == int:  # If the value is a integer
         print(key, ":", int(value))
+        continue
+    if value == bool:  # If the value is a boolean
+        print(key, ":", bool(value))
         continue
     print(key, ":", value)

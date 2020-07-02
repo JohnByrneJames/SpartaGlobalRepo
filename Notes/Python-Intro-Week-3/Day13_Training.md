@@ -69,17 +69,17 @@ print(x != y)
 If the movie is a alphanumeric rating it will convert it to a number
 
 > **~ Today's Python Files ~** <br>
-* [**variables.py**](../../Python-Files/Revision-Files/variables.py) :page_with_curl:
+* [**variables**](../../Python-Files/Revision-Files/variables.py) :page_with_curl:
 
-* [**operators.py**](../../Python-Files/Revision-Files/operators.py) :page_with_curl:
+* [**operators**](../../Python-Files/Revision-Files/operators.py) :page_with_curl:
 
-* [**string_casting.py**](../../Python-Files/Revision-Files/strings.py) :page_with_curl:
+* [**string_casting**](../../Python-Files/Revision-Files/strings.py) :page_with_curl:
 
-* [**lists.py**](../../Python-Files/Revision-Files/lists.py) :page_with_curl:
+* [**lists**](../../Python-Files/Revision-Files/lists.py) :page_with_curl:
 
-* [**tuples.py**](../../Python-Files/Revision-Files/tuples.py) :page_with_curl:
+* [**tuples**](../../Python-Files/Revision-Files/tuples.py) :page_with_curl:
 
-* [**control_flow.py**](../../Python-Files/Revision-Files/control_flow.py) :page_with_curl:
+* [**control_flow**](../../Python-Files/Revision-Files/control_flow.py) :page_with_curl:
 
 * [**dictionaries**](../../Python-Files/Revision-Files/dictionaries.py) :page_with_curl:
 
