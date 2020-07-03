@@ -25,7 +25,7 @@ calc = Calculator()
 
 print("Welcome to the calculator")
 while True:
-    print("/n")
+    print("\n")
     calc.calculate()
 
     decision = input("Want to do another calculation (Y/ N)  ")

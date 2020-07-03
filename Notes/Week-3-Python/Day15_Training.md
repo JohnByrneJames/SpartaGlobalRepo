@@ -38,10 +38,13 @@ putting brackets around my everything as I am so used to using C-style syntax.
 > **"**
 
 * **Positive feedback** <br>
- > **"** **"**
+ > **"** I have been engaged, showing a lot of enthusiasm for the Python subject that we have been learning, my logic and programming
+>structure in my programs are well laid out and efficient. I have been engaged and asking questions where I need to and good explaining concepts. **"**
 
 * **Constructive feedback** <br>
-> **"** **"**
+> **"** When doing homework I need to read the question first before jumping into it, before you try to further expand on the task do 
+>everything that has been asked. Pseudo code my programs more as it is essential to understanding if you or anyone else ever refers
+>back to the program in the future **"**
 
 Thanks for the feedback I will take everything into consideration for sure and am looking forward to the next week. 
 
@@ -58,3 +61,6 @@ is usually used in a class initialisation to assign values to that instances att
 ___
 **Homework**
 * Look more in **Encapsulation**, **Abstraction**, **Inheritance** and **Polymorphism**
+* Weekend work is in this Repo Folder from Sharaukh [**Repo**](https://github.com/khanmaster/python_apis/blob/master/OOP_EXERCISE.md)
+  
+  

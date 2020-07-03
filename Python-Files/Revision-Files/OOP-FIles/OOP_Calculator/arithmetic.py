@@ -30,3 +30,4 @@ class Arithmetic:
     def get_operator():
         operator = input('Please enter an operator (+, -, *, %, /): ')
         return operator
+
