@@ -73,7 +73,7 @@ print(number_1.__str__() + " - " + number_2.__str__() + " = " + subtraction(numb
 print(number_1.__str__() + " / " + number_2.__str__() + " = " + division(number_1, number_2).__str__())
 print(number_1.__str__() + " % " + number_2.__str__() + " = " + remainder(number_1, number_2).__str__())
 
-print() # Add space in terminal
+print()  # Add space in terminal
 # create a function with multiple args
 
 def multi_args(*multiargs):  # Unpacking allows any amount of varaiables to be passed into a function

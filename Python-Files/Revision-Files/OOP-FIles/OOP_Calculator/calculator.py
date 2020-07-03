@@ -1,37 +1,8 @@
+from arithmetic import Arithmetic
 # OOP Calculator
 
-class Calculator:
-
-    @staticmethod
-    def addition(value1, value2):
-        return value1 + value2
-
-    @staticmethod
-    def multiplication(value1, value2):
-        return value1 * value2
-
-    @staticmethod
-    def subtraction(value1, value2):
-        return value1 - value2
-
-    @staticmethod
-    def division(value1, value2):
-        return value1 / value2
-
-    @staticmethod
-    def modulate(value1, value2):
-        return value1 % value2
-
-    @staticmethod
-    def get_numbers():
-        num1 = int(input("Enter first number:  "))
-        num2 = int(input("Enter second number: "))
-        return num1, num2
-
-    @staticmethod
-    def get_operator():
-        operator = input('Please enter an operator (+, -, *, %, /): ')
-        return operator
+# Calculator using static methods to allow the user to perform calculations
+class Calculator(Arithmetic):
 
     @classmethod
     def calculate(cls):
@@ -62,8 +33,5 @@ while True:
         continue
     elif decision.lower() == "n":
         break
-
-
-
 
 

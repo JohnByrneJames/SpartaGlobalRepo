@@ -4,8 +4,12 @@ ___
 
 > 9:00 AM Stand-up [Morning]
 
+I am enjoying Python quite a lot, OOP is nothing new to me and I am actually enjoying going back over it.
+It is great to see the power of Python coming to fruition and I really can't wait to carry on and see what else
+this programming language is capable of. 
 
-
+I have no blockers really, everything is going pretty well - the only blocker I have is that I keep
+putting brackets around my everything as I am so used to using C-style syntax.
 
 
 **One-to-One** with Sharukh<br>
@@ -14,41 +18,43 @@ ___
 - We will time-box our meeting for 10 minutes
 - Please take notes, as you will be expect to email us the summary of our conversations...
 - How did you think this week went?
-> **"** This week went very well for myself, it was constructive, informative and over all allowed us to 
->go through the information in a orderly fashion with the all important practical examples which drill the information
->that much more into your head. Astha is a really good teacher, she is calm, collected and always willing to help 
->anyone who thinks they do not understand what is needed to be done. At the time I felt like the course was going at a speed I 
->couldn't quite keep up with, but with my new 'Determined' and 'Successful' mind-set I managed to spend a good amount of time going 
->over each concept that I did not fully understand, this was displayed on the last day when I was breezing through the questions on the Mock-exam.  
->As for the weekend I will spend it going over SQL topics I am still not fully comfortable with such as `JOINS`,
->`CASE SELECT` and SubQueries.**"**
+> **"** This week is going very well for me, I have enjoyed starting on Python I have quite a lot of enthusiasm for programming
+>and finally getting into the technical part of the course. I am getting concepts and the more I try to program and encounter problem 
+>the more I gradually learn about the language and its behaviours towards errors and its way of running. I have also enjoyed 
+>messing around in the PyCharm IDE it is a brilliant resource. I really want to move onto doing more with Pythons capabilities such as
+>its ease of accessing APIs, RESTful and speed of the process. So far I have to admit I have the most knowledge of OOP constructs I have had in
+>a long time, the way it is taught here and reinforced through discussion and presentation is amazing for picking up the concepts.**"**
 - From the behavioural competencies one competencies do you think you are excelling and which competencies you need to work one?
-> **"** Like last week I think I am becoming more determined that I have ever been and really want to finish this course, with the best 
->possible outcome, therefore I am putting everything I have into making sure I have my notes formatted and uploaded by the end of the day 
->and pushing them to GitHub for easy access from any of my devices. I think I am improving on critical thinking and the way I convey
->information to my peers and supervisors but I still need to practice it a lot more, also I think my presentation skills need a lot 
->of work. This can only be achieved through presenting multiple times which I hope I will be doing many more times in the coming weeks. **"**
+> **"** I have a lot of motivation at the moment for this course, I have a lot of enthusiasm to work on my Python as it could lead to a very 
+>exciting career in DevOps  **"**
 - One thing to start doing? 
-> **"** Thinking about the way I formulate information and pass and receive information. Sometimes I find it hard to articulate questions 
->or a point I want to get across to others. **"**
+> **"** I think I am still lacking on the communication aspect, I need to interact with my colleagues a little more and make myself
+>known among my peers. I do already interact with my them a lot but I need to be consistent in the way I communicate with them. **"**
 - One thing to stop doing? 
-> **"** Work on my presentation in the class, I was told that I have been laughing too much - therefore I will try to 
->dull it down but I refuse to look miserable all the time as I am enjoying the course and getting to know people so I want to express 
->my happiness towards that.**"**
+> **"** I need to try focus a little more on the class and do not get distracted my something else as I may be doing.   **"**
 - One thing to continue?
-> **"** Keep up with the note-taking and interaction that I am giving in the classroom, clearly it is working as I have had a lot of positive 
->feedback from both Astha and Sharukh about my behaviour and involvement in the class **"**
+> **"** Although I may already be familiar with a lot of the concepts such as OOP from previous programming in university it is
+>important that I make myself into the best kind of learner I can be by making sure I fully understand everything.
+> **"**
 
 * **Positive feedback** <br>
- > **"** Happy with performance throughout the class, able to keep up with everything and 
- ask questions whenever is needed, not afraid to admit when don't know something either. Overall am happy with
- progress so far...**"**
+ > **"** **"**
 
 * **Constructive feedback** <br>
-> **"** Do not Laugh during class... and do not eat (I have not eaten during class). It is 
- important to remain professional throughout the day and whenever you are learning as the classes are recorded and can be 
- viewed by anyone anytime from outside the class, as well as from people who join whilst we are having the class too. Before
- answering a question in the future make sure you read through the question twice before answering it, this way you 
- are less likely to miss information.**"**
+> **"** **"**
 
 Thanks for the feedback I will take everything into consideration for sure and am looking forward to the next week. 
+
+**Notes**
+* **Self** - This is the part of a class that refers to that particular instance of that class, it
+is usually used in a class initialisation to assign values to that instances attributes. 
+* **Super** - This allows a sub-class (child class) to gain access to all the methods and attributes of its parent class.
+
+> **~ Today's Python Files ~** <br>
+* [**OOPCalculator**](../../Python-Files/Revision-Files/OOP-FIles/OOP_Calculator/arithmetic.py) :page_with_curl: `Inherits from the Arithmetic class`
+* [**OOPArithmetic**](../../Python-Files/Revision-Files/OOP-FIles/OOP_Calculator/arithmetic.py) :page_with_curl: 
+* [**Encapsulation**](../../Python-Files/Revision-Files/OOP-FIles/encapsulation.py)
+
+___
+**Homework**
+* Look more in **Encapsulation**, **Abstraction**, **Inheritance** and **Polymorphism**
