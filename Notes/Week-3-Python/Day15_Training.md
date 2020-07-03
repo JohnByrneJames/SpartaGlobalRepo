@@ -61,6 +61,5 @@ is usually used in a class initialisation to assign values to that instances att
 ___
 **Homework**
 * Look more in **Encapsulation**, **Abstraction**, **Inheritance** and **Polymorphism**
-* Weekend work is in this Repo Folder from Sharaukh [**Repo**](https://github.com/khanmaster/python_apis/blob/master/OOP_EXERCISE.md)
-  
+* Weekend work is in this Repo Folder from Sharaukh [**Repo**](https://github.com/khanmaster/python_apis/blob/master/OOP_EXERCISE.md) Instructions on [**Trello**](https://trello.com/b/eZdQiVQU/engineering-67)
   
