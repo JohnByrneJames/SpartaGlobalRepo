@@ -4,7 +4,7 @@
 ##### `E-mail :` Jbyrne@spartaglobal.com :email:
 ##### `Languages :` C#, SQL and Python :snake:
 ##### `Location :` Central London :round_pushpin:  
-<div align="center" style="font-weight: bolder"> :trophy: Happy Pride Month :trophy: </div> 
+<div align="center" style="font-weight: bolder"> :rainbow: Happy Pride Month :rainbow: </div> 
 
 ___
 

@@ -46,20 +46,21 @@ from request_response import RequestResponse
 
 print("\n")
 
-url = "https://euw1.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/RandomAmazingGuy"
+url = "https://national-weather-service.p.rapidapi.com/products/locations"
 
 headers = {
-    'x-rapidapi-host': "-",
-    'x-rapidapi-key': "-"
+    "x-rapidapi-host": "national-weather-service.p.rapidapi.com",
+    "x-rapidapi-key": "927bcbee56msh9b0b9704a9d6484p1eaeb4jsn11c9ee903dcd",
 }
 
-response = requests.request("GET", url , headers=headers)
+response = requests.request("GET", url, headers=headers)
 
 response_req = RequestResponse(response)
 print(response_req.check_response_code())
 
-print(response.text)
-# data = url.json()
+data = response.json()
+
+
 
 # print(data)
 # print(data["503"]["name"])
