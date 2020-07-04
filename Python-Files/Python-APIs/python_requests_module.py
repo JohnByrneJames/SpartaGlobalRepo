@@ -50,7 +50,7 @@ url = "https://national-weather-service.p.rapidapi.com/products/locations"
 
 headers = {
     "x-rapidapi-host": "national-weather-service.p.rapidapi.com",
-    "x-rapidapi-key": "927bcbee56msh9b0b9704a9d6484p1eaeb4jsn11c9ee903dcd",
+    "x-rapidapi-key": "",
 }
 
 response = requests.request("GET", url, headers=headers)
