@@ -1,15 +1,16 @@
 # Abstraction
 
-**Contents**
+## **Contents**
 
-- [ ] What [:file_folder:](#What?)
+- [x] What [:file_folder:](#What?)
 
-- [ ] Why [:file_folder:](#Why?)
+- [x] Why [:file_folder:](#Why?)
 
-- [ ] How [:file_folder:](#How?)
-    - [ ] Important Points [:file_folder:](#important-points)
+- [x] How [:file_folder:](#How?)
 
-### What?
+- [x] Important Points [:file_folder:](#important-points)
+
+# What?
 
 Abstraction is another concept of OOP wherein the user is kept unaware of the basic implementation of a functions
 property. The user is only able to view basic functionality whereas the internal details are hidden from view. The aim is
@@ -25,14 +26,14 @@ its inner workings or each individual component that make up that car. :red_car:
  they just want to be free to use the ATM as a whole. meaning they just want to enter an amount and receive that amount. It may
  be a complex process behind the scenes but it is not important to the user so its an abstract of that functionality.:bank: 
  
- ### Why?
+ # Why?
  
  Abstraction is used to handle the complexity of an object, this is usually accomplished through something known as
  hierarchical abstraction which will be demonstrated through the python file that is in this repository. As previously mentioned as well
  the process of abstraction allows the developer to hide all irrelevant data/ processes that take place in an application in order to reduce
  complexity and increase efficiency.
  
- ### How?
+ # How?
  
  In python abstraction is achieved by using abstract classes and methods in our programs. A class containing one or more
  abstract methods is called a abstract class. Abstract methods do not contain any implementation. Instead, all the implementation can be defined in methods
@@ -87,7 +88,7 @@ If the implementation of the abstract method is not defined in the derives class
 error. This is because the abstract method will not be defined as a working method, therefore it must have some kind of base
 implementation / functionality.
 
-### Important Points
+# Important Points
 
 There are also some important points to take into consideration when creating abstract classes/ methods in Python.
 1. An abstract class can have both a normal method and an abstract method
