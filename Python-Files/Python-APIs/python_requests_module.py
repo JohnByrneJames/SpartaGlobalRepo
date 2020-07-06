@@ -46,23 +46,16 @@ from request_response import RequestResponse
 
 print("\n")
 
-url = "https://national-weather-service.p.rapidapi.com/products/locations"
+url = "https://pokeapi.co/api/v2/pokemon/ditto"
 
-headers = {
-    "x-rapidapi-host": "national-weather-service.p.rapidapi.com",
-    "x-rapidapi-key": "",
-}
-
-response = requests.request("GET", url, headers=headers)
+response = requests.request("GET", url)
 
 response_req = RequestResponse(response)
 print(response_req.check_response_code())
 
 data = response.json()
 
-
-
-# print(data)
+print(data)
 # print(data["503"]["name"])
 
 # for name, id in data.items():
