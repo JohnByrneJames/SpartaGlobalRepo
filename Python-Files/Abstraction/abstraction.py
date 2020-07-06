@@ -17,31 +17,31 @@ class AbsClass(ABC):  # subclass of ABC
 
     @abstractmethod
     def task(self):
-        print("We are inside Absclass task")
+        pass
 
-class test_class(AbsClass):  # subclass of AbsClass
+class TestClass(AbsClass):  # subclass of AbsClass
     def task(self):
         print("We are inside test_class task")
 
-class example_class(AbsClass):  # subclass of AbsClass
+class ExampleClass(AbsClass):  # subclass of AbsClass
     def task(self):
         print("We are inside example_class task")
 
 
 # object of test_class created
-test_obj = test_class()
-test_obj.task()
-test_obj.print(100)
+testclass = TestClass()
+testclass.task()
+testclass.print(100)
 
 #object of example_class created
-example_obj = example_class()
-example_obj.task()
-example_obj.print(200)
+exampleclass = ExampleClass()
+exampleclass.task()
+exampleclass.print(200)
 
 # This will throw an error because the task method inside the AbsClass is an abstract method and cannot be made into
 # an instance. It raises a TypeError: Can't instantiate abstract class AbsClass with abstract method task
 # >>> tester = AbsClass()
 # >>> tester.task()
 
-print("test_obj is instance of Absclass? ", isinstance(test_obj, AbsClass))
-print("example_obj is instance of Absclass? ", isinstance(example_obj, AbsClass))
+print("test_obj is instance of Absclass? ", isinstance(test_obj, AbsClass))  # True
+print("example_obj is instance of Absclass? ", isinstance(example_obj, AbsClass))  # True

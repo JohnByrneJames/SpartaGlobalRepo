@@ -1,6 +1,6 @@
 # Polymorphism
 
-# Polymorphism is one of the core concepts in OOP languages, it describes the concept that different classes
+# Polymorphism is one of the core concepts in OOP languages, it describes the concept that different
 # classes can be used with same interface. Each of these classes can provide its own implementation of the interface.
 
 # For this example we are going to create two distinct classes to use with two distinct objects, each of these
