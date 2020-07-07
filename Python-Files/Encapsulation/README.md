@@ -17,7 +17,7 @@ to some of the the object's components. It essentially means the internal repres
 view outside of the objects definition. Some would say that encapsulation is very similar to abstraction, however this one key difference
 between the two: <br>
 * **Encapsulation** = Information hiding
-* **Implementation** = Implementation hiding
+* **Abstraction** = Implementation hiding
 
 Two types of Altercations: <br>
 * **Protected** = **_** `_protected_method`

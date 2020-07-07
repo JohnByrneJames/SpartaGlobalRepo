@@ -188,8 +188,35 @@ elif post_codes_req.status_code == 404:
     print("Page unavailable")
 
 print(post_codes_req.headers)
+print(type(post_codes_req.headers))
 print(post_codes_req.content)
+print(type(post_codes_req.content))
 print(post_codes_req.json())
 type_json = post_codes_req.json()
 print(type(type_json))
 ```
+
+**Types of Requests in API:**
+* HTTP
+* Header ➜ {Key : Value} Pairs
+* Body ➜ [Date available: **TEXT**, **JSON**, **XML**]
+* Content 
+* Status
+
+**Data type in URL:**
+* XML
+* HTML
+* JavaScript
+* JSON
+
+We send a HTTP request and we get a response according to the response code, as mentioned above. When we
+send a request we send it on a URL basis and that is recognised by the server and returns the data that you are expecting.
+
+**RESTful API**
+
+**CRUD** stands for "**Create**, **Read**, **Update**, and **Delete**" which are four basic database operations. Many HTTP services
+also model CRUD operations through REST or REST-like APIs. In this tutorial, you will build a very simple web API to manage a list of products... 
+The products API will expose the following methods.
+
+
+
