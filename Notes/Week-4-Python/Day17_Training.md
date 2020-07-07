@@ -218,5 +218,9 @@ send a request we send it on a URL basis and that is recognised by the server an
 also model CRUD operations through REST or REST-like APIs. In this tutorial, you will build a very simple web API to manage a list of products... 
 The products API will expose the following methods.
 
-
+___
+**Homework** 
+* Friday one-to-ones are on Trello board
+    * Elevator Pitch
+    * coding test/ exercise (python only...)
 

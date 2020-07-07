@@ -44,12 +44,26 @@ class LiveWebStatusCode:
 # Check the status code of this request and return correct response
 LiveWebStatusCode.check_status_code(post_codes_req.status_code)
 
-print(post_codes_req.headers)
+# print(post_codes_req.headers)
 # print(type(post_codes_req.headers))
-print(post_codes_req.content)
+# print(post_codes_req.content)
 # print(type(post_codes_req.content))
-print(post_codes_req.json())
+# print(post_codes_req.json())
 type_json = post_codes_req.json()
 # print(type(type_json))
 
-print(post_codes_req.url)
+print(type(type_json))
+
+class JSONReader:
+
+    def get_all_values(self, nested_dictionary):  # This is a method
+        for key, value in nested_dictionary.items():  # iterate through the key, value pairs in this dictionary
+            if type(value) is dict:  # if the value of a key is a dictionary, then you have found a nested dictionary
+                self.get_all_values(value)   # recall this method passing in that dictionary to iterate through it
+            else:
+                print(key, ":", value)  # if the value of the dictionary is not a dict carry on looping through
+
+
+json_reader = JSONReader()
+json_reader.get_all_values(type_json)  # Returns all the values inside a dictionary including any nested dictionaries
+
