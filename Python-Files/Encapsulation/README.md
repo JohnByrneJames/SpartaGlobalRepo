@@ -86,6 +86,38 @@ So here if we were to try create an instance of the Person class, we could actua
 by convention, but the __firstname is private and has been name mangled by the python interpreter. However this can still be accessed
 through specifying the mangled name, this will be demonstrated below.
 
+```python
+# Outside scope of Person Class
+person = Person()
+print(person.name)
+print(person.print_name())
+
+# This will return an attribute error
+print(person.__last_name)
+
+# This will return an attribute error
+print(person.__private_method())
+```
+
+Trying to print out either of these private methods or attributes will throw an attribute error at the user, this is because they no longer exist
+in the class to anyone accessing from outside the scope. It is actually there but has been renamed therefore the user will be told it cannot be
+accessed outside the class.
+
+There is in fact one way to access these private methods outside the class, it is done using a technique known as name-mangling,
+private attributes can also be accessed this way but have a proper technique of which is generally used which I will come onto in a little bit.
+
+```python
+# Outside scope of Person Class
+person = Person()
+
+print(person._Person__private_method())  # object._Class__private_method (name Mangling)
+```
+
+The method can now be accessed by entering what the interpreter has renamed it, this is a done by accessing the method
+via its class, this makes the interpreter assume you are accessing the method from within the classes scope and will not
+return an error. the same can be done with the attributes.
+
+
 
 
 

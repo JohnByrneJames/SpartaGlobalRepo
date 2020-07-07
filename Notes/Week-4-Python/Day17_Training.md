@@ -149,6 +149,47 @@ for key, value in car.items():
 # We have decoded our file new_json_file.json that we created earlier
 # We have used dumps(), dump() and load() methods
 # The load method has returned the JSON file as a dictionary
+```
+
+We did a programming exercise using a JSON file that was full of conversion rates using a euro as a base currency,
+with this we were to take the data and make it usable and more efficient in ways we have learnt. 
+Find my exercise here [**Conversion.Py**](../../Python-Files/JSON/json_exchange_rates.py)
+
+It is easy to think of it like this:
+* **Encoding** is usually witting to a file.
+* **Decoding** is usually reading from a file.
 
 
+* **web-browser - app - cloud**
+* **on premise data**
+
+API call to HTTP request (web-browser) <br>
+Response from HTTP
+
+This is an interaction that takes places when we make a request using Pythons Requests Module. The browser
+is able to understand a request and translates a request based on the information given and returns it in a response
+to the one making the request.
+**Errors** will arise if you try to request data that is either private or inaccessible to us using error codes like
+404, 503, 502.
+
+For an example we were doing [**postcodes**](../../Python-Files/JSON/json_parsing_with_api.py) we could enter our own postcode
+and it would load all the data from london postcodes courtesy of [**postcode.io**](https://api.postcodes.io/)
+
+```python
+import requests
+import json
+post_codes_req = requests.get("https://api.postcodes.io/postcodes/ig89pt")
+
+print(post_codes_req.status_code)
+
+if post_codes_req.status_code == 200:
+    print("Success")
+elif post_codes_req.status_code == 404:
+    print("Page unavailable")
+
+print(post_codes_req.headers)
+print(post_codes_req.content)
+print(post_codes_req.json())
+type_json = post_codes_req.json()
+print(type(type_json))
 ```

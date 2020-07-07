@@ -53,7 +53,7 @@ print(person.print_name())
 
 # Attribute Error: 'Person' object (class) has no attribute '__last_name'
 # This is because the attribute last name does not exist to anyone trying to access the class from outside.
-print(person.__last_name)
+# >>> print(person.__last_name)
 # The same can be applied to methods inside a class, this can be done with the same __.
 
 print()  # Add Space in the terminal
@@ -68,8 +68,8 @@ print()  # Add Space in the terminal
 # This is called a mangled method, by changing the name you an actually access this private method.
 # Showing that the private function doesn't actually provide much protection. Accessing a private member like
 # this should be refrained as it is bad practice.
-# print(person._Person__private_method())  # object._Class__private_method (name Mangling)
-
+print(person._Person__private_method())  # object._Class__private_method (name Mangling)
+print(person._Person__last_name)  # object._Class__private_attribute
 # Essentially when a variable has been made private python will perform name mangling, effectively changing the name
 # of the variable to '_object._class__variable'.
 
