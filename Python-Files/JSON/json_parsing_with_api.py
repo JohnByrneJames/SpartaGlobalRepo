@@ -56,6 +56,7 @@ print(type(type_json))
 
 class JSONReader:
 
+    # This method uses recursion to loop through all nested dictionary values
     def get_all_values(self, nested_dictionary):  # This is a method
         for key, value in nested_dictionary.items():  # iterate through the key, value pairs in this dictionary
             if type(value) is dict:  # if the value of a key is a dictionary, then you have found a nested dictionary
@@ -66,4 +67,3 @@ class JSONReader:
 
 json_reader = JSONReader()
 json_reader.get_all_values(type_json)  # Returns all the values inside a dictionary including any nested dictionaries
-

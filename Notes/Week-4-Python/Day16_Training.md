@@ -50,10 +50,9 @@ that have been made in today business day, instead they use examples that we hav
 to ourselves, in case we need a refresher in the future. The homework's repositories can be found below.
 
 > **~ Weekend Python Repositories and files ~** <br>
-* [**OOP_Inheritance**](https://github.com/JohnByrneJames/student_data_inheritance) :floppy_disk:
+* [**OOP_Inheritance**](https://github.com/JohnByrneJames/oop_inheritance) :floppy_disk:
 
-* [**OOP_Polymorphism**](https://github.com/JohnByrneJames/student_data_polymorphism) :floppy_disk:
-* [**OOP_Encapsulation**](https://github.com/JohnByrneJames/student_data_encapsulation) :floppy_disk:
-* [**OOP_Abstraction**](https://github.com/JohnByrneJames/student_data_abstraction) :floppy_disk:
-* [**Python_apis_with_OOP**](https://github.com/JohnByrneJames/python_apis_with_oop) :floppy_disk:
+* [**OOP_Polymorphism**](https://github.com/JohnByrneJames/oop_polymorphism) :floppy_disk:
+* [**OOP_Encapsulation**](https://github.com/JohnByrneJames/oop_encapsulation) :floppy_disk:
+* [**OOP_Abstraction**](https://github.com/JohnByrneJames/oop_abstraction) :floppy_disk:
 
