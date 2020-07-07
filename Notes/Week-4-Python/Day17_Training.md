@@ -163,8 +163,8 @@ It is easy to think of it like this:
 * **web-browser - app - cloud**
 * **on premise data**
 
-API call to HTTP request (web-browser) <br>
-Response from HTTP
+>API call to HTTP request (web-browser) <br>
+>>Response from HTTP (Json file)
 
 This is an interaction that takes places when we make a request using Pythons Requests Module. The browser
 is able to understand a request and translates a request based on the information given and returns it in a response

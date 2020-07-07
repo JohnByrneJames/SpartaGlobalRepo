@@ -8,7 +8,7 @@
 
 - [x] How [:file_folder:](#How?)
 
-- [x] Important Points [:file_folder:](#important-points)
+- [x] Getter and Setter [:file_folder:](#getter-and-setter)
 
 # What?
 
@@ -110,15 +110,66 @@ private attributes can also be accessed this way but have a proper technique of 
 # Outside scope of Person Class
 person = Person()
 
-print(person._Person__private_method())  # object._Class__private_method (name Mangling)
+# object._Class__attribute/method name (name Mangling)
+print(person._Person__private_method())  
+print(person._Person__last_name)
 ```
 
 The method can now be accessed by entering what the interpreter has renamed it, this is a done by accessing the method
 via its class, this makes the interpreter assume you are accessing the method from within the classes scope and will not
 return an error. the same can be done with the attributes.
 
+**To conclude**
+* Single **_** create protected members, they should not be accessed directly. But nothing stops you from doing that (except convention).
+* Double **_ _** create private members, harder to access than the private ones but still accessible non-the-less.
+* Both are accessible, but private by convention.
+
+# Getter and Setter
+
+Private variables are intended to be changed using the getter and setter methods. These provide indirect access to them.
+This allows the change to take place within the class method and can help keep data integrity as it will only
+change the instances attributes. You can also apply additional checks inside the getter and setter methods to check
+for conditions.
+
+```python
+
+class Person:
+    # Inside scope of Person Class
+    def __init__(self):  
+        self.name = "John"  # public attribute
+        self.__last_name = "Byrne"  # private attribute
+        self._age = 22  # protected attribute
+
+    def print_name(self):
+        return self.name + " " + self.__last_name
+
+    def public_method(self):  # public method
+        return "This method is public, welcome!!"
+
+    def __private_method(self):  # private method
+        return "This method is private! I love cake! How are you seeing this?!"
+
+    # Setter method
+    def setlastname(self, last_name):
+        print("set last_name() called")
+        self.__last_name = last_name
+
+    # Getter method
+    def getlastname(self):
+        print("get last_name() called")
+        return self.__last_name
+
+    last_name = property(getlastname, setlastname)
 
 
+person = Person()
+person.last_name = "Orpin"  # Set the last_name
+print(person.last_name)  # Get the last_name, return the last name 
+```
 
+As you can see when you make a change to a private variable through this technique it will give you a message,
+and it will also give a message when you try to retrieve it. The property() function allows you to assign an alias
+in place of the get and set methods to access their contents, the interpreter will take care of running it when it detects
+a change or retrieval of that private attribute. It can also be done a slightly different way using a decorator called @property
 
 Find the implementation of this in the python class here [**encapsulation.py**](encapsulation.py)
