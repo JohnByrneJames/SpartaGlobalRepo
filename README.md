@@ -33,6 +33,6 @@ ___
 
 - [x] **Week One** - Business Week [:briefcase:](/Notes/Week-1-Business)
 - [x] **Week Two** - SQL [:bar_chart:](/Notes/Week-2-SQL)
-- [ ] **Week Three** - Python [:snake:](/Notes/Week-3-Python)
-- [ ] **Week Four** - Python 
+- [x] **Week Three** - Python [:snake:](/Notes/Week-3-Python)
+- [ ] **Week Four** - Python Continued... [:snake:](/Notes/Week-4-Python)
 

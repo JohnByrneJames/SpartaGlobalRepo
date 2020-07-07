@@ -24,7 +24,6 @@ class Person:
 
     def print_name(self):
         return self.name + " " + self.__last_name
-    # End of scope in Person Class
 
     def public_method(self):  # public method
         return "This method is public, welcome!!"
@@ -54,13 +53,13 @@ print(person.print_name())
 
 # Attribute Error: 'Person' object (class) has no attribute '__last_name'
 # This is because the attribute last name does not exist to anyone trying to access the class from outside.
-# >>> print(person.__last_name)
+print(person.__last_name)
 # The same can be applied to methods inside a class, this can be done with the same __.
 
 print()  # Add Space in the terminal
 
 # Outside scope of Person Class
-print(person.public_method())
+# print(person.public_method())
 
 # Attribute Error: 'Person' object has no attribute '__private_method'
 # Again this method is private therefore cannot be accessed outside the person class.
@@ -69,12 +68,12 @@ print(person.public_method())
 # This is called a mangled method, by changing the name you an actually access this private method.
 # Showing that the private function doesn't actually provide much protection. Accessing a private member like
 # this should be refrained as it is bad practice.
-print(person._Person__private_method())  # object._Class__private_method (name Mangling)
+# print(person._Person__private_method())  # object._Class__private_method (name Mangling)
 
 # Essentially when a variable has been made private python will perform name mangling, effectively changing the name
 # of the variable to '_object._class__variable'.
 
 # This below is possible as the property() function has been used and allows appropriate assignment
 # and retrieval of the last_name attribute form outside the class scope.
-person.last_name = "Orpin"  # Set the last_name even though it is private
-print(person.last_name)  # Get the last_name, return the last name (despite it being private)
+# person.last_name = "Orpin"  # Set the last_name even though it is private
+# print(person.last_name)  # Get the last_name, return the last name (despite it being private)
