@@ -18,9 +18,33 @@ I enjoyed yesterday and really was excited to get into JSON and XML type data fo
 of communicating data over the internet, particularly the API aspects as they return large amount of data. The last hour that we
 got free was really good as it allowed us more time to talk after the lesson and personally more time to work on revision.
 
-**Topics**
+**File Handling**
 
-* **Text file** 
-* **Error handling** 
-* **CSV** (Comma Separated values)
+To do : **_Today's Goals_**
+* Reading from and writing to files [**Main.py**](../../Python-Files/File-Handling/main.py), [**textfile.py**](../../Python-Files/File-Handling/textfile.py)
+* Exception handling 
+* CSV
+* Assignments
+
+**Exception Handling**
+
+Exceptions try [ Code to be run ~~ may raise an exception ] except (general / or pointed exception) [ do something to inform user of exception ]
+finally [ code that will always run finally, despite any exceptions ]
+
+If you have an error that is an exception then it will happen during runtime and cause the program to come to a
+abrupt exit. This is why we handle them with exceptions.
+
+![alt text](../../Images/Python_Exception_Handling.PNG)
+
+We also have talked about debugging in the environment as well, it can be used with breakpoints which can be placed
+throughout the code - these breakpoints will prompt the debugger console to appear where you can manually move the interpreter
+through the code step by step, this is useful to find errors and problems in large processes.
+
+**Dynamically generated programming languages** :
+* Interpreter based languages like the Python interpreter actually run the code during runtime and deal with the
+syntax as it comes up. For example you don't label the variables, the interpreter will automatically interpret what type
+your variables will be.
+* Compiler based languages like C# interpret the code before then run it through the compiler once its compiled.
+
+___ 
 
