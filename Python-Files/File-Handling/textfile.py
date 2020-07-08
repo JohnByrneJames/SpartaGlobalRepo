@@ -69,7 +69,11 @@ class TextFileHandler:
     def playing_with_exceptions(self):
         try:  # Try do the first bit of code E.G. open file
             file = open(self.__file_path, 'r')  # file is attempted to be opened
-        except Exception as e:  # incorrect syntax so exception was raised
+        # It is better practice to place the exact exception here instead of Exception do specific exception :
+        # in this case the specified exception is FileNotFoundError
+        # To have more than one exception in a exception use brackets and commas
+        # If you want to include 'Exception' do it after all the specific exceptions
+        except (ZeroDivisionError, FileNotFoundError) as e:  # incorrect syntax so exception was raised
             print(e)  # print out the error, usually its better to print it out in english
             print("File is not present")
         else:  # else is the code that runs if there is no exception
@@ -78,3 +82,18 @@ class TextFileHandler:
         finally:  # print out the code in the finally block
             return self.__text_storage
 
+    def raise_exception(self):
+        while True:  # Carry on running until break, it can also have a condition like if len == 0 (little sketchy)
+            try:
+                first_value = input("Enter you're name")
+                if len(first_value) is 0:  # If this is true then raise an exception
+                    # You are raising an exception that Python might not have - so its a custom exception
+                    raise Exception
+            # This is a custom exception - (user-defined exception) can be defined in the base class meaning you need to
+            # create your own exception and define the conditions that raise it =
+            # https://docs.python.org/3/tutorial/errors.html#user-defined-exceptions [Can also use ValueError]
+            except Exception:
+                print("We do not accept empty names for the input...")
+                continue
+            else:
+                print("Nice to meet you, " + first_value + "!")

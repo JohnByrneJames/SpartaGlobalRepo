@@ -40,6 +40,9 @@ We also have talked about debugging in the environment as well, it can be used w
 throughout the code - these breakpoints will prompt the debugger console to appear where you can manually move the interpreter
 through the code step by step, this is useful to find errors and problems in large processes.
 
+**Shortcut**:
+* In PyCharm to reformat a piece of code/ file you can use the shortcut `Ctrl + alt + Shift + L`
+
 **Dynamically generated programming languages** :
 * Interpreter based languages like the Python interpreter actually run the code during runtime and deal with the
 syntax as it comes up. For example you don't label the variables, the interpreter will automatically interpret what type
@@ -47,4 +50,7 @@ your variables will be.
 * Compiler based languages like C# interpret the code before then run it through the compiler once its compiled.
 
 ___ 
-
+**Homework** and **Assignments**
+* Accept from the user some text. Ensure user enters something else raise an exception.
+After that write that text to a file and then read from this file to  write to another file simultaneously
+* Reading an image to  writing to another file simultaneously

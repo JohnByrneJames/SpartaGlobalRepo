@@ -23,7 +23,8 @@ print()
 
 # ___________________________
 
-print(text_file_object.playing_with_exceptions())
+# print(text_file_object.playing_with_exceptions())
+
 # Exceptions
 # try [ Code to be run ~~ may raise an exception ]
 # except (general / or pointed exception) [ do something to inform user of exception ]
@@ -32,4 +33,4 @@ print(text_file_object.playing_with_exceptions())
 # If you have an error that is an exception then it will happen during runtime and cause the program to come to a
 # abrupt exit. This is why we handle them with exceptions.
 
-
+text_file_object.raise_exception()
