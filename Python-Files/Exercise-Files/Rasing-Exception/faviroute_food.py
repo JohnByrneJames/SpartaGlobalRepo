@@ -37,9 +37,10 @@ class FavoriteFood:
         if os.path.exists("favourite_food_history.txt") is False:  # If file doesnt already exist add header
             with open("favourite_food_history.txt", "a+") as file:  # append this onto a permanent history file
                 file.write("Permanent History of favourite Food\n")  # If file doesn't exist add header
+                file.write("\n\n" + food)
         else:
             with open("favourite_food_history.txt", "a") as file:  # append this onto a permanent history file
-                file.write("\n\n" + "!-" * 20 + "\n" + food + "\n" + "!-" * 20)
+                file.write("\n\n" + food)
 
     @staticmethod
     def __add_error(error):

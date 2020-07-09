@@ -1,5 +1,5 @@
 ###### Sparta Global Training Day 18
-###### Going over Python concepts again to really get them, also we are covering the TDD (test driven development).
+###### Going over python file read and write, also did some image reading in the homework.
 
 ___
 
