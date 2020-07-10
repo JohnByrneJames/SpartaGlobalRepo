@@ -82,19 +82,35 @@ for a user is to think _`"what ever can go wrong will go wrong"`_.
 >cause more issues. 
 >**"**
 - One thing to continue?
-> **"** Keep up the interaction with peers and tutors as it helps build good relationships which are always improtant in any organisation, or
+> **"** Keep up the interaction with peers and tutors as it helps build good relationships which are always important in any organisation, or
 >situation. I always refrain from answering a question that I know as I want to give someone else a chance to answer it, then I will answer if it
 >seems like no one else knows.
 > **"**
 
 * **Positive feedback** <br>
->**"**
+>**"** 
+>Technical ability, contributions and adaptability to new concepts is very good and always on point with the class.
 >**"**
 
 * **Constructive feedback** <br>
->**"**
+>**"** 
+> Got profile in late, this delays the whole class unfortunately and is going to be bad for your image in the company.
+> Attention to detail, if something is asked do that task then expand on it (this was acknowledged)
+>
+>In Elevator pitch do not read from somewhere it is mechanical, also speak with your diaphragm. 
 >**"**
 
+**Research**
+
+I researched the diaphragm afterwards and found this excellent description of what it is.
+>**"** Here's an easy way to tell the difference.
+>
+>Try speaking to yourself in a very low volume, mumble like you're almost humming. If you pay attention, you'll notice a sensation like a vibration coming from behind your jaw.
+>
+>Now, take a deep breath, open your mouth widely, and yell a sound while exhaling forcefully, like "ha" or "hey", as if you want someone far away to hear you in a large crowded area. You may notice that your skull seems to be vibrating less than before. You may also have the sensation that the voice came from deeper within you, instead of your general throat area.
+>
+>The first one was you speaking from the throat. The second was speaking from the diaphragm. 
+>**"**
 
 ___
 **Homework**

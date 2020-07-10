@@ -11,3 +11,4 @@ password = os.environ.get("db_password")  # password, this here gets the OS priv
 db_instance = DatabaseConnector(server, database, username, password)  # create instance with credentials
 
 db_instance.establish_connection()  # create a connection in the instance
+db_instance.user_interaction()
