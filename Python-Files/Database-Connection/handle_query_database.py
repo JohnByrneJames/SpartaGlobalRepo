@@ -22,16 +22,28 @@ class DatabaseConnector:
 
         try:
             with pyodbc.connect(self.__connection_string, timeout=5) as connection:
-                print("Connection has been made ~ :)")  # Success and connection has been made
+                # Success and connection has been made
+                print("-" * 20 + """\nConnection has been made ~ :)\n""" + "-" * 20 + "\n")
         except (ConnectionError, pyodbc.OperationalError, pyodbc.DatabaseError):
             print("connection has timed out, or the database was not available")
         except pyodbc.InterfaceError:
             print("Invalid connection to DB interface")
         else:
             # The cursor is a control structure, here it gets the cursor and stores it in a class attribute
-            self.__cursor = DatabaseConnector.create_cursor(self.__connection_string)
+            self.create_cursor(connection)
 
-    @staticmethod
-    def create_cursor(connection):
-        return connection.cursor()
+    def create_cursor(self, connection):
+        self.__cursor = connection.cursor()
+        self.query_database()
+
+    def query_database(self):
+        for table in self.__cursor.tables():  # Search through tables
+            if table.table_schem != "dbo":  # not a database table - escape
+                break
+            else:  # get columns
+                print(table.table_name)
+
+        # Create loop to ask user for input
+
+
 

@@ -26,6 +26,7 @@ ___
 5. **Find Me on LinkedIn** [HERE](https://www.linkedin.com/in/john-byrne-b74214174/) `Social Media` - `Work History` - `Latest CV`
 
 6. **Engineering 67 Kanban Board** [HERE](https://trello.com/b/eZdQiVQU/engineering-67) `Kanban` - `Trello Board` - `Agile` - `SCRUM`
+
 ___
 
 ## **Road Map** 
@@ -34,5 +35,5 @@ ___
 - [x] **Week One** - Business Week [:briefcase:](/Notes/Week-1-Business)
 - [x] **Week Two** - SQL [:bar_chart:](/Notes/Week-2-SQL)
 - [x] **Week Three** - Python [:snake:](/Notes/Week-3-Python)
-- [ ] **Week Four** - Python Continued... [:snake:](/Notes/Week-4-Python) TDD [:hammer_and_pick:](https://github.com/JohnByrneJames/python_tdd_pytest) and JSON [:coffee:](/Python-Files/JSON): a little SQL with Python [:chart_with_upwards_trend:](/Python-Files/Database-Connection)  
-
+- [ ] **Week Four** - Python Continued... [:snake:](/Notes/Week-4-Python) TDD [:hammer_and_pick:](https://github.com/JohnByrneJames/python_tdd_pytest) 
+and JSON [:coffee:](/Python-Files/JSON): a little SQL with Python [:chart_with_upwards_trend:](/Python-Files/Database-Connection)  

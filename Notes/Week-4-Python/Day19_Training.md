@@ -41,6 +41,24 @@ I just practiced SQL querying while waiting around, it is what it is.
 
 We are going to present our design of our project, or stuff we have learned in one big project.
 
+**Topics to Revise** <br>
+**Topics :**
+- [ ] Functions
+- [ ] Loops
+- [ ] Tuple
+- [ ] List & Indexes
+- [ ] Dictionaries
+- [ ] OOP
+- [ ] Append
+- [ ] Strings
+- [ ] Inheritance
+
+**Practical :** <br>
+- [ ] Functions
+- [ ] Modulus
+- [ ] Dictionaries
+- [ ] Conditionals (Complex)
+
 ___
 **Homework**
 * Revise for Quality Gate
