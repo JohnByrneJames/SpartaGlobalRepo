@@ -46,7 +46,7 @@ from request_response import RequestResponse
 
 print("\n")
 
-url = "https://pokeapi.co/api/v2/pokemon/ditto"
+url = "https://pokeapi.co/api/v2/pokemon/pikachu"
 
 response = requests.request("GET", url)
 

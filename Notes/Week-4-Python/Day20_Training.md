@@ -34,13 +34,15 @@ for a user is to think _`"what ever can go wrong will go wrong"`_.
 >skills. I am recent graduate from the University of Greenwich, with a focus on Computing and Games Development which included hands-on
 >experience with a magnitude of programming languages and software, such as C#, C++, Microsoft Management Studio and the latest Game-Engines. 
 > 
->   I find the speed at which your company as adapted to the current epidemic climate amazing!, being able to expand your services following a huge demand
+> I find the speed at which your company as adapted to the current epidemic climate amazing!, being able to expand your services following a huge demand
 >and presumably lack of staff is innovating and impressive. Particularly the fact you have been able to move most of the services to a virtual platform, Incredible!.
 > I'd love the opportunity to put expertise to work in your company. Thank you for the opportunity, if possible would it be possible to set up a quick call whenever you are next free
 >to talk about any upcoming opportunities on your teams? 
 >
 >Thank you for the opportunity, and the time to tell you a bit about myself.
->>
+>
+> Put this into points to remember and spark memory, sentence - keyword - explanation
+>
 > **"**
 
 
@@ -107,7 +109,8 @@ I researched the diaphragm afterwards and found this excellent description of wh
 >
 >Try speaking to yourself in a very low volume, mumble like you're almost humming. If you pay attention, you'll notice a sensation like a vibration coming from behind your jaw.
 >
->Now, take a deep breath, open your mouth widely, and yell a sound while exhaling forcefully, like "ha" or "hey", as if you want someone far away to hear you in a large crowded area. You may notice that your skull seems to be vibrating less than before. You may also have the sensation that the voice came from deeper within you, instead of your general throat area.
+>Now, take a deep breath, open your mouth widely, and yell a sound while exhaling forcefully, like "ha" or "hey", as if you want someone far away to hear you in a large crowded area.
+> You may notice that your skull seems to be vibrating less than before. You may also have the sensation that the voice came from deeper within you, instead of your general throat area.
 >
 >The first one was you speaking from the throat. The second was speaking from the diaphragm. 
 >**"**
@@ -115,5 +118,5 @@ I researched the diaphragm afterwards and found this excellent description of wh
 ___
 **Homework**
 
-* Do program by 3:30 PM
-* A break between 3:15 PM to 3:30 PM
+* ~~Do program by 3:30 PM~~
+* ~~A break between 3:15 PM to 3:30 PM~~
