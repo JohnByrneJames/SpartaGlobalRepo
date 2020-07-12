@@ -113,11 +113,10 @@ cases arguments that are passed regardless of how many (dynamic) arguments.
 
 The terms parameter and argument can be used for the same thing: information that are passed into a function.
 
-> From a functions perspective :
->
-> A parameter is the variable listed inside its parentheses in the function definition.
->
-> An argument is the value that is sent to the function when it is called
+**From a functions perspective** :
+
+* A parameter is the variable listed inside its parentheses in the function definition.
+* An argument is the value that is sent to the function when it is called
 
 By default, a function must be called with the correct number of arguments or it will return an error saying how few or too many arguments
 are missing. This means that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.
