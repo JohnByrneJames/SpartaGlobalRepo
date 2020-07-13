@@ -58,7 +58,7 @@ print("Hello world")
 # Comments
 
 
-<div align="center" style="font-weight: bolder">---------- End of **Comments** ----------</div> 
+### <div align="center" style="font-weight: bolder">[----------] End of **Comments** [----------]</div> 
 
 ___
 
