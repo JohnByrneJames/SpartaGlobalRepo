@@ -274,7 +274,9 @@ print(x)
 
 _The above example returns `2` as the number `5` has appeared in the sequence two times._
 
+### <div align="center" style="font-weight: bolder">[----------] End of **Tuples** [----------]</div> 
 
+___
 
 # Loops
 
@@ -499,6 +501,10 @@ for x in [0, 1, 2]:
 
 _In my experience this is a very helpful keyword to layout your code before implementation, else it will be throwing errors all the time, 
 which is both annoying and troublesome_
+
+### <div align="center" style="font-weight: bolder">[----------] End of **Loops** [----------]</div> 
+
+___
 
 # Functions
 
@@ -744,4 +750,7 @@ from that point it unravels the recursion loop and returns the results according
 | Return 6      | 15           | 6       | 15 + 6 = 21 | 21           |
 
 
+### <div align="center" style="font-weight: bolder">[----------] End of **Functions** [----------]</div> 
+
+___
 
