@@ -33,12 +33,12 @@ print("Hello world")
 - [ ] Booleans 
 - [ ] Operators
 - [ ] Lists 
-- [ ] Tuples [:lock:](#tuples)
-- [ ] Sets 
-- [ ] Dictionaries 
+- [x] Tuples [:lock:](#tuples)
+- [x] Sets [:twisted_rightwards_arrows:](#sets)
+- [ ] Dictionaries [:card_file_box:](#dictionaries)
 - [ ] If...Else
-- [ ] Loops [:dizzy:](#Loops)
-- [ ] Functions [:file_folder:](#functions)
+- [x] Loops [:dizzy:](#Loops)
+- [x] Functions [:file_folder:](#functions)
 - [ ] Lambda
 - [ ] Arrays
 - [ ] Classes/ Objects
@@ -277,6 +277,321 @@ _The above example returns `2` as the number `5` has appeared in the sequence tw
 ### <div align="center" style="font-weight: bolder">[----------] End of **Tuples** [----------]</div> 
 
 ___
+
+# Sets
+
+A `set` is a collection which is characterised by being **unordered** and **unindexed**. In python sets are are written
+ with curly brackets.
+ 
+ ```python
+thisset = {"apple", "banana", "cherry"}
+print(thisset) 
+```
+
+_Sets are unordered, so you cannot be sure in which order the items will appear when you print, it is random every time a program
+is run._
+
+## Access Items
+
+You cannot access items in a set by referring to the index, since sets are unordered the items change place and do not follow any kind
+of ordering meaning they cannot be indexed. In sets you can actually find items by using the value they hold, instead of the index.
+
+You can loop through the set items using a `for` loop, or ask if a specified value is present in a set, by using the `in`
+keyword.
+
+```python
+thisset = {"apple", "banana", "cherry"}
+
+for x in thisset:
+  print(x) 
+```
+
+```python
+thisset = {"apple", "banana", "cherry"}
+
+print("banana" in thisset) 
+```
+
+_This is a good example of pythons ability to be so close to human language, it is easily understandable that
+the print is asking if "banana" is the set, called the theset._
+
+## Change Items
+
+_Once a set is created, you cannot change its items, but you can add new items._
+
+### Add Items
+
+* To add one item to a set use the `add()` method.
+
+```python
+thisset = {"apple", "banana", "cherry"}
+
+thisset.add("orange")
+
+print(thisset) 
+```
+
+* To add more than one item to a set use the `update()` method.
+
+```python
+thisset = {"apple", "banana", "cherry"}
+
+thisset.update(["orange", "mango", "grapes"])
+
+print(thisset) 
+```
+
+## Get the Length of a Set
+
+To determine how many items a set has, you use the `len()` method.
+
+```python
+thisset = {"apple", "banana", "cherry"}
+
+print(len(thisset)) 
+```
+
+_Similarly in a lot of other collections, this returns the amount of items : `3` here_
+
+## Remove Items
+
+To remove an item in a set, use the `remove()` method, or `discard()` method.
+
+```python
+thisset = {"apple", "banana", "cherry"}
+
+thisset.remove("banana")
+
+print(thisset) 
+```
+
+_If the item to remove does not exist, `remove()` will raise an error._
+
+```python
+thisset = {"apple", "banana", "cherry"}
+
+thisset.discard("banana")
+
+print(thisset) 
+```
+
+_If the item to remove does not exist, `discard()` will **NOT** raise an error._
+
+
+You can use the `pop()`, method to remove an item, but this method will remove the last item. Remember that sets are unordered,
+so you wil not know what item is removed. Although it can come in useful in certain cases if you were creating a game, that needed to remove a random
+card for example.
+
+The return value of `pop()` can be stored in a variable, it is the value that was removed from the `set()`.
+
+```python
+thisset = {"apple", "banana", "cherry"}
+
+x = thisset.pop()
+
+print(x)  # cherry
+
+print(thisset)  # {"apple", "banana"}
+```
+
+The `clear()` method empties the set.
+
+```python
+ thisset = {"apple", "banana", "cherry"}
+
+thisset.clear()
+
+print(thisset) # set{}
+```
+
+_An empty set is displayed as "set{}" because the single "{}" is actually reserved to identify a empty `dictionary`._ 
+
+You can also use the `del` keyword to completely delete the set, it is also garbage collected which removes its place
+in memory. This is a good way to make sure programs aren't too overloaded with unused variables.
+
+```python
+thisset = {"apple", "banana", "cherry"}
+
+del thisset
+
+print(thisset)  # NameError
+```
+
+_This will give an error as the variable no longer exists_
+
+## Join Two Sets
+
+There are several ways to join two or more sets in Python. You can use the `union()` method that returns a new set containing all
+items from both sets, or the `update()`method that inserts all the items from one set into another.
+
+```python
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+
+set3 = set1.union(set2)
+print(set3) 
+```
+
+```python
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+
+set1.update(set2)
+print(set1) 
+```
+
+_The `update()` method is a preferred approach as it saves memory, instead of creating a whole new object containing both of the
+previous objects items it simply adds one's contents on top of another's_
+
+_Both the `union()` and `update()` will exclude any duplicate items._
+
+* Some other methods:
+    * [`copy()`](https://www.w3schools.com/python/ref_set_copy.asp)
+    * [`difference()`](https://www.w3schools.com/python/ref_set_difference.asp)
+    * [`difference_update()`](https://www.w3schools.com/python/ref_set_difference_update.asp)
+    * [`intersection()`](https://www.w3schools.com/python/ref_set_intersection.asp)
+    * [`intersection_update()`](https://www.w3schools.com/python/ref_set_intersection_update.asp)
+    * [`isdisjoint()`](https://www.w3schools.com/python/ref_set_isdisjoint.asp)
+    * [`issubset()`](https://www.w3schools.com/python/ref_set_issubset.asp)
+    * [`issuperset()`](https://www.w3schools.com/python/ref_set_issuperset.asp)
+    * [`symmetric_difference()`](https://www.w3schools.com/python/ref_set_symmetric_difference.asp)
+    * [`symmetric_difference_update()`](https://www.w3schools.com/python/ref_set_symmetric_difference_update.asp)
+
+
+### <div align="center" style="font-weight: bolder">[----------] End of **Sets** [----------]</div> 
+
+___
+
+# Dictionaries
+
+A dictionary is a collection which is **unordered**, **mutable** (changeable) and **indexed**. In python `dictionaries` are written
+with curly brackets, and they have key and value pairs. The curly bracket is also used by `sets` except they are differentiated by the
+key and value pair, compared to just a value in `sets`.
+
+```python
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)  # {'brand': 'Ford', 'model': 'Mustang', 'year': 1964} (random order)
+```
+
+_This is how you create a dictionary_
+
+## Accessing Items
+
+You can access the items in a `dictionary` by referring to its key name, inside square brackets.
+
+```python
+x = thisdict["model"]
+```
+
+_This will get the model key's value: which is `mustang`_
+
+The same thing can be done, using the `get()` method.
+
+```python
+x = thisdict.get("model")
+```
+
+## Change Values
+
+You can change the values of a specific item by referring to its key name. This is again possible as `dictionaries` are
+**mutable**. 
+
+```python
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict["year"] = 2018
+```
+
+_The value of year is changed to 2018, this is done by referring to the year key and assigning it a value with the `=` operator_
+
+## Loop Through the Dictionary
+
+You can loop through a dictionary by using a `for` loop.
+
+When looping through a dictionary, the return value are the `keys` of the `dictionary`, but there are methods to return the
+`values` as well. Sometimes it is also favourable to return both the `key` and `value` pair too.
+
+```python
+for x in thisdict:
+  print(x) 
+```
+
+_The above example prints out the `keys` one by one_
+
+```python
+for x in thisdict:
+  print(thisdict[x]) 
+``` 
+
+```python
+for x in thisdict.values():
+  print(x) 
+```
+
+_The above example prints out the `values`, one by one_
+
+```python
+for x, y in thisdict.items():
+  print(x, y) 
+```
+
+_This loop uses the `items()` method to iterate over the `dictionary` and print out both the `keys` and `values` of 
+one by one._
+
+## Check if Key Exists
+
+To determine if a specified key is present in a `dictionary` use the `in` keyword.
+
+```python
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+if "model" in thisdict:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary") 
+```
+
+_This works similarly in most of pythons collection types and returns `True` if the items exists and `False` if it doesn't._
+
+## Dictionary Length
+
+To determine how many items (`key`-`value` pairs) a dictionary has, use the `len()` method.
+ 
+ ```python
+print(len(thisdict))  
+```
+
+## Adding Items
+
+Adding an item to a `dictionary` is done by using a new index `key` and assigning a `value` to it.
+
+```python
+thisdict["color"] = "red"
+print(thisdict)
+```
+
+## Removing Items
+
+There are several methods to remove items from a `dictionary`. The `pop()`, `popitem()`, `del` and `clear()`
+ 
+```python
+thisdict.pop("model")
+print(thisdict) 
+```
+ 
+
+### <div align="center" style="font-weight: bolder">[----------] End of **Dictionaries** [----------]</div> 
+
+___
+
 
 # Loops
 
