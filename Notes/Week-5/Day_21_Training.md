@@ -30,6 +30,12 @@ answer that is intuitive as I wasted time messing with basic concepts.
 
 ![alt text](../../Images/Python_Project.PNG)
 
+We started the Trello board [HERE](https://trello.com/b/3BQkzYtl/airport-project)
+
+SQL stores information on passengers ETC.
+
+Consider project as if you are going to build a tenth floor building, you create a map / plan etc then you develop.
+
 ___
 **Homework**
 * write the README.md in [Database-connection](../../Python-Files/Database-Connection)

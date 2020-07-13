@@ -188,5 +188,10 @@ designed to specifically carry out one task. This code is a little confusing but
 define a `dictionary` to store tables with a nested `dictionary` as its value, and that nested `dictionary` has a value of the
 `column_name` and a value of its `column.remarks` which is just a placeholder at this point.
 
-First of all the tables are stored in a simple `list`,  
+First of all the tables are stored in a simple `list`. This list is used in the next part of the code, here a for loop iterates over the
+`list`, getting the tables name and going into a further for loop which iterates over the columns in a table, using the table name and the
+cursor to create a connection. This is then constructed into a `dictionary` within a `dictionary`. This is a dynamic implementation as it will scale or descale as more tables, and columns are
+added to the database. There is also the part that checks the see if the `table_schem` is equals to dbo, this tells the for loop to
+break when the table being iterated isn't a database object e.g. not a table.
+
 
