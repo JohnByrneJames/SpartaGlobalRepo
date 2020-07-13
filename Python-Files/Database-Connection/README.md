@@ -3,10 +3,10 @@
 
 ___
 
-## Contents
-- [ ] [Concept and Ideas :art:](#concepts-and-ideas)
+# Contents
+- [x] [Concept and Ideas :art:](#concepts-and-ideas)
 
-- [ ] [Implementation :zap:](#implementation)
+- [x] [Implementation :zap:](#implementation)
 
 - [ ] [Important Points :bookmark:](#important-points)
 
@@ -281,6 +281,31 @@ The two statements that print out the tables and columns are quite generic and c
 However for the average I wanted to point out that I first queried the database for all the `UnitPrice` attributes and then
 added them into a list and applied the `mean()` function which is available through the `statistics` module. This is one of two ways
 however it is a nice way to quickly get the result making the most of the modules available in python.
+
+# Important Points
+
+* It is important to make sure you keep your private credentials such as the ones used to access the database private. This can be done by
+adding the connection file to the `.gitignore` or like I did creating system environment variables that can be accessed through the os module.
+
+* When printing out database tables it is important that you check for the `"dbo"` table_schem as this is a table, the other
+data structures returned are other pieces of less informative memory.
+* The best way to create a dynamic program is to make methods that are segregated and perform typically one and only one functionality. This is also used when
+the tables and columns are stored in a dictionary as it loops through the variables created on connection ensuring data integrity.
+* Sometimes the `Cursor` object is a little flaky and can return incorrect data if used in quick succession or nested functions, for this reason I first
+gathered the tables and stored them in a separate list and then using that list I then used the cursor to get the relevant columns.
+* When working with users or operations that are not straight-forward yes or no responses it is imperative that you include exception handling. This allows the user to
+be more informed about what mistake they have made and also protect the program from failing during operation.
+
+# Future improvements
+
+For this program I was pretty happy with the outcome, although it is not everything I first imagined, to keep this short I have summarised
+the improvements in bullet points.
+* Addition of stateful text files that can remember a user when they logged onto the database before, and actively retrieve their information if they enter
+their username and password correctly.
+
+* Figure out how a query builder can be created that works, this is important because asking the user to directly enter a query is both inefficient and
+bad practice as they wont know how to query, therefore asking them what they want in layman terms is important and provides ease-of-use.
+* More exceptions added for each of the stages so that the user can be more informed of error details and also it is a better design methodology.
 
 I also did a separate project which allowed the user to add in their favorite food, this would then be written to a temporary text file
 which tracks the latest additions, and another permanent text file which tracks the history of the additions into the lists including any errors that
