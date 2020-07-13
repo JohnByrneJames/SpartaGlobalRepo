@@ -25,20 +25,19 @@ print("Hello world")
            
 # Contents :page_facing_up:
 - [ ] Comments [:file_folder:](#comments)
-- [ ] Variables [:file_folder:](#variables)
-- [ ] Data Types [:file_folder:](#data_types)
-- [ ] Numbers [:file_folder:](#numbers)
-- [ ] Casting [:file_folder:](#castings)
-- [ ] Strings [:file_folder:](#strings)
-- [ ] Booleans [:file_folder:](#booleans)
-- [ ] Operators [:file_folder:](#operators)
-- [ ] Lists [:file_folder:](#lists)
-- [ ] Tuples [:file_folder:](#tuples)
-- [ ] Sets [:file_folder:](#sets)
+- [ ] Variables 
+- [ ] Data Types 
+- [ ] Numbers 
+- [ ] Casting 
+- [ ] Strings 
+- [ ] Booleans 
+- [ ] Operators
+- [ ] Lists 
+- [ ] Tuples [:lock:](#tuples)
+- [ ] Sets 
 - [ ] Dictionaries 
 - [ ] If...Else
-- [ ] While Loops
-- [ ] For Loops
+- [ ] Loops [:dizzy:](#Loops)
 - [ ] Functions [:file_folder:](#functions)
 - [ ] Lambda
 - [ ] Arrays
@@ -57,6 +56,213 @@ print("Hello world")
 - [ ] String formatting
 
 # Comments
+
+# Tuples
+
+A tuple is one of many collection types available in python. However, it has its own advantages and disadvantage which make it
+preferable in certain situations. A tuple is a collection which is **ordered** and **immutable**(unchangeable). In python tuples are written
+with round brackets **()**.
+
+```python
+a_tuple = ("hello", "world", "from", "python")
+print(a_tuple)
+```
+
+_This is how you create a tuple, however in this case some data has been stored on declaration_
+
+## Access Tuple Items
+
+You can access tuple items by referring to the index. This is a common practice in many languages, the index is referred to inside square brackets
+**[the_index]**. _Remember indexes start at 0_.
+
+```python
+a_tuple = ("apple", "banana", "cherry")
+print(a_tuple[1])  # banana
+```
+
+### Negative Indexing
+
+Negative indexing means beginning from the end of a collection. In this case `-1` refers to the last item, `-2` refers to the second
+last item and so on.. This can be especially useful when you are trying to iterate through an unknown amount of items in a tuple and want to stop
+when it is iterating over the last item, E.G. index **[`-1`]**
+
+```python
+a_tuple = ("apple", "banana", "cherry")
+print(a_tuple[-1])  # cherry
+```
+
+### Range of indexing
+
+
+# Loops
+
+In Python there are two primitive loop commands:
+* [`while`](#while-loops) loop
+* [`for`](#for-loops) loop
+
+Loops are traditionally used when you have a block of code which you want to
+repeat a fixed number of times. The Python `for` statement iterates over the members of a
+sequence in order, executing the block each time. On the other hand you have the `while` loop
+which iterates an infinite amount of times until it is told to stop or a condition is no longer satisfied.
+
+# While loops
+
+The `while` can execute a set of statements as long as the condition is `True`. The condition can be set to something that is
+always true to enable an infinite loop or a boolean which can be altered during the loop execution.
+
+```python
+i = 1
+while i < 6:
+    print(i)
+    i+=1
+```
+
+_The above example uses the increment operator to increase the variable `i` each iteration_
+
+_Ultimately `i` will increase beyond 6 consequently exiting the while loop as the condition relies of `i` being less than 6_
+
+Sometimes the variable used to exit the `while` loop is known as a indexing variable as it documents to number of times
+a loop has iterated through its contents.
+
+## The Break Statement
+
+The `break` statement allows us to stop the loop even if the `while` loops condition is `True`. By using the break statement any
+kind of looping or control-flow function can be exited before its execution path as it tells the interpreter to step outside the encapsulated
+statement.
+
+```python
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+  i += 1 
+```
+
+_On first observation this loop looks like it will exit after 5 iterations, however the if statement
+which will become true when the i variable is 3 will call the `break` statement which will exit the loop._
+
+_Therefore this loop will only iterate over its contents 3 times_
+
+## The Continue Statement
+
+The `continue` statement is similar to the `break` statement in the fact that it manipulates the flow of a loop,
+however the `continue` statement stops the current iteration, and continues the the next one. This can be quite useful
+if you want a loop to skip a particular loop of its contents.
+
+```python
+i = 0
+while i < 6:
+  i += 1
+  if i == 3:
+    continue
+  print(i)
+```
+
+_Here we expect 6 iterations of the `while` loop, however it has been specified that `if` the `i` variable
+is equal to 3, the `continue` statement will be called which will move onto the next iteration of the loop E.G 4_
+
+_As a result the print function is never called on the 3rd iteration, therefore it will only print out 1, 2, 4, 5 and 6_
+
+## Else statement
+
+The `else` statement is used to run a block of code once the condition is no longer `True`. The `else` statement
+is known as a control flow statement and is usually used in conjunction with other control flow statements such as the
+`if`, `elif`, `try`, `except` and `finally`. _Find out more in respective segments_
+
+
+```python
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+```
+
+_After 5 iterations of the loop the `else` statement is executed and prints out its contents, this is a result of the `while` 
+loops condition no longer being satisfied_
+
+# For Loops
+
+A `for` loop is used for iterating over a sequence of items. (`list`, `tuple`, `dictionary`, `set` or a `string`)
+
+The `for` keyword is quite unique in Python compared to other programming languages. It works more like an iterator method as found in
+other object-oriented programming languages, taking a sequence and outputting each item one by one as it iterates through the collection.
+
+With a `for` loop we can execute a set of statements, once for each item in a `list`, `tuple`, `
+
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+```
+
+_Each of the items inside the fruits `list` will be printed out one-by-one_
+
+_The `for` loop does not require an indexing variable to be set beforehand like other languages_
+
+### Looping Through a String
+
+Strings are what is known as an iterable object, this means they can be used within a `for` loop. The reason for this
+is because technically a string is just a sequence of characters.
+
+```python
+for x in "banana":
+  print(x)
+```
+
+_In this example the output will be each character in banana: `b` `a` `n` `a` `n` `a`_
+
+## The Break Statement
+
+The `break` statement can stop a loop before it has reached its pre-set amount of iterations. This can be useful
+in situations when a certain value has been found in a sequence for example.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+```
+
+_The `break` statement has been told to execute if the current item in the list is equal to "banana". This happens in the
+second iteration of the `for` loop meaning it won't print cherry._
+
+## The continue statement
+
+The `continue` statement can stop the current iteration of the loop, and continue with the next. More so in `for` loops
+this statement is very useful as it can be used to stop certain iterations of the loop. For example, if a value
+equals "banana" then `continue` to the next iteration of this `for` loop.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+```
+
+## The Range() Function
+
+To loop through a set of code a specified number of times, we can use the `range()` function. This function takes 3 optional
+arguments (`start`, `end`, `step`)
+
+The `range()` function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default) and ends at a specified
+number.
+
+```python
+for x in range(6):
+    print(x)
+```
+
+_Note that range(6) is not the values of 0 to 6, but the values of 0 to 5_
+
+_The reason for this is that the range will start at 0 by default and count to 6, not including the last number (6)_
+
+The `range()` function default to 0 as a starting value, however as mentioned above it is possible to specify the starting value by adding a parameter:
+`range(2, 6)`, which means values from 2 to 6 (but not including 6). `2`, `3`, `4`, `5`
 
 # Functions
 
@@ -300,4 +506,6 @@ from that point it unravels the recursion loop and returns the results according
 | Return 4      | 6            | 4       | 6 + 4 = 10  | 10           |
 | Return 5      | 10           | 5       | 10 + 5 = 15 | 15           |
 | Return 6      | 15           | 6       | 15 + 6 = 21 | 21           |
+
+
 
