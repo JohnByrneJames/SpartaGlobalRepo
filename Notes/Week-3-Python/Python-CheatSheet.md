@@ -264,6 +264,60 @@ _The reason for this is that the range will start at 0 by default and count to 6
 The `range()` function default to 0 as a starting value, however as mentioned above it is possible to specify the starting value by adding a parameter:
 `range(2, 6)`, which means values from 2 to 6 (but not including 6). `2`, `3`, `4`, `5`
 
+```python
+for x in range(2, 6):
+  print(x)
+```
+
+The `range()` function defaults to increment by 1, however it is possible specify the increment value by adding a third parameter known as the step: `range(2, 30, 3)`.
+This can be useful if you are going through a sequence that has a particular pattern you are aware of.
+
+```python
+for x in range(2, 30, 3):
+  print(x)
+```
+
+## Else in For Loop
+
+The `else` keyword `for` loop specifies a block of code to be executed when the loop is finished. Print all numbers from 0 to 5, and
+print a message when the loop has ended.
+
+```python
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!") 
+```
+
+## Nested Loops
+
+A nested object is an object within another, this means that they will take place within the execution of the first object.
+Here a nested loop is a loop inside a loop. The `inner loop` will be executed one time for each iteration of the `outer loop`.
+
+```python
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y) 
+```
+
+_This is an excellent use of the for `nested loops` it will print each adj along with each fruit and repeat for each adjective._
+
+## Pass Statement
+
+`for` loops cannot be empty, but if you for some reason have a `for` loop that is perhaps a placeholder for a future functionality, put the
+`pass` statement to avoid getting an error.
+
+```python
+for x in [0, 1, 2]:
+  pass
+```
+
+_In my experience this is a very helpful keyword to layout your code before implementation, else it will be throwing errors all the time, 
+which is both annoying and troublesome_
+
 # Functions
 
 A function is a block of code which only runs when it is called, it is also referred to as a method
