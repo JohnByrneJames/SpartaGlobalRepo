@@ -57,6 +57,11 @@ print("Hello world")
 
 # Comments
 
+
+<div align="center" style="font-weight: bolder">---------- End of **Comments** ----------</div> 
+
+___
+
 # Tuples
 
 A tuple is one of many collection types available in python. However, it has its own advantages and disadvantage which make it
@@ -92,6 +97,183 @@ print(a_tuple[-1])  # cherry
 ```
 
 ### Range of indexing
+
+You can specify a range of indexes by specifying where to start and where to end the range. When specifying a range, the return value will be a
+new tuple with the specified items. This quite similar to the `range()` keyword however it is used in a different context, which is indexing to a tuple and
+retrieving certain items.
+
+```python
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:5])  # ('cherry', 'orange', 'kiwi')
+```
+
+_The search will start at index 2 (included) and end at index 5 (not included), remember indexes start at 0_
+
+### Range of negative indexing
+
+Same as the range of index except we are working backwards from the end to the start using negative indexes.
+
+```python
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[-4:-1])  #('orange', 'kiwi', 'melon')
+```
+
+_Similarly to the `range()` operator this will only return the start the end index, not including the last index E.G. `-1` in this example._
+
+## Change Tuple Values
+
+Once a tuple is created, you cannot change its values. Tuples are **immutable** so cannot be changed.
+But there is a workaround, you can covert a `tuple` into a `list`, change the `list`, and covert the `list` back into a `tuple`.
+
+It may seem a little extensive but a `tuple` is ideal for storing data that does not generally change, such as a number plate or
+phone extension code.
+
+```python
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+
+print(x)  # ("apple", "kiwi", "cherry") 
+```
+
+_Here the item at index `1` which was banana has been changed to the kiwi, then it is converted back into a tuple
+and printed to show the changes have been made_
+
+_Attempting to change a tuples value will throw: `TypeError: 'tuple' object does not support item assignment`_
+
+## Loop Through a Tuple
+
+You can loop through the `tuple` items by using a `for` loop. 
+
+```python
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x)
+```
+
+Find more information about [for loops](#for-loops)
+
+## Check if item Exists
+
+To determine if a specified item is present in a tuple use the `in` keyword, this checks over the entire tuple to find a match
+of whatever was specified.
+
+```python
+thistuple = ("apple", "banana", "cherry")
+if "apple" in thistuple:
+  print("Yes, 'apple' is in the fruits tuple") 
+```
+
+## Tuple Length
+
+To determine how many items a tuple has, use the `len()` method.
+
+```python
+thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))  # 3
+```
+
+_The `len()` method is useful in a lot of situations to get the size of something, this case
+it sees that the tuple has 3 items so it will return 3 as the length._
+
+## Add Items
+
+Once a tuple is created, you cannot add item to it. Tuples are again **IMMUTABLE**.
+
+Again this is an error and it cannot be done, to do this refer to the above example, which
+converts the `tuple` into a `list` to make changes and then changes it back again.
+
+## Create Tuple with One item
+
+To create a tuple with only one item, you have to add a comma ater the item, otherwise Python will not recognise it as a
+`tuple`. This is a common mistake as if you don't add the comma the Python interpreter may think of it as a single variable assignment
+just within parentheses.
+
+```python
+thistuple = ("apple",)
+print(type(thistuple))
+
+#NOT a tuple
+thistuple = ("apple")
+print(type(thistuple)) 
+```
+
+_In this example, the second one is actually just a string inside parentheses to the interpreter._
+
+##Remove Items
+
+_You cannot remove items from a `tuple`._
+
+Again, `tuples` are **immutable**, so you cannot remove items from it, but you can delete the tuple completely.
+
+```python
+thistuple = ("apple", "banana", "cherry")
+del thistuple
+print(thistuple) #this will raise an error because the tuple no longer exists 
+```
+
+_The `del` keyword actually deletes the entire tuple, so it is no longer in the memory and has been
+garbage collected_
+
+## Join Two Tuples
+
+To join two or more tuples you can use the `+` operator.
+
+```python
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3) 
+``` 
+
+_A single tuple has been made, formed of both `tuple1` and `tuple2`_
+
+## The Tuple() Constructor
+
+It is also possible to use the `tuple()` constructor to make a tuple.
+
+```python
+thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+print(thistuple)
+```
+
+## The Tuple Index() Method
+
+* The `index()` method finds the first occurrence of the specified value.
+* The `index()` method raises an exception if the value is not found.
+
+```python
+thistuple = (1, 3, 7, 8, 7, 5, 
+            4, 6, 8, 5)
+
+x = thistuple.index(8)
+
+print(x) 
+```
+
+_The above example returns **`3`** as the number `8` is the fourth element in this tuple
+therefore starting from 0 it is the 3rd index_
+
+_One thing to remember about this is that it will only return the first occurrence of a value, 
+this can be good when used in conjunction with a loop and exception to loop until an exception is raised._
+
+## The Tuple Count() Method
+
+* The `count()` method returns the number of times a specified value appears in a tuple.
+
+```python
+thistuple = (1, 3, 7, 8, 7, 5,
+            4, 6, 8, 5)
+
+x = thistuple.count(5)
+
+print(x) 
+```
+
+_The above example returns `2` as the number `5` has appeared in the sequence two times._
+
 
 
 # Loops
