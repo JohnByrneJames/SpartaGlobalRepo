@@ -194,4 +194,94 @@ cursor to create a connection. This is then constructed into a `dictionary` with
 added to the database. There is also the part that checks the see if the `table_schem` is equals to dbo, this tells the for loop to
 break when the table being iterated isn't a database object e.g. not a table.
 
+### User Interaction Handling
 
+```python
+    def user_interaction(self):  # user interaction
+        print("Welcome!.. ", self.__username, self.__database, "was loaded successfully")
+
+        users_exit_status = False  # It is good practice to control the while loop with a variable that can be altered
+        users_help = "\nInstructions:\n" + "To view tables type [T]\n" + "To start a query type [S]\n" +\
+                     "To exit type [E]\n" + "To get help type [H]\n" + "To get products average [A]\n"
+        print(users_help)
+
+        while not users_exit_status:
+            users_input = input("What would you like to do? ")
+
+            if users_input.lower() == "t":
+                print("Loading tables...\n")
+                #  time.sleep(1)
+                print(self.__database + " Tables. \n")
+                print(self.create_table_string())
+                try:
+                    users_input = input("Enter a table to see its columns (Include capitals) ")
+                    if len(users_input) is 0:
+                        raise ValueError
+                    print("Loading columns...\n")
+                    print(users_input + " Columns. \n")
+                    print(self.create_column_string(users_input))
+                except ValueError:
+                    print("That column doesn't exist\n")
+                except Exception:
+                    print("Unexpected error!\n")
+                finally:
+                    print("Restarting... \n" + "*"*20 + "\n")
+                    time.sleep(1)
+
+            elif users_input.lower() == "s":  # if they type s go here
+                self.query_builder()
+
+            elif users_input.lower() == "e":  # exit
+                print("\nExiting program, see you next time...")
+                time.sleep(1)
+                print("\nSaving your database for future use")
+                users_exit_status = True
+
+            elif users_input.lower() == "a":  # get average password
+                self.refresh_cursor()
+                print("\ncalculating average of product price\n")
+                TableInterface.get_average_of_product(self.__cursor)
+                time.sleep(1)
+
+            elif users_input.lower() == "h":
+                print(users_help)
+            else:
+                print("\nSorry " + users_input.__str__() + " is not a recognised command")
+```
+
+Once the database has been successfully loaded into the variables in the parent class holding the names of the columns and tables,
+it then goes into a method called `user_interaction()`. This method uses a while loop and control flow statements to give the user
+various options such as loading all the tables in the database and then the chance to load all the columns in that table. They can also
+reprint the help text with `h`, exit with `e`, get the average of the products with `a` and start a query with `s` although at the moment
+this is not properly implemented. 
+
+The user will remain in this while loop as it is set to `not users_exit_status` and only exit once they enter the `e` which will escape the while loop
+by setting it to True which will no longer meet the condition of the loop.
+
+```python
+    @staticmethod
+    def get_average_of_product(cursor):
+        query = cursor.execute("SELECT UnitPrice FROM Products")
+
+        rows = query
+
+        prices = []
+
+        for row in rows:
+            prices.append(row[0])
+
+        # print("Average of products are £", round(sum(prices) / len(prices), 2))
+
+        average = round(statistics.mean(prices), 2)
+
+        print(average)
+```
+
+The two statements that print out the tables and columns are quite generic and can be viewed in the files in this directory.
+However for the average I wanted to point out that I first queried the database for all the `UnitPrice` attributes and then
+added them into a list and applied the `mean()` function which is available through the `statistics` module. This is one of two ways
+however it is a nice way to quickly get the result making the most of the modules available in python.
+
+I also did a separate project which allowed the user to add in their favorite food, this would then be written to a temporary text file
+which tracks the latest additions, and another permanent text file which tracks the history of the additions into the lists including any errors that
+have been encountered. If you are interest in seeing that, you can find it [**HERE**](../Exercise-Files/Rasing-Exception)
