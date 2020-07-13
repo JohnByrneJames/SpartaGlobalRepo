@@ -8,9 +8,9 @@ ___
 
 - [x] [Implementation :zap:](#implementation)
 
-- [ ] [Important Points :bookmark:](#important-points)
+- [x] [Important Points :bookmark:](#important-points)
 
-- [ ] [Future Improvements :construction_worker:](#future-improvements)
+- [x] [Future Improvements :construction_worker:](#future-improvements)
 
 ___
 
