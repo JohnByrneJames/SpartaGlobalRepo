@@ -1,5 +1,5 @@
 ###### Sparta Global Training Day 22
-###### Official Python test is today, starting at 10:00AM
+###### Project week, all this week so not much note taking and lots of collaborative programming
 ___
 
 > 9:00 AM Stand-up [Morning]

@@ -1,5 +1,5 @@
 ###### Sparta Global Training Day 24
-###### Official Python test is today, starting at 9:30AM
+###### Project week, all this week so not much note taking and lots of collaborative programming
 ___
 
 We had a stand up this morning, All the groups went over their projects - I showed me flight creation system that the
