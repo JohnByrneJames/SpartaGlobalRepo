@@ -37,4 +37,5 @@ ___
 - [x] **Week Three** - Python [:snake:](/Notes/Week-3-Python)
 - [x] **Week Four** - Python Continued... [:snake:](/Notes/Week-4-Python) TDD [:hammer_and_pick:](https://github.com/JohnByrneJames/python_tdd_pytest) 
 and JSON [:coffee:](/Python-Files/JSON): a little SQL with Python [:chart_with_upwards_trend:](/Python-Files/Database-Connection)  
-- [ ] **Week Five** - Python Projects [:snake:](/Notes/Week-5)
+- [x] **Week Five** - Python Projects [:snake:](/Notes/Week-5-Project)
+- [ ] **Week Six** - 

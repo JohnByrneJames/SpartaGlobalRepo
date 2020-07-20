@@ -133,8 +133,8 @@ explain what that piece of code does in a couple lines.
 * Understand the effect of body language
 * Apply open and closed question to remove ambiguity
 
-**+** Delivery always affects the message outcome **+**
-**+** The real message is the one received, not the one intended **+**
+**+** Delivery always affects the message outcome **+** <br>
+**+** The real message is the one received, not the one intended **+** <br>
 
 * **Poor Communication**
     * can lead to dead-ends and also affect the development

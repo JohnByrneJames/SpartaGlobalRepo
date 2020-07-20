@@ -1,6 +1,7 @@
 ###### Sparta Global Training Day 24
 ###### Project week, all this week so not much note taking and lots of collaborative programming
 ___
+> 9:30 AM Sparta Stand-up [Morning]
 
 We had a stand up this morning, All the groups went over their projects - I showed me flight creation system that the
 assistant requested.
