@@ -26,7 +26,7 @@ We worked on MVC Flask framework with Python [**HERE**](https://github.com/JohnB
 ## **Interview Prep**
 **Agile and SCRUM**
 
-* 3 Amigos
+# * 3 Amigos
     * **Primary Perspectives** to examine an increment of work before, during and after development.
         * **Business** - problems trying to solve
         * **Development** - how might we build a solution to solve that problem
@@ -38,7 +38,7 @@ We worked on MVC Flask framework with Python [**HERE**](https://github.com/JohnB
         
         The concept of three amigos intends to balance between no collaboration between people with different 
         perspectives and involving an entire team in discussing all the details of every increment of work.
-* Persona
+# * Persona
 
     * A persona, first introduced by Alan Cooper, defines an archetypical user of a system, an example of the 
     kind of **person who would interact with it**. The idea is that if you want to design effective software, then it 
@@ -51,7 +51,7 @@ We worked on MVC Flask framework with Python [**HERE**](https://github.com/JohnB
     
     * Can be incredibly useful **Stand in** if there are no real users.
     
-* Information Radiators with example
+# * Information Radiators with example
     
     * **Information radiator** is the generic term for any of a number of handwritten, drawn, printed or electronic 
     displays which a team places in a highly visible location, so that all team members as well as passers-by can see 
@@ -66,7 +66,7 @@ We worked on MVC Flask framework with Python [**HERE**](https://github.com/JohnB
 ![Info_Radiator](../../Images/Info_radiator.jpg)
     
     
-
+# SCRUM Artefacts
 **Difference between Artifact and Artefact?**
 *  **Artifact**: An object produced or shaped by human craft, especially a tool, weapon,
     or ornament of archaeological or historical interest.
@@ -122,7 +122,7 @@ ___
   
 * _Other required artefact's... (If needed)_
 
-**SCRUM Events**
+# **SCRUM Events**
 
 > **"** At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behaviour accordingly. **"**
 >> **"** Agile approaches ask that people learn from mistakes/ or identify new ways to improve on them.
@@ -145,7 +145,7 @@ the team time in which to identify, discuss and plan this. The whole scrum team 
 SCRUM and Agile process.
 - **The Sprint** - The Sprint is an event in itself that contains all the work and all the other events that happen during the time boxed period of development.
 
-**SCRUM Roles**
+# **SCRUM Roles**
 
 > **"** Scrum specifies three major roles that play a part in the Scrum Team: 
 Product Owner, Scrum Master, and Development team member. Besides these roles, 
@@ -163,7 +163,7 @@ These individuals share different tasks and responsibilities related to the fina
 however under the SCRUM ethos it is seen as a self-organizing and cross-functional team that 
 collaboratively works together.
 
-**SCRUM Summary**
+# **SCRUM Summary**
 
 **Overall** the SCRUM framework consists of SCRUM teams, their associated roles, events, artefact's and rules, with each component in the framework serving a specific purpose and is essential to
 SCRUM usage and success. Ultimately helping teams work together by encouraging teams to learn through experiences, self-organization while working on a problem and to reflect on wins and losses effectively to allow for 
@@ -173,7 +173,7 @@ continuous improvement.
 
 ___
 
-* **Starfish retrospective** 
+# **Starfish retrospective** 
 
 ![StarFish](http://www.thekua.com/rant/wp-content/uploads/2006/03/StarTechnique.gif)
 
@@ -183,10 +183,11 @@ ___
 * **Stop Doing** – something that is not bringing value, or even worse, it is getting on the way.
 * **Start Doing** – a new idea, or  something you have seen working before that you would like to bring to the table.
 
-* **Root cause Analysis-part of retrospective looks**
-    *
+# **Root cause Analysis-part of retrospective looks**
+
+to be added
     
-* **Agile values and principles** 
+# **Agile values and principles** 
     * Great website [HERE](https://www.smartsheet.com/comprehensive-guide-values-principles-agile-manifesto)
     * **4 Values**
         1. **Individuals and Interactions Over Processes and Tools**
@@ -206,6 +207,7 @@ ___
         10. **Simplicity**
         11. **Self-organizing teams encourage great architectures, requirements, and designs**
         12. **Regular reflections on how to become more effective**
->**"** There are many more things in agile and scrum for which resources have been provided and you have done it practically like user story, epic etc. Have a solid answer ready for what is Agile? **"**
+>**"** There are many more things in agile and scrum for which resources have been provided and you have done
+> it practically like user story, epic etc. Have a solid answer ready for what is Agile? **"**
 
 **STAR** `Situation` `Task` `Action` and `Result` _Interview Technique_
