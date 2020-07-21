@@ -26,41 +26,41 @@ We worked on MVC Flask framework with Python [**HERE**](https://github.com/JohnB
 ## **Interview Prep**
 **Agile and SCRUM**
 
-# * 3 Amigos
-    * **Primary Perspectives** to examine an increment of work before, during and after development.
+# 3 Amigos
+ * **Primary Perspectives** to examine an increment of work before, during and after development.
         * **Business** - problems trying to solve
         * **Development** - how might we build a solution to solve that problem
         * **Testing** - What could possibly happen
         
-        These three perspectives are held by different people with these perspectives, to collaborate to define
-        `what` to `do`, and `agree` on how they know when it is done correctly. Resulting in clearer description 
-        of an increment of work.
+These three perspectives are held by different people with these perspectives, to collaborate to define
+`what` to `do`, and `agree` on how they know when it is done correctly. Resulting in clearer description 
+of an increment of work.
         
-        The concept of three amigos intends to balance between no collaboration between people with different 
-        perspectives and involving an entire team in discussing all the details of every increment of work.
-# * Persona
+The concept of three amigos intends to balance between no collaboration between people with different 
+perspectives and involving an entire team in discussing all the details of every increment of work.
+# Persona
 
-    * A persona, first introduced by Alan Cooper, defines an archetypical user of a system, an example of the 
+* A persona, first introduced by Alan Cooper, defines an archetypical user of a system, an example of the 
     kind of **person who would interact with it**. The idea is that if you want to design effective software, then it 
     needs to be **designed for a specific person**. For the bank, potential persona's could be named 
     Frances Miller and Ross Williams. In other words, persona's represent fictitious people which are based on your 
     knowledge of real users. 
     
-    * Persona's are different because they describe an archetypical instance of an actor. In a use case model we would 
+* Persona's are different because they describe an archetypical instance of an actor. In a use case model we would 
     have a Customer actor, yet with persona's we would instead **describe several different types of customers**.
     
-    * Can be incredibly useful **Stand in** if there are no real users.
+* Can be incredibly useful **Stand in** if there are no real users.
     
-# * Information Radiators with example
+# Information Radiators with example
     
-    * **Information radiator** is the generic term for any of a number of handwritten, drawn, printed or electronic 
+* **Information radiator** is the generic term for any of a number of handwritten, drawn, printed or electronic 
     displays which a team places in a highly visible location, so that all team members as well as passers-by can see 
     the latest information at a glance: count of automated tests, velocity, incident reports, 
     continuous integration status, and so on.
     
-    * Also known as a **Big Visible Chart**
+* Also known as a **Big Visible Chart**
     
-    * **Confirms and conveys** to customers and stakeholders that the team has nothing to hide, it acknowledges 
+* **Confirms and conveys** to customers and stakeholders that the team has nothing to hide, it acknowledges 
     and confronts problems.
     
 ![Info_Radiator](../../Images/Info_radiator.jpg)
@@ -188,7 +188,7 @@ ___
 to be added
     
 # **Agile values and principles** 
-    * Great website [HERE](https://www.smartsheet.com/comprehensive-guide-values-principles-agile-manifesto)
+* Great website [HERE](https://www.smartsheet.com/comprehensive-guide-values-principles-agile-manifesto)
     * **4 Values**
         1. **Individuals and Interactions Over Processes and Tools**
         2. **Working Software Over Comprehensive Documentation**
