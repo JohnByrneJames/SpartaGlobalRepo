@@ -1,8 +1,8 @@
-###### Sparta Global Training Day 26
+**###### Sparta Global Training Day 26
 ###### This week we are preparing for our interviews with the sales team, but first we must present our project week presentation from last week again.
 ___
 
-> 9:00 AM - 9:30 AM Stand-up [Morning]
+> 9:00 AM - 9:30 AM Stand-up [Morning]**
 
 We need to go through our notes and look at how we presented last week, making sure we record three positive and negative points
 about the presentation. This is a good way to improve in the future as you are identifying your weaknesses during a presentation.

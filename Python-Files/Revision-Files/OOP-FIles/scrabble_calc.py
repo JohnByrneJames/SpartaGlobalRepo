@@ -20,6 +20,8 @@ class WorkOutScrabbleScore:
                     "To help enter [H]\n" \
                     "If you want to convert a word simply enter it."
 
+        print(help_info)
+
         while in_program:
             user_input = input("\nWhat word would you like to convert?\n")
 
@@ -35,7 +37,7 @@ class WorkOutScrabbleScore:
             except TypeError:
                 print("\nIt seems that you have entered an unexpected letter/ character")
             except KeyError as e:
-                print("\nSorry characters like" + str(e) + " are not allowed")
+                print("\nSorry characters like " + str(e) + " are not allowed")
 
 
 # Instance
