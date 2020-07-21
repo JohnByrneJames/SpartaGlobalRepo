@@ -112,4 +112,69 @@ Completed online **STAR** [**HERE**](https://forms.office.com/Pages/ResponseDeta
 
 **Revise for rest of day, waiting for Interview to come through**
 
+**Interview with Shahrukh**
+
+It went okay, there was no technical questions as Shahrukh knows that I am quite proficient in my technical knowledge, so there was litte to no
+questions about that - but 
+
+**My Notes for the interview**
 ___
+>Studied at Greenwich (1st) Studying --->
+>
+>Training to become a DevOps consultant at SpartaGlobal
+>
+>Proficient in C#, SQL, Git and Python
+>
+>Passionate about technology, specifically fields such as DevOps which offer such a diverse range of opportunities and technologies to learn.
+>
+>Experience with IDEs such as PyCharm, Visual Studio, Microsoft DBMS, Azure Data studio and Unity Games Engine
+>
+>Familiar with the agile methodology and SCRUM framework
+>
+>I appreciate this opportunity, and look forward to hearing more about the opportunity.
+>
+>---------------------------------------------------------------------------------------
+>behave competencies - Imaginative, Studious, Professional, Determined, Independent and Analytical
+>
+> ###AGILE
+>continuous iterations (dev/test) - encourages concurrent testing and development
+>break project into small parts
+>encourage face-to-face comm / teamwork (cross-functional teams stkholder, dev, bus)
+>SCRUM
+>agile process with a focus on delivering business value i nthe shortest time.
+>inspects software iterably (emph accountability, teamwork, goal driven).
+>framework focused on gradual and changing requirements that come through dev
+>react to changes as the process is always being insepected/ assessed each step
+>
+>artefacts - sprint goal, product backlog, sprint, DOD
+---------------------------------------------------------------------------------------
+>**1 NF** - atomic so data is small as it can be (singular values)
+>
+>**2 NF** - all non key are functioanly dependent on PK
+>
+>**3 NF** - A non-key col is dep on another which is dep on PK
+---------------------------------------------------------------------------------------
+>**Poly** - Polymorphism is taken from the Greek words Poly (many) and morphism (forms). It means that the same function name can be used for different types. This makes programming more intuitive and easier.
+>
+>product bklg, sprint bklg, DOD, sprint goal, prdct vision, increment
+>
+>sprnt pln, sprnt rev, sprn retro, daily SCRUM
+>
+>
+>**To DO :**
+>
+>FIZZBUZZ
+>SCRIBLE
+>20 examples
+>Let them know about achievements, 100% achievement and GitHub knowledge in elevator pitch
+>Include examples of STAR, FIZZBUZZ, SCRUBLE in your response
+
+**Interview time**
+* **11:40 AM - with Tim Mccarthy** 
+
+Be back in class at 3:30 PM 
+
+___
+**Homework**
+* Practice STAR responses, with 20 examples practice your STAR response so it can instantly 
+be retrieved if it is asked in an interview.
