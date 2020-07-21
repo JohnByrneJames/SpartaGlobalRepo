@@ -12,6 +12,19 @@ ___
 ##### `Ended :`  **Ongoing...** :warning:
  
 ___
+## **Other Repositories** 
+* **Python OOP Repositories** 
+    1. **Abstraction** [HERE](https://github.com/JohnByrneJames/oop_abstraction) :sparkles:
+    2. **Encapsulation** [HERE](https://github.com/JohnByrneJames/oop_encapsulation) :lock:
+    3. **Polymorphism** [HERE](https://github.com/JohnByrneJames/oop_polymorphism) :recycle:
+    4. **Inheritance** [HERE](https://github.com/JohnByrneJames/oop_inheritance) :children_crossing:
+        * **OOP Calculator** [HERE](https://github.com/JohnByrneJames/oop_calculator)
+
+* **Airport Project** [HERE](https://github.com/JohnByrneJames/Airport_Project) :package:
+* **MVC_Flask** [HERE](https://github.com/JohnByrneJames/MVC_Flask) :iphone:
+* **TTD in Python** [HERE](https://github.com/JohnByrneJames/python_tdd_pytest) :building_construction:
+
+___
 
 ## **Useful Links** 
 
@@ -38,4 +51,4 @@ ___
 - [x] **Week Four** - Python Continued... [:snake:](/Notes/Week-4-Python) TDD [:hammer_and_pick:](https://github.com/JohnByrneJames/python_tdd_pytest) 
 and JSON [:coffee:](/Python-Files/JSON): a little SQL with Python [:chart_with_upwards_trend:](/Python-Files/Database-Connection)  
 - [x] **Week Five** - Python Projects [:snake:](/Notes/Week-5-Project)
-- [ ] **Week Six** - 
+- [ ] **Week Six** - Quality Gate :construction: and Interviews :fire:

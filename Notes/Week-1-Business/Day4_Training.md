@@ -321,7 +321,7 @@ as it displays the capabilities of a system in a way that is easy for non-techno
 
 
 ![alt text](../../Images/V-Model_Diagram.jpg "Diagram of V-Model Methodology")
-    
+
 ___
 
 **Agile**  (_**`Iterative`**_ → `Plan` → `Do` → `Check`)

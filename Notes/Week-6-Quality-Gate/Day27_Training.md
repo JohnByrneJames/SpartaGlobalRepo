@@ -21,16 +21,16 @@ so I have those answers before the interviewer even asks the question.
 
 We worked on MVC Flask framework with Python [**HERE**](https://github.com/JohnByrneJames/MVC_Flask/blob/5559831af312188750a974f53ba7a374c47fc4cb/Flask/app.py#L12)
 
-> 11:00AM [Late-Morning]
+> 11:00 AM [Late-Morning]
 
 ## **Interview Prep**
 **Agile and SCRUM**
 
 # 3 Amigos
  * **Primary Perspectives** to examine an increment of work before, during and after development.
-        * **Business** - problems trying to solve
-        * **Development** - how might we build a solution to solve that problem
-        * **Testing** - What could possibly happen
+     * **Business** - problems trying to solve
+     * **Development** - how might we build a solution to solve that problem
+      * **Testing** - What could possibly happen
         
 These three perspectives are held by different people with these perspectives, to collaborate to define
 `what` to `do`, and `agree` on how they know when it is done correctly. Resulting in clearer description 
@@ -207,7 +207,21 @@ to be added
         10. **Simplicity**
         11. **Self-organizing teams encourage great architectures, requirements, and designs**
         12. **Regular reflections on how to become more effective**
+
 >**"** There are many more things in agile and scrum for which resources have been provided and you have done
 > it practically like user story, epic etc. Have a solid answer ready for what is Agile? **"**
 
 **STAR** `Situation` `Task` `Action` and `Result` _Interview Technique_
+
+We went over MVC Flask in Python [**HERE**](https://github.com/JohnByrneJames/MVC_Flask)
+
+Now we have got to prepare for our interviews tomorrow so we practiced in 1 to 1 scenarios with our class mates.
+It went went and I am going to do it again tomorrow.
+
+**Interview time**
+* **11:40 AM - with Tim Mccarthy** 
+
+___
+**Homework**
+* Revise the Elevator pitch and try add some more enthusiasm into it
+* Revise the STAR replies to questions
