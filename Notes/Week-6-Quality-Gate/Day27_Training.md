@@ -185,7 +185,29 @@ ___
 
 # **Root cause Analysis-part of retrospective looks**
 
-to be added
+During the sprint-retrospective it is common to hear people complain about the same problem happening time and time again,
+to combat this a technique that gets to the root causes of their problem can be used: **the five times why retrospective**
+
+The five times why retrospective uses root cause analysis to identify the deeper causes of problems, 
+and define actions to stop them. The basic mechanism is to build a shared view of the causes, 
+by repeatedly asking “why”. Each cause that is identified by asking why is questioned to find 
+why it happened, until you find the lowest or root causes.
+
+You can draw a cause-effect chart which shows the causes, on the different levels, found by repeatedly asking why. 
+Usually after 4 to 7 levels of cause-effect you either get to a situation where nobody knows the 
+answer, or there is no need to go deeper: Now you have found a root cause! Once you have all root 
+causes identified you can ask the team for actions that would prevent similar causes to happen in 
+the future. Don’t stop too early, make sure you really find the causes.
+
+### Some things to be aware of when you are doing a five times why retrospective
+
+- Use real problems that are happening, not just some imaginary cases, and ask that the team members bring up causes that actually happened and not something that could or may have happened (prevent assumptions). As a team you must recognize the causes, know that they are the real causes, to be able to define effective actions.
+- Know that there are always multiple causes for a problem. Don’t stop when you have a first root cause, but invest enough time in analysis to find all of them, and get a good understanding how the causes are related.
+- Vary the way that you ask “why”, to get a better understanding of the real causes. This requires some skills from the person facilitating the retrospective. This can be your scrum master (who might need mentoring on how to do a five times why retrospective), but there are also situations where an experienced facilitator who knows the technique can get to the bottom of problems.
+- Root causes almost always have to do with people. It’s rarely a technical or tool problem, most of the time it has to do with skills, knowledge, or the way the work is done. Or with leadership, power, authority, communication, or collaboration.
+
+Since the five times why retrospective is based on root cause analysis, it helps if the retrospective facilitator understands how that works. The blog getting to the root causes of problems explains how to do root cause analysis effectively. There are also some practical tools from root cause analysis that facilitators can use for the retrospective, like a root cause analysis process and a root cause analysis checklist.
+
     
 # **Agile values and principles** 
 * Great website [HERE](https://www.smartsheet.com/comprehensive-guide-values-principles-agile-manifesto)
