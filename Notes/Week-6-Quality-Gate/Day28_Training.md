@@ -1,5 +1,5 @@
 ###### Sparta Global Training Day 27
-###### We will be going more in-depth on Python frameworks and also revising for interviews later in the week.
+###### Today is interviews with Sales, I am nervous but very well prepared! 
 ___
 
 
