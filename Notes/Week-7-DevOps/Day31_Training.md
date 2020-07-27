@@ -91,3 +91,41 @@ Really good CAM resource [**HERE**](https://squadex.com/insights/how-to-implemen
 ## **Risk Register**
 
 ![RiskRegister](../../Images/DevOps_Risk_Register.PNG)
+
+# Starting on The Oracle VirtualBox
+
+navigate to the Virtual Box location in the git Bash run as administrator. Do
+
+```bash
+vagrant status
+```
+
+This will give us the status of the virtual box, if it is running or not. Then run this command to run the
+virtual environment.
+
+```bash
+vagrant up
+```
+
+Go to the place where the virtual box has been created.
+
+```bash
+vagrant ssh
+```
+
+This puts us inside the virtual box environment, in our case. Then we run the command:
+
+```bash
+sudo apt-get update
+```
+
+This commands updates the virtual box environment.
+* **sudo** - run command as admin
+* **apt-get** is a package manager used to install, **update**, upgrade packages
+
+A great cheatsheet for vagrant commands can be found [**HERE**](https://gist.github.com/wpscholar/a49594e2e2b918f4d0c4)
+
+
+**Diagram of Virtual Machine and Vagrant ECT**
+
+![Diagram](../../Images/DevOps_Vagrant_VM.svg)
