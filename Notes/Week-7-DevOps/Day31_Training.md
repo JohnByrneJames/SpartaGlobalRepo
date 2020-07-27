@@ -129,3 +129,88 @@ A great cheatsheet for vagrant commands can be found [**HERE**](https://gist.git
 **Diagram of Virtual Machine and Vagrant ECT**
 
 ![Diagram](../../Images/DevOps_Vagrant_VM.svg)
+
+To set updates to happen automatically you can use the command:
+
+```bash
+sudo apt-get update -y
+```
+
+We also learnt how to create, for example a README.md file inside the cmd line using:
+
+```bash
+nano unix_commands.md
+```
+
+Nano is a editor we can use the command line.
+
+## Some Unix Commands
+
+**Where are you in the directory?**
+
+```bash
+pwd
+```
+
+This command prints out the current working directory.
+
+**Who am I?**
+
+```bash
+who
+```
+
+This command prints out the current machine you are on, so in this case vagrant run VM
+
+**What do I have available in the current directory?**
+
+```bash
+ls
+```
+
+To reveal the hidden files use the -a (all) extension too:
+
+```bash
+ls -a
+```
+
+**How can I find out the name of the system I am using?**
+
+```bash
+uname
+```
+
+This prints out the name of the system you are currently working on, in this case **Linux**
+
+**How can we create a file?**
+
+```bash
+touch myfirstfile.txt
+```
+
+This will create a txt file inside the current directory.
+
+**How can we make a directory?**
+
+```bash
+mkdir myfirstdir
+```
+
+This creates a directory in your current directory (ls) to show
+
+**How to navigate inside a directory**
+
+```bash
+cd myfirstdir
+```
+
+This will navigate inside the directory
+
+**How to navigate back out of the directory**
+
+```bash
+cd.. 
+```
+
+This will then take you back out of the directory, back by one level.
+
