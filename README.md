@@ -17,6 +17,7 @@ ___
     1. **Abstraction** [HERE](https://github.com/JohnByrneJames/oop_abstraction) :sparkles:
     2. **Encapsulation** [HERE](https://github.com/JohnByrneJames/oop_encapsulation) :lock:
     3. **Polymorphism** [HERE](https://github.com/JohnByrneJames/oop_polymorphism) :recycle:
+    
     4. **Inheritance** [HERE](https://github.com/JohnByrneJames/oop_inheritance) :children_crossing:
         * **OOP Calculator** [HERE](https://github.com/JohnByrneJames/oop_calculator)
 
