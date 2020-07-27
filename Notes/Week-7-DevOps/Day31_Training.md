@@ -109,6 +109,8 @@ vagrant up
 
 Go to the place where the virtual box has been created.
 
+The alternative of running a VM is to go to the VM and right click, then press show to run it that way.
+
 ```bash
 vagrant ssh
 ```
@@ -214,3 +216,112 @@ cd..
 
 This will then take you back out of the directory, back by one level.
 
+**How to navigate back out of the directory**
+
+```bash
+cd
+```
+
+This will take you back to the root directory of your application, could be C:/ on my computer or
+home/ inside the virtual machine.
+
+> 1:30 PM Back to VM and Vagrant [Afternoon]
+
+**SUDO Commands - This is an administrator command**
+
+**How do we remove a file?**
+
+```bash
+sudo rm myfirsttext.txt
+```
+
+this will remove the text file that has been specified from the directory. This cannot be done with directories.
+
+**How do we gain access to the root or admin user in the virtual machine?**
+
+In order to gain access to the root user in Linux you need to use the command:
+
+```bash
+sudo su
+```
+
+This sets yourself into a super user, e.g. an admin, to undo this you can simply use the `exit` command to
+return to normal user status.
+
+**How do we check who is using the virtual machine?**
+
+```bash
+id
+```
+
+Using this command will tell you info about yourself and any other users using the virtual machine.
+
+**To print to the terminal**
+
+```bash
+echo "message"
+```
+
+# **Installing NGINX with package manager**
+
+To install a program through Linux we need to use the package manager `apt-get` this package manager
+is different between versions of linux but have a list of popular packages and installs them when they are requested by the
+user.
+
+To install **NGINX** we use the command:
+
+```bash
+sudo apt-get-install nginx
+```
+
+sudo is not needed if you are already on the **root** but will not cause an error either way.
+
+To check if the service is running you need to use the following command:
+
+```bash
+systemctl status nginx
+```
+
+This is will give us the status of the **NGINX** service, alternatively you can replace this with `start` and `stop` commands.
+
+Inside the `Vagrantfile` you need to include a new line of code (network):
+
+```bash
+config.vm.network "private_network", ip: "192.168.10.100"
+```
+
+This line of code is creating a private IP to access our **NGINX** server on the web from inside the Virtual machine. After
+this we now need to reload the vagrant file, so it knows what we are now trying to do additionally.
+
+Now we run the VM again with `vagrant up` then navigate to `192.168.10.100` on your browser and you can see the **NGINX** welcome page.
+
+**Second Iteration of the Diagram detailing cycle of operations from today's training**
+
+![Diagram](../../Images/DevOps_Vagrant_and_Virtual_Environment_Diagram_V2.svg)
+
+** Redirecting the Network address**
+
+As a side note - the vagrant file is written in **Ruby**
+
+```bash
+config.hostsupdater.aliases = ["development.local"] 
+```
+
+Here we are redirecting the host to this specified alias. In this case `development.local`. Then do the
+`reload vagrant` command afterwards. This gave an **Error**
+
+To fix the error we then had to install a vagrant plugin using the following command:
+
+```bash
+vagrant plugin install vagrant-hostsupdater
+```
+
+**Then...**
+
+```bash
+vagrant reload
+```
+
+This will successfully reload the VM. This can then be reloaded and ran. Now we can access the **NGINX**
+server via the alias we just gave it. Type `http://development.local/` in the browser and it will load the **NGINX** server
+welcome page.
