@@ -1,4 +1,4 @@
-###### Sparta Global Training Day 27
+###### Sparta Global Training Day 29
 ###### Today we have independent revision time to go over stuff we have been learning the past couple weeks. Incorporating them all into a MVC style log in system with a quiz.
 ___
 

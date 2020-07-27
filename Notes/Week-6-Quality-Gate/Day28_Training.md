@@ -1,4 +1,4 @@
-###### Sparta Global Training Day 27
+###### Sparta Global Training Day 28
 ###### Today is interviews with Sales, I am nervous but very well prepared! 
 ___
 

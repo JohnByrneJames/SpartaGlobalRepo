@@ -1,4 +1,4 @@
-###### Sparta Global Training Day 27
+###### Sparta Global Training Day 30
 ###### Today we are carrying on with the MVC task, installing vagrant, Oracle VM and Ruby as well as getting interviewed later by Richard.
 ___
 
