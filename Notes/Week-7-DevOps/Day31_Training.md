@@ -36,3 +36,58 @@ these individuals were involved in every aspect of the development process and c
 * Flexibility
 * Robustness
 * Cost
+
+**What is DevOps**
+
+**Practical Definitions**
+* A **Collaboration** of Development (Dev) and Operations (Ops).
+* A **Culture** which promotes collaboration between Development and Operations Team to deploy code to
+production faster in an automated and repeatable way.
+* A **Practice** of development and operation engineers taking part together in the whole service lifecycle.
+* An **Approach** through which superior quality software can be developed quickly and with more reliability.
+* An **Alignment** of development and IT operations with better communication and collaboration.
+
+## **DevOps Value**
+
+## **CAMS Model**
+
+![DevOpsIntro](../../Images/DevOps_Cam_Model.PNG)
+
+Really good CAM resource [**HERE**](https://squadex.com/insights/how-to-implement-devops-with-cams/)
+
+## **DevOps Principles**
+1. Customer-Centric Action
+2. End-to-End Responsibility
+3. Continuous Improvement
+4. Automate everything
+5. Work as one teams
+6. Monitor and test everything
+
+## **Stages in DevOps LifeCycle**
+
+![DevOpsToolsAndLifeCycle](../../Images/Devops_Lifecycle_Software.png)
+
+* Continuous Development
+* Continuous Testing
+* Continuous Integration
+* Continuous Deployment
+* Continuous Monitoring
+
+## **DevOps implementation**
+
+* **Cloud Platform**
+    * AWS
+    * GCP
+    * Azure
+* **Infrastructure Architecture**
+    * Virtualisation
+    * Containerization (Docker)
+* **DevOps Implementation**
+    * Infrastructure as code (IAC)
+    * Infrastructure as a service (IaaS)
+    * Infrastructure as a platform (IaaP)
+    * Infrastructure as a product
+
+## **Risk Register**
+
+![RiskRegister](../../Images/DevOps_Risk_Register.PNG)
