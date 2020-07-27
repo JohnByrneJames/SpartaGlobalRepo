@@ -51,4 +51,5 @@ ___
 - [x] **Week Four** - Python Continued... [:snake:](/Notes/Week-4-Python) TDD [:hammer_and_pick:](https://github.com/JohnByrneJames/python_tdd_pytest) 
 and JSON [:coffee:](/Python-Files/JSON): a little SQL with Python [:chart_with_upwards_trend:](/Python-Files/Database-Connection)  
 - [x] **Week Five** - Python Projects [:snake:](/Notes/Week-5-Project)
-- [ ] **Week Six** - Quality Gate :construction: and Interviews :fire:
+- [x] **Week Six** - Quality Gate :construction: and Interviews :fire:
+- [ ] **Week Seven** - DevOps Begins.. :rocket: :boom: :package:

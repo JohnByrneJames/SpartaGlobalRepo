@@ -64,5 +64,5 @@ Not much constructive, just to keep it up and try to explain my programs a littl
 ___
 **Homework**
 
-* Read through [this](https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450)
-* send email to sharukh with meeting minutes
+* ~~Read through~~ [this](https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450)
+* ~~send email to sharukh with meeting minutes~~
