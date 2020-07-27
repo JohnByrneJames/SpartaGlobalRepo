@@ -271,7 +271,7 @@ user.
 To install **NGINX** we use the command:
 
 ```bash
-sudo apt-get-install nginx
+sudo apt-get install nginx
 ```
 
 sudo is not needed if you are already on the **root** but will not cause an error either way.
@@ -299,7 +299,7 @@ Now we run the VM again with `vagrant up` then navigate to `192.168.10.100` on y
 
 ![Diagram](../../Images/DevOps_Vagrant_and_Virtual_Environment_Diagram_V2.svg)
 
-** Redirecting the Network address**
+**Redirecting the Network address**
 
 As a side note - the vagrant file is written in **Ruby**
 
@@ -325,3 +325,14 @@ vagrant reload
 This will successfully reload the VM. This can then be reloaded and ran. Now we can access the **NGINX**
 server via the alias we just gave it. Type `http://development.local/` in the browser and it will load the **NGINX** server
 welcome page.
+
+## Exercise 4 - 5
+
+We used the following command:
+
+```bash
+vagrant destroy
+```
+
+This destroyed our Virtual Box and now we have been tasked to go through today's tasks and do everything ourselves,
+including adding vagrant.
