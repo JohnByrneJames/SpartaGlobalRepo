@@ -211,9 +211,9 @@ Inside this file we entered the following:
 
 > `#!/bin/bash`
 >
-> do apt-get update
-> do apt-get install nginx
-> do apt-get upgrade
+> sudo apt-get update
+> sudo apt-get install nginx
+> sudo apt-get upgrade
 
 Now to test this we are going to remove **NGINX** and then run the file we just made so it can automate the process of installing the
 **NGINX** package.
@@ -388,7 +388,13 @@ For changing the ownership of a file/directory, you can use the following comman
 chown user
 ```
 
-Do rest from this website [HERE](https://www.guru99.com/file-permissions.html)
+In case you want to change the user as well as group for a file or directory use the command 
+
+```bash
+chown user:group filename
+```
+
+For more information go [**HERE**](https://www.guru99.com/file-permissions.html)
 
 ___
 
@@ -443,3 +449,24 @@ config.vm.provision "shell", path: "environment/provision.sh"
 This effectively tells the run file to run this command, to run the `.sh` file in vagrants shell interpreter. This means
 as soon as I `vagrant ssh` into the virtual machine the **NGINX** is already installed. This is an amazing way to automate
 access and setups for users.
+
+**This is a diagram I made over the day to better describe the concept**
+
+![Diagram_of_days_work](../../Images/VM_Vagrant_Diagram_automating_Node.svg)
+
+
+**Exercise**
+
+Now we are going to automate everything we have done today using what we have learnt.
+
+___
+**Homework**
+
+The sample application has the ability to connect to a database. We need to provision our development environment with a vm for the database and one for the database.
+Vagrant is capable of running two or more virtual machines at once with different configurations.
+
+**Tasks**
+- [x] Research how to create a multi machine vagrant environment [**INFO**](https://www.vagrantup.com/docs/multi-machine)
+- [x] Add a second virtual machine called "db" to your Vagrant file
+- [x] Configure the db machine with a different IP from the app
+- [x] Provision the db machine with a MongoDB database
