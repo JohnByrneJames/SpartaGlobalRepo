@@ -209,6 +209,8 @@ This means it is going to automate a process that would usually take someone 2 t
 
 Inside this file we entered the following:
 
+> `#!/bin/bash`
+>
 > do apt-get update
 > do apt-get install nginx
 > do apt-get upgrade
@@ -229,3 +231,215 @@ then we do our new automated installation bash file to install all the **NGINX**
 This successfully installed the **NGINX**. As you can see this a very powerful way of making the installation process a lot easier.
 For example if you were instructing a client or colleague to install the software, you could simply give them the `.sh` and ask them to run it
 which would automatically install all and any dependencies that they may need. Effectively automating the process entirely. 
+
+> 13:40 PM [Afternoon]
+
+**Time to learn some more Linux Commands**
+
+The first command is: **TOP**
+
+```bash
+top
+```
+
+This hows us all the programs running in the background. It is useful to check which programs are being run in the background,
+since Linux has no GUI so it can be hard to tell.
+
+The next command is: **PS**
+
+```bash
+ps
+```
+
+This command gives the programIDs
+
+The next command is: **CAT** (Computer-aided-translation)
+
+```bash
+cat file_name
+```
+
+Instead of having to nano into a file you can actually print out the files contents into the terminal.
+This can be useful for quick reading of what is inside.
+
+The next command is: **CHMOD**
+
+```bash
+chmod +x file_name.sh
+```
+
+This here gives the file the permission to be run as an executable file. In linux there are three groups of users:
+
+* **User**
+* **Group**
+* **All**
+
+All these have three permissions.
+* **READ** : This permission give you the authority to open and read a file. Read permission on a directory gives you 
+the ability to lists its content.
+* **WRITE** :  The write permission gives you the authority to modify the contents of a file. 
+The write permission on a directory gives you the authority to add, remove and rename files stored in the directory. 
+Consider a scenario where you have to write permission on file but do not have write permission on the directory where 
+the file is stored. You will be able to modify the file contents. But you will not be able to rename, 
+move or remove the file from the directory.
+* **Execute** : In Windows, an executable program usually has an extension ".exe" and which you can easily run. 
+In Unix/Linux, you cannot run a program unless the execute permission is set. If the execute permission is not set, 
+you might still be able to see/modify the program code(provided read & write permissions are set), but not run it.
+
+If you use the command:
+
+```bash
+ls -l
+```
+
+![PermissionsInLinux](../../Images/DevOps_Linux_Permissions.PNG)
+
+It will return the file type and access permissions. Here the first '-' implies that we have selected a file.p and the directories
+are shown using a 'd'.
+
+The characters are pretty easy to remember:
+
+* **r** = **read permission**
+* **w** = **write permission**
+* **x** = **execute permission**
+* **-** = **no permission** 
+
+the first part of the code `-rw-rw-r--` (no execute permission)
+
+* Read the file
+* Write or edit the file
+* He cannot execute the file since the execute bit is set to '-'
+
+The second part of it is `rw-`. For the user group `Home` and group member can:
+
+* Read the file
+* Write or edit the file
+
+The third part is for the world which means any user. It says `r--` . This means the user can only:
+
+* Read the file
+
+We can use the 'chmod' command which stands for 'change mode'. Using the command, we can set permissions (read, write, execute) on a file/directory for the owner, group and the world. Syntax:
+
+```bash
+chmod permissions filename
+```
+
+There are 2 ways to use the command-
+
+1. **Absolute mode**
+2. **Symbolic mode**
+
+## Absolute (numeric) mode
+
+In this mode, file permissions are not represented as characters but a three-digit octal number. 
+
+| Number 	| Permission Type        	| Symbol 	|
+|--------	|------------------------	|--------	|
+| 0      	| No permission          	| ---    	|
+| 1      	| Execute                	| --x    	|
+| 2      	| Write                  	| -w-    	|
+| 3      	| Execute + Write        	| -wx    	|
+| 4      	| Read                   	| r--    	|
+| 5      	| Read + Execute         	| r-x    	|
+| 6      	| Read + Write           	| rw-    	|
+| 7      	| Read + Write + Execute 	| rwx    	|
+
+![Numeric_Linux_permis](../../Images/DevOps_Permissions_Numeric.png)
+
+**'764'** absolute code says the following: 
+
+* Owner can read, write and execute
+* User group can read and write
+* World can only read
+
+Also shown as **-rwxrw-r-**
+
+## Symbolic mode
+
+In the Absolute mode, you change permissions for all 3 owners. In the symbolic mode, 
+you can modify permissions of a specific owner. 
+It makes use of mathematical symbols to modify the file permissions. 
+
+| Operator 	| Description                                                    	|
+|----------	|----------------------------------------------------------------	|
+| +        	| Adds permission to a file or directory                         	|
+| -        	| Removes permissions                                            	|
+| =        	| Sets the permissions and overrides the permissions set earlier 	|
+
+**The various owners are represented as:**
+
+| User 	| Denotations 	|
+|------	|-------------	|
+| u    	| user/owner  	|
+| g    	| group       	|
+| o    	| other       	|
+| a    	| all         	|
+
+We will not be using permissions in numbers like 755 but characters like rwx. Let's look into an example:
+
+![Example_of_symbolic_perms](../../Images/DevOps_Linux_Symbolic.png)
+
+**Changing Ownership and Group**
+
+For changing the ownership of a file/directory, you can use the following command: 
+
+```bash
+chown user
+```
+
+Do rest from this website [HERE](https://www.guru99.com/file-permissions.html)
+
+___
+
+**Continuation on VM and automating processes**
+
+Now we have gone back to our VM location in our local machine. Then inside our `VagrantFile` we want to add all the files
+from our VM directory into the VM when it is run. To do this we change the command like so:
+
+```bash
+config.vm.synced_folder "app", "/home/vagrant/app"
+
+#Into
+
+config.vm.synced_folder ".", "/home/vagrant/app"
+```
+
+The '.' stands for everything in this folder. Then we go and do a `vagrant reload`, followed by the `vagrant ssh`.
+Then we navigate to the directory we specified the vagrant to sync the contents to, which is `home/vagrant/app`.
+In order to go to the app when inside the VM we do `cd app` and it has successfully synced all the files and folders from our
+OS directory.
+
+**Exercise**
+
+- Run shell/bash script commands from environment folder on your OS
+- create a file called provision.sh inside the environment folder 
+- add one line in the vagrant file to link the provision.sh to at the same time while vm is being created.
+- Hint - vagrant official documentation to find the correct syntax to add code into the vagrantfile
+
+Before starting I destroyed my VM as I wanted to start fresh and see if the code worked, in terms of automatically installing
+**NGINX**. To destroy the VM I used `vagrant destroy`
+
+First of all I went to the `app/environment` directory and created a file with the command `touch provision.sh`.
+
+Inside the `touch provision.sh` we added the following:
+
+>#!/bin/bash
+>sudo apt-get update -y
+>sudo apt-get install nginx -y
+>sudo apt-get upgrade -y
+
+This is an automated `.sh` file that will automatically update and install the **NGINX** module into the VM as it bootsup.
+But first we need to tell Vagrant to do this when it creates the VM, so in the `VagrantFile` we add the following line of code:
+
+**Important** We add `-y` at the end as this automatically answers yes to any optional messages that may appear, making the process
+truly automated and not reliant on user input.
+
+```bash
+# run provision.sh here during VM start up
+config.vm.provision "shell", path: "environment/provision.sh"
+```
+
+This effectively tells the run file to run this command, to run the `.sh` file in vagrants shell interpreter. This means
+as soon as I `vagrant ssh` into the virtual machine the **NGINX** is already installed. This is an amazing way to automate
+access and setups for users.
