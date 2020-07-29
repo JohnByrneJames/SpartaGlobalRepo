@@ -6,3 +6,5 @@ ___
 > 9:00 AM - 9:30 AM Stand-up [Morning]
 
 <ins style="color=#f20a0a">dasda</ins>
+
+Some Markdown text with <span style="color:blue">some *blue* text</span>.
