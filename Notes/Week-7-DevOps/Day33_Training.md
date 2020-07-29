@@ -162,3 +162,10 @@ exit
 **Linux Commands Diagram**
 
 ![Diagram_of_linux](../../Images/linux_commands_diagram.png)
+
+We changed some parts of our VagrantFile so that the environment variable was made during creation of the virtual machines.
+
+After lots of fiddling the database was successfully connected and we could actually load the posts page.
+
+before it worked we had to install npm with `npm install` which installed all the dependencies that were required
+and this then allowed the data to be loaded on the posts page.
