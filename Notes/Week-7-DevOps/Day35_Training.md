@@ -1,4 +1,4 @@
-###### Sparta Global Training Day 34
+###### Sparta Global Training Day 35
 ###### Continuation of Vagrant and Oracle VM box
 
 ---
@@ -26,4 +26,19 @@ website which will be listening on port `3000`.
 
 ## Contents
 
+- [Introduction](#Introduction)
+- [Explanation](#Explanation)
+- [Installation and Requirements](#Installation-and-Requirements)
+- [Booting up the Virtual Machines](#Booting-up-the-Virtual-Machines)
+- [Access VM, run server and connect to server in browser](#Access-VM,-run-server-and-connect-to-server-in-browser)
+
+## Introduction
+
+## Explanation
+
+## Installation and Requirements
+
+## Booting up the Virtual Machines
+
+## Access VM, run server and connect to server in browser
 
