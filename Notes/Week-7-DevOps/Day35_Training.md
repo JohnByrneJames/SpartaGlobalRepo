@@ -126,5 +126,47 @@ That is all for the requirements, it should all work now. Next we will see how t
 First of all make sure you have downloaded this Repo as a zip. Create a folder inside one of your directories
 called anything you like, a good example could be `VM_MultiMachine` and place that zip inside and unzip it.
 
+Once unzipped you should have the following files in your directory:
+* app
+* environment
+* tests
+* .gitignore
+* README.md
+
+That means you are ready to start creating your virtual machine using Vagrant! The first thing you need to do
+is open a **git bash** command line in **ADMINISTRATOR MODE** so that you have all privileges. Then navigate to the folder
+that has the files you just unzipped.
+
+**Tips**
+* To change drive simply do `cd /<driveletter/` to change onto that root.
+* To go back a directory do `cd ..` to go back a single directory
+
+Once you are inside the directory you unzipped the contents of this repo, type the following command:
+
+```bash
+vagrant up
+```
+
+This will automatically create a VM for both the app and the database. This may take a few minutes... depending on your
+chosen drives speed.
+
+All the dependencies and software should be pre-installed in the provisions that I have added into the `VagrantFile`.
+
+When it comes to a end, the two Oracle machines should be running, there are two ways to check this:
+
+1. Open the `oracle VM VirtualBox Manager` and you will see them both running
+2. Type `Vagrant status`
+
+**Perfect** Now you can move onto the next step...
+
 ## Access VM, run server and connect to server in browser
 
+**Accessing the VM**
+
+To access the Virtual Machine you just created, use the command:
+
+```bash
+vagrant ssh <name_of_machine>
+```
+
+First of all we are going to enter the `app` machine with `vagrant ssh app` this should load us into the virtual machine.

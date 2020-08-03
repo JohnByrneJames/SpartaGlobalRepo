@@ -60,3 +60,20 @@ server {
 }
 
 Now you can connect to the sparta global node.js app without the port
+
+test if nginx file was succesfully edited
+```bash
+sudo nginx -t
+```
+ 
+
+restart nginx
+```bash
+sudo systemctl restart nginx
+```
+ 
+
+check its status
+```bash
+sudo systemctl status nginx
+```
