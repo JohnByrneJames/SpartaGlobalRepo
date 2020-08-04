@@ -2,7 +2,7 @@
 ##### `Name:` John Byrne :relaxed:
 ##### `Position:` Junior DevOp Engineer :computer: 
 ##### `E-mail :` Jbyrne@spartaglobal.com :email:
-##### `Languages :` C#, SQL and Python :snake:
+##### `Languages :` C#, SQL and Python :snake: 
 ##### `Location :` Central London :round_pushpin:  
 <div align="center" style="font-weight: bolder"> :rainbow: Happy Pride Month :rainbow: </div> 
 
