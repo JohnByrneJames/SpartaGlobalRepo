@@ -3,7 +3,7 @@
 
 ___
 
-> 9:30 AM - 10:00 AM Standup [Morning]
+> 9:30 AM - 10:00 AM Stand up [Morning]
 
 We looked at our usual blockers and good moments from yesterday and then we went onto
 prepare for our presentations which we are having at 10:00 AM once we have rehearsed within our

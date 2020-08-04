@@ -53,4 +53,6 @@ ___
 and JSON [:coffee:](/Python-Files/JSON): a little SQL with Python [:chart_with_upwards_trend:](/Python-Files/Database-Connection)  
 - [x] **Week Five** - Python Projects [:snake:](/Notes/Week-5-Project)
 - [x] **Week Six** - Quality Gate :construction: and Interviews :fire:
-- [ ] **Week Seven** - DevOps Begins.. :rocket: :boom: :package:
+- [x] **Week Seven** - DevOps Begins.. :boom: :package: Virtual Machine, Vagrant and Ruby [:rocket:](/Notes/Week-8-DevOps-CI)
+- [ ] **Week Eight** - Devops Continues.. CI / CD / CDE [:robot:](/Notes/Week-8-DevOps-CD)
+
