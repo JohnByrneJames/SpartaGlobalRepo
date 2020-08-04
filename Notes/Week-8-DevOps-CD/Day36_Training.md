@@ -3,7 +3,8 @@
 
 ___
 
-**Stand up**
+
+> 9:30 AM - 10:00 AM Self-revision and Standup [Morning]
 
 I explained my problem, we are going to look at this problem later on if we find some time as it is causing a lot of problems
 for myself and delaying the team further.
@@ -77,3 +78,48 @@ Any Errors will throw an error and we need to go fix that.
 * (Delivery is automated)
 * (Deployment is manual) unless it is to an existing app that is fully functional or confident developers.
 
+**Bit of history into Jenkins and Software development**
+
+**SDLC** Software development life cycle
+
+Development ➜ Tests and Integration ➜ Acceptance ➜ Deployment and Maintenance 
+
+![ImageOfSDLCChange](../../Images/SDLC_Change.png)
+
+**SAAS** Software as a service
+
+Historically SDLC has been very slow and prevented new ideas as it took to long to add little functionality and release it.
+DevOps as a job is to modulise things, E.G. automate the process of this using the software available: Ansible, Jenkins, Cradle and many many more.
+
+* **CI** is daily
+* **CDelivery**
+* **CDeployment** 
+
+- **We will time-box our meeting for 10 minutes**
+- **Please take notes, as you will be expect to email us the summary of our conversations...**
+- **How did you think this week went?**
+>**"** 
+>**"**
+- From the behavioural competencies one competencies do you think you are excelling and which competencies you need to work one?
+>**"** 
+>**"**
+- One thing to start doing? 
+>**"**  
+>**"**
+- One thing to stop doing? 
+>**"**  
+>**"**
+- One thing to continue?
+> **"** 
+> **"**
+
+* **Positive feedback** <br>
+>**"** 
+No constructive Shahrukh said he is happy with my progress so far, and the problems I am having with the Virtual machine is 
+>quite normal among DevOps. Some computers just have specific problems with hardware.
+>**"**
+
+* **Constructive feedback** <br>
+>**"** 
+Nothing constructive
+>**"**
