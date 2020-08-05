@@ -58,5 +58,7 @@ and JSON [:coffee:](/Python-Files/JSON): a little SQL with Python [:chart_with_u
 
 
 <p align="center">
+
 ![Johns's github stats](https://github-readme-stats.vercel.app/api?username=JohnByrneJames&show_icons=true&hide_border=true)
+
 </p>

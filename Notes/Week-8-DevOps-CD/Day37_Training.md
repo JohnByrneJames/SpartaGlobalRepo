@@ -34,3 +34,10 @@ until that is fixed.
 > 16:00 PM Stand up [Late-Afternoon]
 
 **Jenkins** and **AWS**
+
+We will begin Jenkins tomorrow, as we have gone through theory today mostly.
+
+**Diagram by Filipe**
+
+![Diagram_Of_Why_We_Use_Virtual_Machines](../../Images/Reason_For_VirtualMachines.png)
+
