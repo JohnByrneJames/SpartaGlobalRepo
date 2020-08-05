@@ -56,4 +56,7 @@ and JSON [:coffee:](/Python-Files/JSON): a little SQL with Python [:chart_with_u
 - [x] **Week Seven** - DevOps Begins.. :boom: :package: Virtual Machine, Vagrant and Ruby [:rocket:](/Notes/Week-8-DevOps-CI)
 - [ ] **Week Eight** - DevOps Continues.. CI / CD / CDE [:robot:](/Notes/Week-8-DevOps-CD)
 
+
+<p align="center">
 ![Johns's github stats](https://github-readme-stats.vercel.app/api?username=JohnByrneJames&show_icons=true&hide_border=true)
+</p>
