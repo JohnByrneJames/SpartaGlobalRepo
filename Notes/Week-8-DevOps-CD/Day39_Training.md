@@ -209,4 +209,4 @@ This then copied over the app folder from within our local directory into the vi
 
 We did the necessary provisioning the our Virtual machines to to get NGINX running and NPM installed then the web server could be reached and by adding over people to my security group they were also able to access the web server.
 
-For now our work is on the Trello board.
+For now our work is on the Trello board..
