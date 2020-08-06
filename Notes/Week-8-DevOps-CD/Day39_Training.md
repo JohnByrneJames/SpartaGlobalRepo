@@ -101,3 +101,40 @@ Now we are installing Sublime text, a lightweight editor rather than PyCharm. It
 5. Save the changes and restart command prompt.
 
 Now when I am in the command line I can open sublime anywhere using the command `subl`
+
+
+**For Future Reference**
+
+**Changing PC meant I needed a new SSH Key**
+
+I kept getting the error, you are an invalid use, to fix this problem I needed to boot up the SSH agent and then add the locally stored private SSH key so it would recognise me when I attempted to push to the Github repository. 
+
+First I activated the SSH agent and added my private key, whilst inside the .ssh hidden directory.
+
+```bash
+cd ~/.ssh/
+
+eval $(ssh-agent -s)
+
+ssh-add <name of key>
+
+ssh-add l (list all keys in agent)
+```
+
+This fixed my problem and I could push to the repository.
+
+> 2:00 PM Amazon Web Services [Mid-Afternoon]
+
+**AWS**
+
+We log in through this [**LINK**](https://sparta-devops.signin.aws.amazon.com/console)
+
+**Post Requests**
+
+These happen behind the scenes and are usually data being sent to the server from the user, typically these are private details and they wont be visible in the URL. This is used sometimes during payment as it is confidential information that should not be seen by any other individuals.
+
+**Get Requests**
+
+These are requests that happen when you click a website for example you are getting all the URL requests and displaying the page. The URL usually contains paths and arguments of the get request too.
+
+They both have an end-point when they are made, these are used in different cases but have their specific uses.
