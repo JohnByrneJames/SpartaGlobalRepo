@@ -168,3 +168,45 @@ ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@<ip address from VM>
 Now we are inside this Virtual Machine on the Amazon Web Services.
 
 Other users cannot SSH into our Virtual Machines, because when we set up the Virtual machines `security group` we set it to only allow our IP access our machine.
+
+**Moving some code to AWS VM**
+
+We installed the following:
+
+```bash
+sudo apt-get update
+
+sudo apt-get install nginx
+
+sudo apt-get install nodejs
+
+sudo apt-get install npm
+```
+
+Now we want to send a folder into our **EC2** instance being hosted on AWS.
+
+There is also a cool way to access a manual of certain commands when you use the `man` key word before a command, for example:
+
+```bash
+man scp <to send folders to VM on AWS>
+```
+
+To send a secure copy of our folder we are using:
+
+```bash
+scp -i <key> path/file user@ip:/path/file1
+```
+
+In the folder we can open the directory we are in using sublime with `subl .`
+
+We used the command:
+
+```bash
+scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@3.250.67.195:~/app/
+```
+
+This then copied over the app folder from within our local directory into the virtual machines directory using the pem key to following by `-r` as this makes it recursive in order to move all the files until there are no more left. The letter `i` stands for identity and should have our public key to match with the stored private key on AWS.
+
+We did the necessary provisioning the our Virtual machines to to get NGINX running and NPM installed then the web server could be reached and by adding over people to my security group they were also able to access the web server.
+
+For now our work is on the Trello board.
