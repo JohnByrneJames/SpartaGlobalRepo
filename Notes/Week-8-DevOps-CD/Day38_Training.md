@@ -10,7 +10,7 @@ Today we are starting on Jenkins with Filipe, but first we had a stand up. I per
 that my laptop is not able to run the virtual machine software using Vagrant. Therefore I have got my big computer and
 am going to set that up later tonight when I have more time.
 
-* To add to VM_Proxy Repository 
+* To add to VM_Proxy Repository
 
 * **Add part telling user how to access the code**
 * **Add Development environment Note, talk about the environment**
@@ -30,7 +30,7 @@ ___
 **Next** Dev Cycle **2000** - **2010**
 
 It would take **3** months to develop, **3** months of testing and then a further **1** month to deploy the product.
-Here you get **$$$$** earlier 
+Here you get **$$$$** earlier
 
 ___
 
@@ -59,8 +59,8 @@ Then we created a new directory in our folder called `web_app_starter_code` wher
 that filipe sent us. Inside the terminal we initialised the git repository and added two lines to the `.gitignore`.
 
 ```bash
-echo "app/node-modules/" >> .gitignore 
-echo "*.log" >> .gitignore 
+echo "app/node-modules/" >> .gitignore
+echo "*.log" >> .gitignore
 ```
 
 Then we linked up the folder with this [repository](https://github.com/JohnByrneJames/WebApp-CI) on my GitHub.
@@ -71,10 +71,10 @@ Now on Jenkins we made a job through the new tab, then we clicked `Freestyle job
 * **Jenkins** Has..
     * **JSDK 8**
     * **Python**
-    
+
  Then we configured the settings of the Job with our Test server credentials and a link to the Repo where we have the project.
  Also a key that can be used to deploy.
- 
+
 **Now we are setting up the key**
 
 This key will be used on our github to allow Jenkins to communicate with GitHub. We are going to be doing this in two different ways,
@@ -105,7 +105,7 @@ triggering the job. So every time you make a change to your github history a tes
 
 ## Summary
 
-Our current CI setup on Jenkins has one major flaw. The build is currently started and the tests are run on the master branch of the repository. 
+Our current CI setup on Jenkins has one major flaw. The build is currently started and the tests are run on the master branch of the repository.
 This means that if the tests fail the code still exists on the master branch ( which is only supposed to contain working code ).
 
 We need to reconfigure the job so that the code is tested on a different branch ( develop ) and automatically merged with the master branch if the tests pass.
@@ -130,6 +130,6 @@ You will need to research how these plugins works:
 **Acceptance Criteria**
 
 **Steps**
-* 1 - Go to the the job and select `Configure`
+* 1 - Go to the job and select `Configure`
 * 2 - Go inside the Repo and replace the branch with `develop` or the name of the development branch
-* 3 - 
+* 3
