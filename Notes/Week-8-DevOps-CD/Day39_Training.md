@@ -79,3 +79,25 @@ _We are looking to merge the branch before and then run the tests against that, 
       * Target remote name : `origin`
   * **E-mail Notification**
     * --
+    
+
+**Notes from today**
+
+To find a specific process you can do the following command:
+
+```bash
+ps aux | grep node
+```
+
+or you can just do `ps aux |` to display all the commands running.
+
+Now we are installing Sublime text, a lightweight editor rather than PyCharm. It is also going to be a default editor for adding stuff.
+
+
+1. Open command prompt and type sysdm.cpl
+2. In Advanced tab, select Environment variables
+3. Under system variables, select variable named "Path" and click Edit.
+4. Add "C:\Program Files\Sublime Text 3;" to the end of the existing string.
+5. Save the changes and restart command prompt.
+
+Now when I am in the command line I can open sublime anywhere using the command `subl`
