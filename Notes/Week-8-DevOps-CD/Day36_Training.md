@@ -95,24 +95,6 @@ DevOps as a job is to modulise things, E.G. automate the process of this using t
 * **CDelivery**
 * **CDeployment** 
 
-- **We will time-box our meeting for 10 minutes**
-- **Please take notes, as you will be expect to email us the summary of our conversations...**
-- **How did you think this week went?**
->**"** 
->**"**
-- From the behavioural competencies one competencies do you think you are excelling and which competencies you need to work one?
->**"** 
->**"**
-- One thing to start doing? 
->**"**  
->**"**
-- One thing to stop doing? 
->**"**  
->**"**
-- One thing to continue?
-> **"** 
-> **"**
-
 * **Positive feedback** <br>
 >**"** 
 No constructive Shahrukh said he is happy with my progress so far, and the problems I am having with the Virtual machine is 

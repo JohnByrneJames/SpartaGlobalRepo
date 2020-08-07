@@ -1,5 +1,5 @@
 ###### Sparta Global Training Day 39
-###### Running our VM on Jenkins with automated testing
+###### Using AWS to run a EM2 machine and connect to it Via SSH
 
 ___
 
