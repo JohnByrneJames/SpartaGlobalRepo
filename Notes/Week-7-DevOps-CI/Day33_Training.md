@@ -74,7 +74,7 @@ To do this we do the following command with keyword `export`:
 export name="eng-67" 
 ```
 
-In order to see all the variables in a environment you use the command:
+In order to see all the variables in an environment you use the command:
 
 ```bash
 env
