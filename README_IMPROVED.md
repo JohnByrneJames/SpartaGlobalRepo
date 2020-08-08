@@ -1,5 +1,5 @@
 <!-- Your title -->
-## Hi, I am John Byrne a Junior DevOps Consultant at Sparta Global
+## Hi, I am John Byrne a Junior DevOps Engineer at Sparta Global
 
 <!-- Social Media / Contacts Badges -->
 
@@ -11,9 +11,18 @@
 [![Outlook](https://img.shields.io/badge/-Outlook-0078D4?style=flat&logo=Microsoft-Outlook&logoColor=white)](mailto:jbyrne@spartaglobal.com)
 [![SpartaGlobal](https://img.shields.io/badge/-SpartaGlobal-e33661?)](https://www.spartaglobal.com/)
 
+&nbsp;
+
+**Personal Information:**
+
 <!-- Any image aligned to the right. Beware the width -->
-<img width="55%" align="right" alt="Github" src="Images/sparta-logo.png" />
+<img width="50%" align="right" alt="Github" src="Images/DevOps_tools.png" />
+
+- :round_pushpin: **London** Based
+- :date: **Start of Training** : **15/06/2020**
+- :calendar: **End of Training** : **28/06/2020**
+- :cyclone: **Junior DevOp Engineer**
+- :trophy: **1st Class** in Computing with Games Development
 
 
-I am recent graduate from the University of Greenwich 
 
