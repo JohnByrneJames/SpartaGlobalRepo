@@ -30,9 +30,7 @@
 
 &nbsp;
 
-**Personal Information:**
-
 <!-- Any image aligned to the right. Beware the width -->
 <img width="50%" align="left" alt="Github" src="Images/DevOps_tools.png" />
 
-
+**Personal Information:**
