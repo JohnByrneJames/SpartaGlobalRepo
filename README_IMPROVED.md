@@ -31,7 +31,7 @@
 &nbsp;
 
 <!-- Any image aligned to the right. Beware the width -->
-<img width="50%" align="left" alt="Github" src="Images/CICD_DevOps_Journey.png" />
+<img width="100%" align="left" alt="Github" src="Images/CICD_DevOps_Journey.png" />
 
 **Course Road Map:**
 - [x] **Week One** - Business Week
