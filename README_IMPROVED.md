@@ -35,4 +35,12 @@
 
 **Course Road Map:**
 
+- [x] **Week One** - Business Week
+- [x] **Week Two** - SQL
+- [x] **Week Three** - Python
+- [x] **Week Four** - Python Continued
+- [x] **Week Five** - Python Airport Project
+- [x] **Week Six** - Quality Gate and Interviews
+- [x] **Week Seven** - DevOps Begins **|** Linux with Virtual Machines, Vagrant and Ruby Scripting
+- [x] **Week Eight** - DevOps Continue **|** CICD Pipeline, Jenkins and AWS
 
