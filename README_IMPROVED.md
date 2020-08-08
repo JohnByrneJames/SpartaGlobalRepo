@@ -34,7 +34,6 @@
 <img width="50%" align="left" alt="Github" src="Images/CICD_DevOps_Journey.png" />
 
 **Course Road Map:**
-
 - [x] **Week One** - Business Week
 - [x] **Week Two** - SQL
 - [x] **Week Three** - Python
