@@ -12,7 +12,7 @@
 [![SpartaGlobal](https://img.shields.io/badge/-SpartaGlobal-e33661?)](https://www.spartaglobal.com/)
 
 <!-- Any image aligned to the right. Beware the width -->
-<img width="55%" align="right" alt="Github" src="Images/sparta-global-icon.svg" />
+<img width="55%" align="right" alt="Github" src="Images/sparta-logo.png" />
 
 
 I am recent graduate from the University of Greenwich 
