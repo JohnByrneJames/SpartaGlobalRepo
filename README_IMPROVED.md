@@ -31,6 +31,8 @@
 &nbsp;
 
 <!-- Any image aligned to the right. Beware the width -->
-<img width="50%" align="left" alt="Github" src="Images/DevOps_tools.png" />
+<img width="50%" align="left" alt="Github" src="Images/CICD_DevOps_Journey.png" />
 
-**Personal Information:**
+**Course Road Map:**
+
+
