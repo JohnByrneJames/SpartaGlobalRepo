@@ -23,6 +23,16 @@
 - :calendar: **End of Training** : **28/06/2020**
 - :cyclone: **Junior DevOp Engineer**
 - :trophy: **1st Class** in Computing with Games Development
+- :notebook: [**Training Notes**](/Notes)
+- :zap: **Fun Fact** : I have an almost unhealthy obsession with Japanese Culture. :japanese_castle:
 
+<!-- Technical skills Here -->
+
+&nbsp;
+
+**Personal Information:**
+
+<!-- Any image aligned to the right. Beware the width -->
+<img width="50%" align="left" alt="Github" src="Images/DevOps_tools.png" />
 
 
