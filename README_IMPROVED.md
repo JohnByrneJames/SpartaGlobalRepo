@@ -42,4 +42,8 @@
 - [x] **Week Six** - Quality Gate and Interviews
 - [x] **Week Seven** - DevOps Begins **|** Linux with Virtual Machines, Vagrant and Ruby Scripting
 - [x] **Week Eight** - DevOps Continue **|** CICD Pipeline, Jenkins and AWS
+- [ ] **Week Nine**
+- [ ] **Week Ten**
+- [ ] **Week Eleven**
+- [ ] **Week Twelve**
 
