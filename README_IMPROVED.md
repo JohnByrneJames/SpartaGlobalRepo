@@ -83,4 +83,6 @@
 
 ![Johns's github stats](https://github-readme-stats.vercel.app/api?username=JohnByrneJames&show_icons=true&hide_border=true)
 
+<img width="50%" align="center" alt="Github" src="https://github-readme-stats.vercel.app/api?username=JohnByrneJames&show_icons=true&hide_border=true" />
+
 <img src="https://komarev.com/ghpvc/?username=JohnByrneJames" alt="JohnByrneJames" />
