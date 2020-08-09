@@ -77,12 +77,9 @@
 ![Microsoft powerpoint](https://img.shields.io/badge/-Microsoft%20PowerPoint-b9361a?style=flat&logo=microsoft%20powerpoint)
 ![Microsoft Teams](https://img.shields.io/badge/-Microsoft%20Teams-6264A7?style=flat&logo=Microsoft%20Teams&logoColor=white)
 ![Microsoft One Drive](https://img.shields.io/badge/-Microsoft%20OneDrive-0078D4?style=flat&logo=Microsoft%20OneDrive&logoColor=white)
-![Microsoft VisualStudio](https://img.shields.io/badge/-Visual%20Studio-5C2D91?style=flat&logo=Visual%20Studio&logoColor=white)
-
-<img src="https://github-readme-stats.vercel.app/api?username=JohnByrneJames&show_icons=true&hide_border=true" align="center"></img>
+![Microsoft VisualStudio](https://img.shields.io/badge/-Visual%20Studio-5C2D91?style=flat&logo=Visual%20Studio&logoColor=white)g
 
 ![Johns's github stats](https://github-readme-stats.vercel.app/api?username=JohnByrneJames&show_icons=true&hide_border=true)
 
-<img width="40%" align="center" alt="Github" src="https://github-readme-stats.vercel.app/api?username=JohnByrneJames&show_icons=true&hide_border=true" style="display:block; margin-left: auto; margin-right: auto;"/>
 
 <img src="https://komarev.com/ghpvc/?username=JohnByrneJames" alt="JohnByrneJames" />
