@@ -79,6 +79,7 @@
 ![Microsoft One Drive](https://img.shields.io/badge/-Microsoft%20OneDrive-0078D4?style=flat&logo=Microsoft%20OneDrive&logoColor=white)
 ![Microsoft VisualStudio](https://img.shields.io/badge/-Visual%20Studio-5C2D91?style=flat&logo=Visual%20Studio&logoColor=white)
 
+<img src="https://github-readme-stats.vercel.app/api?username=JohnByrneJames&show_icons=true&hide_border=true" align="center"></img>
 
 ![Johns's github stats](https://github-readme-stats.vercel.app/api?username=JohnByrneJames&show_icons=true&hide_border=true)
 
