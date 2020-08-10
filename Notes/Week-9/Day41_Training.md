@@ -33,3 +33,20 @@ You can test what is actually running inside a VirtualMachine by clicking on the
 **CI Deployment**
 
 After successful job on Jenkins then it should automatically run the other job which will move the code from one server to another. (**Message**)
+
+There was a small error inside our app folder, the problem we have is that the actual tests would pass and then after that it would not know what to do afterwards. So we needed to tell it to exit after it has completed the tests.
+
+Go to **App**>**Package.json**
+
+Then inside you need to change this line:
+
+```javascript
+"test":"./node_modules/mocha/bin/mocha"
+```
+
+into (add the `-exit` at the end)
+
+```javascript
+"test":"./node_modules/mocha/bin/mocha --exit" 
+```
+
