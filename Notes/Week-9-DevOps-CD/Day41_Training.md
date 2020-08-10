@@ -50,3 +50,43 @@ into (add the `-exit` at the end)
 "test":"./node_modules/mocha/bin/mocha --exit" 
 ```
 
+> 2:00 PM Jenkins Deployment [Mid-Afternoon]
+
+We tried to automate the process of deploying the code from our git to the EC2 instance on our AWS. This will be automated using a job which will trigger another job to do the deployment using SSH and Rsync.
+
+The first thing we did was download some code that Filipe sent in the chat. We placed it somewhere and unpacked it, then we removed its remote and added our own so we can succesfully push and pull from the [**repo**](https://github.com/JohnByrneJames/NodeAppPipeline).
+
+**So far we have**
+* Set up a git Repo
+* Ran tests locally using Vagrant and OracleVM
+* Setup CI ~ (JENKINS)
+    - [x] **MUST BUILD IN AGENT NODE**
+    - [x] **MUST ONLY LISTEN TO DEV BRANCH**
+    - [x] **MUST MERGE CODE IF SUCCESS**
+    
+We set the webhook and then created a develop branch using the bash CMD:
+
+```bash
+git checkout -b develop
+```
+
+Once we pushed this to the GitHub it was checked by the Jenkins Job and this automatically merged it into the master branch.
+
+The job I made was called **Eng67-John-NodeJS-v2** for the last part.
+
+___
+
+**Pushing build to AWS instance**
+
+Using:
+
+* `SCP`
+* `SSH`
+
+**Steps for SCP** into AWS EM instance.
+
+1. Copy app
+2. Copied the environment setup files (config and sh files)
+3. we run these. Possible restart required.
+
+We created the Job, then allows port 22 to be reached on the AWS instance inside my security group.
