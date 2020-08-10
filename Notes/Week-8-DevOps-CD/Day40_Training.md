@@ -1,4 +1,4 @@
-###### Sparta Global Training Day 39
+###### Sparta Global Training Day 40
 ###### Running our VM on Jenkins with automated testing
 
 ___
