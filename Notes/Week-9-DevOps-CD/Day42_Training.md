@@ -98,3 +98,31 @@ The common configuration of a **VPC** includes a **public subnet** and a **priva
 
 _This information is courtesy of [**Amazon**](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Scenario2.html)_
 
+**Terminology to Master**
+* **VPC** - Virtual Private Cloud in AWS to launch computing resources.
+* **IGW** - Internet gateway, attached to the VPC and allows internet into the VPC via route table.
+* **Subnet** - Internal networking
+* **NACLs** - Network Access Control list, this is an optional layer of security for your machine. (A firewall at the level of a subnet)
+* **Route Tables** - Contains a set of rules, called routes that determine where network traffic from a subnet or gateway is directed.
+* **SG** - Security Group / Firewall
+* **EC2** - Amazon Elastic Compute Cloud
+
+**Objective:**
+
+A classic tier architecture VPC for our web app and DB. It will have a public subnet and private subnet.
+
+Getting to work and communicating and working and setting up all the networking --->> network practice 
+
+
+**Acceptance Criteria**
+
+* **Has a private sub**
+* **Has a public sub**
+* **Is your own VPC**
+* **Public sub has internet access**
+* **Has the right routes**
+* **App exists in public sub**
+* **DB exists in private sub**
+* **Networking has been done correctly**
+
+![Image_Of_PVC](../../Images/VPC%20Setup.svg)
