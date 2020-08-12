@@ -79,3 +79,10 @@
 
 
 <img src="https://komarev.com/ghpvc/?username=JohnByrneJames" alt="JohnByrneJames" />
+
+___
+
+### **My Repositories**
+
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_abstraction)](https://github.com/JohnByrneJames/oop_abstraction)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_inheritance)](https://github.com/JohnByrneJames/oop_inheritance)

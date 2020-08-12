@@ -13,4 +13,36 @@ goes hand in hand.
 
 I don't really have any blockers but I really need to start revising on them. I will continue to make diagrams and make README as this is a good way to drill in the information that we learnt.
 
-**INTERNAL QUALITY GATES THURSDAY TO FRIDAY**
+### **INTERNAL QUALITY GATES THURSDAY TO FRIDAY**
+
+_What to expect in the Internal QG..._
+
+
+**Points of the interview**
+- GREENWICH GAMES
+- C#, C++, SQL and Web Dev
+- Present my idea, worked with Student Nurses
+- Gaming Society 
+- DevOps | Sparta
+- Skills
+- 100% at Python exam (Love programming)
+
+**If you are from a tech background**... Why are you here? 
+
+~ I wanted to refresh my knowledge from this eclectic experience where I am looking at the latest greatest technology, software and interests within the DevOps field.
+
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=yellow)
+![CSharp](https://img.shields.io/badge/-CSharp-1572B6?style=flat&logo=c%20sharp&logoColor=white)
+![MYSQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=MySQL&logoColor=white)
+![MSSQL](https://img.shields.io/badge/-MicrosoftSQLServer-CC2927?style=flat&logo=Microsoft%20SQL%20Server&logoColor=white)
+![Vagrant](https://img.shields.io/badge/-Vagrant-1563FF?style=flat&logo=Vagrant&logoColor=white)
+![Ruby](https://img.shields.io/badge/-Ruby-CC342D?style=flat&logo=Ruby&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=Git&logoColor=white)
+![OracleVM](https://img.shields.io/badge/-OracleVM-F80000?style=flat&logo=Oracle&logoColor=white)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat&logo=Linux&logoColor=black)
+![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?style=flat&logo=Jenkins&logoColor=white)
+![AWS](https://img.shields.io/badge/-Amazon%20AWS-232F3E?style=flat&logo=Amazon%20AWS&logoColor=white)
+
+_I have learnt all these skills so far_
+
