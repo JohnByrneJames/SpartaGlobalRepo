@@ -102,4 +102,4 @@ Lots of useful Information on this [**card**](https://trello.com/c/pHNg1SKE/199-
 
 ## Task set by Filipe
 
-![Image_of_VPC_SetUP_Bastion_too](../../Images/VPC%20Setup.svg)
+![Image_of_VPC_SetUP_Bastion_too](../../Images/VPC_SetupV2.svg)
