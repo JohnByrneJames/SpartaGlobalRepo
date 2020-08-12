@@ -1,5 +1,5 @@
 ###### Sparta Global Training Day 42
-###### We have now completed Continuous Integration and Deployment using Jenkins
+###### Today we are going to be working with VPC, Networking and N-Tier Architecture
 
 ___
 
