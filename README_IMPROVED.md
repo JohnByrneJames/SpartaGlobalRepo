@@ -41,8 +41,8 @@
 - [x] **Week Five** - Python Airport Project
 - [x] **Week Six** - Quality Gate and Interviews
 - [x] **Week Seven** - DevOps Begins **|** Linux with Virtual Machines, Vagrant and Ruby Scripting
-- [x] **Week Eight** - DevOps Continue **|** CICD Pipeline, Jenkins and AWS
-- [ ] **Week Nine**
+- [x] **Week Eight** - DevOps Continued **|** CICD Pipeline, Jenkins and AWS
+- [ ] **Week Nine** - DevOps In-depth **|** Amazon Web Service, Networking and N-Tier Architecture
 - [ ] **Week Ten**
 - [ ] **Week Eleven**
 - [ ] **Week Twelve**
