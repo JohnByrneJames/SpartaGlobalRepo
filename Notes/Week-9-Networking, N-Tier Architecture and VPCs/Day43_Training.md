@@ -46,3 +46,60 @@ _What to expect in the Internal QG..._
 
 _I have learnt all these skills so far_
 
+Lots of useful Information on this [**card**](https://trello.com/c/pHNg1SKE/199-discuss-what-to-expect-in-internal-qg) in the Trello board.
+
+### **General Hints and Advice**
+
+* Be present and in the two way conversation (center yourself)
+* Listen
+* Be Genuine 
+* Think how you will be perceived. Abstract yourself from the world around you and be there as yourself and with your best performance... No Baggage
+* Bring a notebook, knock on the door (the interviewer call you), have water with you. _So you can be smooth and have a pause to think_
+* Align with company dress code, E.G. what is appropriate, correct headset ECT... just adapt to the situation.
+* Sales person - get insight into the role and the people.
+* Study the person - use your 20 80 principle
+* **STAR** situation, task, action and response.
+
+### **Structure of Interview**
+
+* Intro
+* Questions from the interviewer: (motivation and positivity and long term person, your interests are aligned) 
+* Questions Technical overview and concepts: (technical clarity, conciseness,  Draw on experience) Define --> experience 
+* Actual Technical questions
+* Your Questions 
+
+### **Questions motivated and alignment**
+
+* Dig into the background and motivation
+* Intent and assertive
+* if you from a tech background... why are you here? (do not use the word NO EXPERIENCE)
+* If you are from a non-tech background.... why are you here?
+* what we want to avoid is hiring someone who isn't happy doing what they are doing
+* Genuine
+* Pitfalls: superficial anwsers with no intent
+* Pitfalls: Don't be a time-waster of your own time :) 
+
+### **Questions Technical Overview and Concepts**
+
+* Have technical clarity
+* Think, apply and draw on your experience
+
+### **Actual Technical questions**
+
+* Let people know you are taking notes
+* Take time to understand the actual question
+* Pseudo-code the question, take notes.
+* Then attempt the question
+* Verbalize everything you are doing > Your thoughts
+
+### **Your questions to ask the interviewer**
+
+* Research LinkedIN, for targeted questions relevant to the person.
+* Questions regarding role
+* Questions regarding tech stack
+* Question why they like working at the company
+* Don't be in a rush to leave, like you were never supposed to be there.
+
+## Task set by Filipe
+
+![Image_of_VPC_SetUP_Bastion_too](../../Images/VPC%20Setup.svg)
