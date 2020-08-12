@@ -86,3 +86,5 @@ ___
 
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_abstraction)](https://github.com/JohnByrneJames/oop_abstraction)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_inheritance)](https://github.com/JohnByrneJames/oop_inheritance)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_encapsulation)](https://github.com/JohnByrneJames/oop_encapsulation)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_polymorphism)](https://github.com/JohnByrneJames/oop_polymorphism)
