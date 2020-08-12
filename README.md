@@ -84,7 +84,7 @@ ___
 
 ### **My Repositories**
 
-##### **4 Pillars of OOP**
+##### **4 Pillars of OOP | Flask | SQL | TDD | Unit Testing | API** 
 
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_abstraction)](https://github.com/JohnByrneJames/oop_abstraction)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_inheritance)](https://github.com/JohnByrneJames/oop_inheritance)
