@@ -96,3 +96,11 @@ ___
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_calculator)](https://github.com/JohnByrneJames/oop_calculator)
 
 ##### **Virtual Machines | AWS | Jenkins | Vagrant**
+
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=VM_Proxy_Machine)](https://github.com/JohnByrneJames/VM_Proxy_Machine)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=WebApp-CI)](https://github.com/JohnByrneJames/WebApp-CI)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=AWS_WebApp)](https://github.com/JohnByrneJames/AWS_WebApp)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=NodeAppPipeline)](https://github.com/JohnByrneJames/NodeAppPipeline)
+
+
+
