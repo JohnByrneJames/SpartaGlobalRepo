@@ -5,7 +5,7 @@ from sports_car import SportsCar
 # Inheritance class
 
 # Before starting this I am going to layout the idea behind the inheritance example, you can also find
-# a more in depth view of it on the README.md file located at the main page of this directory.
+# a more in depth view of it on the README_OLD.md file located at the main page of this directory.
 # This file will demonstrate how inheritance allows child classes to adopt the methods and functionality available
 # in its parent class and adding any additional functionality on top. This helps reduce the amount of duplicated code
 # as it is bad practice to keep repeating yourself.
