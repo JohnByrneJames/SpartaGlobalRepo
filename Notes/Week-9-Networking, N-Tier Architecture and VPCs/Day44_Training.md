@@ -14,5 +14,9 @@ It can be seen on this [**card**](https://trello.com/c/M0to4ePp/207-making-small
 
 **Difference between**
 
-**Private and Public Subnet**: Private has no internet and public has acess to the internet.
+**Private and Public Subnet**: Private has no internet and public has access to the internet.
+
+The Gate surrounding the Subnet is the **NACL** and the Security Group is the gate that is surrounding the **Instances** for example the App EC2.
+
+The App is quite unsecure, so you don't want to put your data there really. Then the Bastion is also quite tight on security but is just another server therefore it makes more sense to put the database on a private subnet so it cannot be accessed via the internet. The Bastion is a way to access the DB securely through port 22.
 
