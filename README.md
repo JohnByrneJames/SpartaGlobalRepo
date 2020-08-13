@@ -90,7 +90,7 @@ ___
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_inheritance)](https://github.com/JohnByrneJames/oop_inheritance)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_encapsulation)](https://github.com/JohnByrneJames/oop_encapsulation)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_polymorphism)](https://github.com/JohnByrneJames/oop_polymorphism)
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=AAirport_Project)](https://github.com/JohnByrneJames/Airport_Project)
+[![AirPort Project](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=AAirport_Project)](https://github.com/JohnByrneJames/Airport_Project)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=MVC_Flask)](https://github.com/JohnByrneJames/MVC_Flask)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=python_tdd_pytest)](https://github.com/JohnByrneJames/python_tdd_pytest)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=oop_calculator)](https://github.com/JohnByrneJames/oop_calculator)

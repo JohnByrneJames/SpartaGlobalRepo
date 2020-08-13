@@ -20,3 +20,32 @@ The Gate surrounding the Subnet is the **NACL** and the Security Group is the ga
 
 The App is quite unsecure, so you don't want to put your data there really. Then the Bastion is also quite tight on security but is just another server therefore it makes more sense to put the database on a private subnet so it cannot be accessed via the internet. The Bastion is a way to access the DB securely through port 22.
 
+| Metric        | **NACL**                                                                                                                                                    | **SG**                                                                |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **JOB**       | Filter INCOMING and OUTGOING traffic into a subnet                                                                                                          | Filter INCOMING traffic to a instance                                 |
+| **Location**  | At Subnet level                                                                                                                                             | At Instance level                                                     |
+| **RULES IN**  | _By Default Deny Everything_  Rules Numbered: (Should be broader than security groups)                                                                      | _By Default nothing allowed, you need to specify_                     |
+| **RULES OUT** | _By Default Deny Everything_  Should you need to specify what goes out.  This means they are stateless: They do not remember what came in as to let it out. | _By Default allows everything out_  No need to worry, it is stateful. |
+
+**Web app SG**
+* Open Port 80 on 0.0.0.0/0
+* Open port 22 to your IP
+* Open 443 to 0.0.0.0/0
+* Open ephemeral port to 0.0.0.0/0
+
+**My Steps**
+1. Add a public SSH into the Database instance for my IP inside the Private **NACL**
+2. Added my IP to the VPC DB security group, allow my IP to SSH into it.
+3. Added Internet to the Route Table, private 
+
+
+**Interview**
+
+* **2 PM** Tomorrow
+
+
+**LIST OF USEFUL COMMANDS**
+* scp -i ~/.ssh/DevOpsStudents.pem -r environment/ ubuntu@109.10.2.78:/home/ubuntu
+* ssh -i DevOpsStudents.pem ubuntu@109.10.2.78
+
+Finished Today, was a lot of revision and trying to get the DB and APP to work on our new VPC. Find more information [**HERE**](https://github.com/JohnByrneJames/Network_VPC_setup)
