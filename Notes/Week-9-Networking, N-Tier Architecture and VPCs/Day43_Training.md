@@ -100,6 +100,6 @@ Lots of useful Information on this [**card**](https://trello.com/c/pHNg1SKE/199-
 * Question why they like working at the company
 * Don't be in a rush to leave, like you were never supposed to be there.
 
-## Task set by Filipe
+## Image of Setting up VPC, Bastion Server and access into Private subnet
 
 ![Image_of_VPC_SetUP_Bastion_too](../../Images/VPC_SetupV2.svg)
