@@ -85,3 +85,16 @@ Today I have my interview to prepare for. I am at 1:45 PM with the Trainer **Fil
 
 # customer collaboration feedback in scrum
 - This usually takes place during a Daily SCRUM the customer who is one of the stakeholders will be asked for their feedback on the product or product so far and their thoughts, suggestions and criticisms will be taken into consideration when thinking about what is next needed for the project. This helps the product be more adapted to what the customer wants.
+___
+
+
+- REMOVE:  I THINK, IN MY OPINION and MAYBE (NON ASSERTIVE COMMUNICATION)
+
+- NOT CONCISE
+- PROGRAMMING PSEUDO CODE WITH EXPLAINING
+- LOOKS LIKE I AM READING FROM NOTES
+- STAR
+
+**FINISHED**
+
+- `npm start app.js`

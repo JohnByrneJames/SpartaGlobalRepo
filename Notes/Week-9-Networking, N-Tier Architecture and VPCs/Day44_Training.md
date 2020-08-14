@@ -41,6 +41,9 @@ The App is quite unsecure, so you don't want to put your data there really. Then
 **LIST OF USEFUL COMMANDS**
 * scp -i ~/.ssh/DevOpsStudents.pem -r environment/ ubuntu@109.10.2.78:/home/ubuntu
 * ssh -i DevOpsStudents.pem ubuntu@109.10.2.78
+* export DB_HOST="mongodb://109.10.2.78/posts"
+* export DB_HOST="mongodb://52.211.119.65/posts"
+
 
 Finished Today, was a lot of revision and trying to get the DB and APP to work on our new VPC. Find more information [**HERE**](https://github.com/JohnByrneJames/Network_VPC_setup)
 
