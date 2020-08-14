@@ -33,12 +33,6 @@ The App is quite unsecure, so you don't want to put your data there really. Then
 * Open 443 to 0.0.0.0/0
 * Open ephemeral port to 0.0.0.0/0
 
-**My Steps**
-1. Add a public SSH into the Database instance for my IP inside the Private **NACL**
-2. Added my IP to the VPC DB security group, allow my IP to SSH into it.
-3. Added Internet to the Route Table, private 
-
-
 **Interview**
 
 * **2 PM** Tomorrow
@@ -49,3 +43,13 @@ The App is quite unsecure, so you don't want to put your data there really. Then
 * ssh -i DevOpsStudents.pem ubuntu@109.10.2.78
 
 Finished Today, was a lot of revision and trying to get the DB and APP to work on our new VPC. Find more information [**HERE**](https://github.com/JohnByrneJames/Network_VPC_setup)
+
+**My Steps**
+1. Add a public SSH into the Database instance for my IP inside the Private **NACL**
+2. Added my IP to the VPC DB security group, allow my IP to SSH into it.
+3. Added Internet to the Route Table, private 
+4. Added HTTP and HTTPS links into the Private subnets Instance and subnet to allow internet temporarily (Port **80** and **443**)
+5. SCP from OS to bastion and then into private DB
+6. Run DB inside db instance inside VPC, make sure it is running
+7. Exit back to OS, SCP in App provision folder. SSH into App instance inside VPC public subnet and run app provision
+8. Run **NPM install** and **NPM Test**
