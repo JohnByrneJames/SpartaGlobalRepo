@@ -102,5 +102,3 @@ ___
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=AWS_WebApp)](https://github.com/JohnByrneJames/AWS_WebApp)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=NodeAppPipeline)](https://github.com/JohnByrneJames/NodeAppPipeline)
 
-
-

@@ -97,4 +97,7 @@ ___
 
 **FINISHED**
 
-- `npm start app.js`
+- `npm start app.js`  | `killall node`
+* export DB_HOST="mongodb://109.10.2.78/posts"
+* export DB_HOST="mongodb://52.211.119.65/posts"
+
