@@ -76,7 +76,7 @@ Now we want to make the controller nicknamed `AWS` into our Ansible Controller a
 * `sudo apt-add-repository ppa:ansible/ansible` this gets the package from the ansible repository. Then run another `sudo apt-get update -y`.
 * Now you have the package use `sudo apt-get install ansible -y`
 * Now check if you have it installed with `ansible --verison`
-* Install tree ` sudo apt-get install tree` (**tree** is a package manager)
+* Install tree `sudo apt-get install tree` (**tree** is a package manager)
 * **Ansible** default location is `cd /etc/ansible`.
 
 ### Ansible Commands
@@ -96,7 +96,7 @@ Now we want to make the controller nicknamed `AWS` into our Ansible Controller a
 * Now we are able to SSH into the `App` and `DB` using **SSH** like so, and entering **Vagrant** as the password.
 
 * `ssh vagrant@192.168.33.10` For **Web**
-* `ssh vagrant@192.168.33.10` For **DB**
+* `ssh vagrant@192.168.33.11` For **DB**
 * Doing those last two commands creates a connection between the Controller and its hosts when you run the ` ansible all -m ping` command.
 
 Now we pinged all the VMs and got a response saying **SUCCESS**.
@@ -236,7 +236,7 @@ I have added a line to my playbook to start the **NGINX** service.
 ansible-playbook <playbook_name> -b
 ```
 
-There is a command to ge t around return of the **HTML** from a webpage to see if it is displaying the correct out:
+There is a command to get around return of the **HTML** from a webpage to see if it is displaying the correct out:
 
 ```bash
 # curl the addresses HTML
@@ -244,3 +244,4 @@ curl http://192.168.33.10/
 ```
 
 ![My_Vagrant_output_curl](../../Images/Ansible_Setup_2.PNG)
+
