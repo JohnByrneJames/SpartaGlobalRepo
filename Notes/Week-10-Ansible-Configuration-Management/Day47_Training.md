@@ -21,3 +21,11 @@ You can add `--check` at the end of a playbook to check syntax.
 We need to actually get a SSH connection that is authorized from within our AWS machine.
 
 **Ansible is Infrastructure as Code** and **Terraform**  orchestrates it.
+
+WHAT I DID TO GET DATABSE TO WORK:
+
+npm install 
+
+DB_HOST=mongodb://vagrant@192.168.33.11/posts
+
+ansible db -m shell -a "sudo systemctl status mongodb.service"
