@@ -41,9 +41,9 @@
 - [x] **Week Five** - Python Airport Project
 - [x] **Week Six** - Quality Gate and Interviews
 - [x] **Week Seven** - DevOps Begins **|** Linux with Virtual Machines, Vagrant and Ruby Scripting
-- [x] **Week Eight** - DevOps Continued **|** CICD Pipeline, Jenkins and AWS
-- [ ] **Week Nine** - DevOps In-depth **|** Amazon Web Service, Networking and N-Tier Architecture
-- [ ] **Week Ten**
+- [x] **Week Eight** - DevOps Continued **|** _**CICD**_ Pipeline, Jenkins and AWS
+- [x] **Week Nine** - DevOps In-depth **|** Amazon Web Service, VPC, Networking and N-Tier Architecture
+- [ ] **Week Ten** - Infrastructure as Code _**IAC**_ with Ansible, Provision orchestration with Terraform, Hybrid Cloud, Route 53, Scalability and Load Balancing
 - [ ] **Week Eleven**
 - [ ] **Week Twelve**
 
@@ -105,4 +105,10 @@ ___
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=WebApp-CI)](https://github.com/JohnByrneJames/WebApp-CI)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=AWS_WebApp)](https://github.com/JohnByrneJames/AWS_WebApp)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=NodeAppPipeline)](https://github.com/JohnByrneJames/NodeAppPipeline)
+
+##### **Networking | VPC | EC2 | Ansible | Terraform**
+
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=Network_VPC_setup)](https://github.com/JohnByrneJames/Network_VPC_setup)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=Ansible)](https://github.com/JohnByrneJames/Ansible)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=JohnByrneJames&repo=Terraform)](https://github.com/JohnByrneJames/Terraform)
 
