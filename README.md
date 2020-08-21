@@ -43,7 +43,7 @@
 - [x] **Week Seven** - DevOps Begins **|** Linux with Virtual Machines, Vagrant and Ruby Scripting
 - [x] **Week Eight** - DevOps Continued **|** _**CICD**_ Pipeline, Jenkins and AWS
 - [x] **Week Nine** - DevOps In-depth **|** Amazon Web Service, VPC, Networking and N-Tier Architecture
-- [x] **Week Ten** - Infrastructure as Code _**IAC**_ with Ansible, Provision orchestration with Terraform, Hybrid Cloud, Route 53, Scalability and Load Balancing
+- [x] **Week Ten** - Infrastructure as Code **|** _**IAC**_ with Ansible, Provision orchestration with Terraform, Hybrid Cloud, Route 53, Scalability and Load Balancing
 - [ ] **Week Eleven**
 - [ ] **Week Twelve**
 
