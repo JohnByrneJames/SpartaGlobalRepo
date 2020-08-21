@@ -1,8 +1,8 @@
 ###### Sparta Global Training Day 49
-###### Using Ansible to up AWS instances and provision them from single controller
+###### Testing our Ansible AWS Instance creation then moving on Terraform and creation of VPC with IAC
 ___
 
-> 9:00 AM Academy Stand up [Morning]
+> 9:00 AM Stand up [Morning]
 
 I got the AMI up via my ansible playbook and was able to successfully provision the EC2 instance via my controller!
 
@@ -87,5 +87,4 @@ Here the extra 50GB used to be an investment that would go to waste once the inc
 
 ### Use Infrastructure as Code to provision and manage any cloud, infrastructure or service.
 
-
-A lot of todays work can be found [HERE](https://github.com/JohnByrneJames/Terraform)
+A lot of today's work can be found [HERE](https://github.com/JohnByrneJames/Terraform)

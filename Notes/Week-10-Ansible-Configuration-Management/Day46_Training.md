@@ -2,7 +2,7 @@
 ###### Ansible, configuration management tools in DevOps.
 ___
 
-> 9:00 AM Academy Stand up [Morning]
+> 9:00 AM Stand up [Morning]
 
 I did not have many blockers this weekend, however I was quite busy due to some family issues. I did not manage to completely record all the videos but I successfully made a note of them and will definitely do that later in the day or the week.
 

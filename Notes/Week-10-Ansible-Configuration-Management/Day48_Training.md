@@ -2,7 +2,7 @@
 ###### Continuous with Ansible trying to perfect playbooks
 ___
 
-> 9:00 AM Academy Stand up [Morning]
+> 9:00 AM Stand up [Morning]
 
 Although I tried to finish my Ansible playbook and configuration the night before I could not and today is the day that I fix it!. No real blockers but I am going to consult with google and find out. Starting with bash shell scripts and then one by one changing them to more appropriate and robust yaml scripting expressions.
 

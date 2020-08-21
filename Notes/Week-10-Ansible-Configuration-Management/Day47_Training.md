@@ -2,7 +2,7 @@
 ###### Further work into Ansible...
 ___
 
-> 9:00 AM Academy Stand up [Morning]
+> 9:00 AM Stand up [Morning]
 
 I couldn't get the web page to come up, unfortunately I haven't actually got
  the web page to load as the playbook is having a lot of issues and the internet is running extremely slow.
