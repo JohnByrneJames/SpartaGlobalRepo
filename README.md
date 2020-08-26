@@ -58,7 +58,8 @@
 ![.NET](https://img.shields.io/badge/-.NET-5C2D91?style=flat&logo=.NET&logoColor=white)
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=yellow)
-![CSharp](https://img.shields.io/badge/-CSharp-1572B6?style=flat&logo=c%20sharp&logoColor=white)
+![CSharp](https://img.shields.io/badge/-CSharp-239120?style=flat&logo=c%20sharp&logoColor=white)
+![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=C++&logoColor=white)
 ![MYSQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=MySQL&logoColor=white)
 ![MSSQL](https://img.shields.io/badge/-MicrosoftSQLServer-CC2927?style=flat&logo=Microsoft%20SQL%20Server&logoColor=white)
 ![Vagrant](https://img.shields.io/badge/-Vagrant-1563FF?style=flat&logo=Vagrant&logoColor=white)
