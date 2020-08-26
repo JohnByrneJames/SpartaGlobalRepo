@@ -55,6 +55,7 @@
 ![JS](https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript&logoColor=eed718)
 ![PHP](https://img.shields.io/badge/-PHP-5466b8?style=flat&logo=php&logoColor=white)
 ![Flask](https://img.shields.io/badge/-Flask-0d7963?style=flat&logo=flask&logoColor=white)
+![.NET](https://img.shields.io/badge/-.NET-5C2D91?style=flat&logo=.NET&logoColor=white)
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=yellow)
 ![CSharp](https://img.shields.io/badge/-CSharp-1572B6?style=flat&logo=c%20sharp&logoColor=white)
